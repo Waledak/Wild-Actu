@@ -1,22 +1,81 @@
 
-.container{
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
+@import url('https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap');
 
+
+/* Partie à propos */
+
+h1{
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #006B67;
+    font-size: 60px;
 }
-.card-container{
-    border: solid 1px grey;
-    border-radius: 5px;
-    width: 32%;
-    max-height: 45%;
-    margin: 5px;
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
     
 }
-.card-img{
-    background-size: cover;
-    border-radius: 5px;
-    width: 100%;
 
+.container-img{
+    width: 20%;
 }
 
+span{
+    font-size: 30px;
+    color: #008681;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 180%;
+}
+
+a:link{
+    text-decoration:none;
+} 
+
+a:hover{
+    background-color: #39C6C0;
+}
+
+p{
+    font-family: 'Forum', cursive;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+.apropos{
+    margin-bottom: 50px;
+}
+
+/* Partie formulaire contact */
+
+form {
+    background-color:#39C6C0;
+    padding:10px;
+    width: auto;
+    margin: 40px;
+}
+
+.formulaire{
+    padding: 5px; 
+}
+
+input, textarea{
+    display: flex;
+    border-radius: 10px;
+    border-color: #006B67;
+    border-width: 2px;
+    padding-left: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
