@@ -2,10 +2,21 @@
 
 @import url("https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap");
 
+
 /* régle pour un effet smooth avec les ancres */
 * {
   scroll-behavior: smooth;
   transition: all ease 0.3s;
+}
+
+/* Titre à propos */
+.titreapropos, .titrecontact{
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #006B67;
 }
 
 /* modification du body, 0 marge et background antiquewhite  */
@@ -55,6 +66,57 @@ body {
   flex-wrap: wrap;
 }
 
+/* Partie à propos */
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.container-img{
+    width: 20%;
+}
+
+span{
+    font-size: 15px;
+    color: #008681;
+}
+
+.imgprofil{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 180%;
+    margin: 0;
+}
+
+a:link{
+    text-decoration:none;
+} 
+
+a:hover{
+    background-color: #39C6C0;
+}
+
+p{
+    font-family: 'Forum', cursive;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+.apropos{
+    margin-bottom: 50px;
+}
+
+/* création d'une classe container avec les règles flex */
+.container{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
 /* container d'une card */
 .card-container {
   border: solid 1px grey;
@@ -70,6 +132,30 @@ body {
   background-size: cover;
   border-radius: 1px 45px 0px 0px;
   width: 100%;
+}
+
+/* Partie formulaire contact */
+
+form {
+    background-color:#39C6C0;
+    padding:10px;
+    width: auto;
+    margin: 40px;
+}
+
+.formulaire{
+    padding: 5px; 
+}
+
+input, textarea{
+    display: flex;
+    border-radius: 10px;
+    border-color: #006B67;
+    border-width: 2px;
+    padding-left: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
 }
 
 /* container du text des card */
@@ -185,3 +271,95 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
 }
+    display: none;
+    position: absolute;
+    background-color: rgba(0,107,103, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0 16px 16px;
+    margin-top: calc(35px - 0.85rem );
+    flex-direction: column;
+    
+    
+}
+.dropdown-content li{
+    border-bottom: ghostwhite solid 1px;
+    width: 100%;
+
+}
+.dropdown-content li:hover{
+    border-bottom: rgb(247, 148, 0) solid 1px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+
+/*         Partie Aline page-article       */
+
+/*     Titre    */
+
+.bref {
+  background-color: #20b5af ;
+  font-family: 'Luckiest Guy';
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  border: 1px solid #006B67;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  margin-top: 100px;
+  margin-bottom: 0;
+  width: 100%
+}
+
+/*  Date et Auteur */
+
+.infos {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.precisions {
+  list-style: none;
+  font-family: 'Forum';
+  border: 1px solid #006B67;
+  border-radius: 4px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*   Photo   */
+
+.travaux {
+  width: 100%;
+  margin: 5% 0,
+}
+
+  /*   Article   */
+
+  .text {
+    width: 95%;
+    padding: 0.5rem;
+    border: 1px solid #006b67;
+    border-radius: 0 20px 20px 20px ;
+    box-shadow: 10px 10px 5px #006B67;
+    font-family: 'Forum';
+    font-size: 20px;
+    margin-top: 2%;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  /*     Fin Aline    */
+  
