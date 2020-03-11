@@ -92,15 +92,15 @@ span{
     margin: 0;
 }
 
-a:link{
+article a:link{
     text-decoration:none;
 } 
 
-a:hover{
+article a:hover{
     background-color: #39C6C0;
 }
 
-p{
+.description{
     font-family: 'Forum', cursive;
     justify-content: center;
     text-align: center;
@@ -271,32 +271,8 @@ input, textarea{
   align-items: flex-start;
   flex-wrap: wrap;
 }
-    display: none;
-    position: absolute;
-    background-color: rgba(0,107,103, 0.8);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 0 16px 16px;
-    margin-top: calc(35px - 0.85rem );
-    flex-direction: column;
-    
-    
-}
-.dropdown-content li{
-    border-bottom: ghostwhite solid 1px;
-    width: 100%;
 
-}
-.dropdown-content li:hover{
-    border-bottom: rgb(247, 148, 0) solid 1px;
-}
 
-.dropdown:hover .dropdown-content {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    
-}
 
 /*         Partie Aline page-article       */
 
