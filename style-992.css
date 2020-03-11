@@ -1,11 +1,41 @@
-@media screen and (min-width: 992px) {
-  .card-container {
-    width: calc(33.33% - 40px * 2);
-    margin: 40px 20px;
-  }
-  .container {
-    width: 90%;
-    margin: auto;
-    justify-content: space-between;
-  }
+@media screen and (min-width:992px){
+    .card-container{
+        width: calc(33.33% - 40px * 2);
+        margin: 40px 20px;
+
+    }
+    .container{
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+    } 
+    
+    .bref {
+      width: 40%;
+    }
+
+    .infos {
+      width: 80%;
+      padding: 0;
+      justify-content: center;
+    }
+
+    .travaux {
+      max-height: 35rem;
+      width: 80%;
+    }
+
+    .text {
+      width: 70%;
+      padding: 20px;
+    }
+
+    .text p {
+      font-size: 20px;
+      margin: 15px;
+    }
+
+    .text p span {
+      font-size: 25px;
+    }
 }
