@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
 }
 
+/* Titre à propos */
 h1{
     font-family: 'Luckiest Guy', cursive;
     letter-spacing: 4px;
@@ -15,8 +16,8 @@ h1{
     margin-bottom: 50px;
     margin-top: 50px;
     color: #006B67;
-    font-size: 60px;
 }
+
 /* modification du body, 0 marge et background antiquewhite  */
 body{
     box-sizing: border-box;
@@ -64,12 +65,6 @@ article{
     justify-content: space-around;
     margin-bottom: 50px;
 }
-/* création d'une classe container avec les règles flex */
-.container{
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-}
 
 .container-img{
     width: 20%;
@@ -86,6 +81,32 @@ img{
     object-fit: cover;
     border-radius: 180%;
 }
+
+a:link{
+    text-decoration:none;
+} 
+
+a:hover{
+    background-color: #39C6C0;
+}
+
+p{
+    font-family: 'Forum', cursive;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+.apropos{
+    margin-bottom: 50px;
+}
+
+/* création d'une classe container avec les règles flex */
+.container{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
 /* container d'une card */
 .card-container{
     border: solid 1px grey;
@@ -101,24 +122,6 @@ img{
     background-size: cover;
     border-radius: 5px;
     width: 100%;
-}
-
-a:link{
-    text-decoration:none;
-} 
-
-a:hover{
-    background-color: #39C6C0;
-}
-
-p{
-    font-family: 'Forum', cursive;
-    justify-content: center;
-    text-align: center;
-    font-size: 20px;
-}
-.apropos{
-    margin-bottom: 50px;
 }
 
 /* Partie formulaire contact */
