@@ -1,133 +1,184 @@
 /* link pour les fonts */
 
-@import url('https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap");
 
 /* régle pour un effet smooth avec les ancres */
-*{
-    scroll-behavior: smooth;
-    transition: ease-in 0.3s;
-
+* {
+  scroll-behavior: smooth;
+  transition: all ease 0.3s;
 }
 
 /* Titre à propos */
-.titreapropos, .titrecontact{
-    font-family: 'Luckiest Guy', cursive;
-    letter-spacing: 4px;
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    color: #006B67;
+.titreapropos {
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 95px;
+  color: #006b67;
+}
+.titrecontact {
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  color: #006b67;
 }
 
 /* modification du body, 0 marge et background antiquewhite  */
-body{
-    box-sizing: border-box;
-    margin: 0;
-    background-color: floralwhite;
-
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: floralwhite;
 }
 
 /* Partie de tanguy V.Mobile début */
 
-
 /* image d'accueil (la même pour toute les pages) */
-.img-accueil{
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url(http://www.writingfordesigners.com/wp-content/uploads/2015/09/geometric_background_13.jpg);
-    background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom;
-    text-align: center;
-    color: antiquewhite;
-    font-size: 6vh;
-    position: relative;
-    height: 45vh;
-    margin-bottom: 20px;
-    margin-top: 70px;
+.img-accueil {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)),
+    url(http://www.writingfordesigners.com/wp-content/uploads/2015/09/geometric_background_13.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 6vh;
+  position: relative;
+  height: 45vh;
+  margin-bottom: 20px;
+  margin-top: 70px;
 }
 
 /* text superposant l'image d'acceuil */
-.img-accueil h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    font-family: Luckiest Guy, cursive;
-    letter-spacing: 10px;
-    text-shadow:0 0 4px  black
+.img-accueil h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-family: Luckiest Guy, cursive;
+  letter-spacing: 10px;
+  text-shadow: 0 0 4px black;
 }
 
+/* création d'une classe container avec les règles flex */
+.container {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+/* Partie Alexandra*/
 
 /* Partie à propos */
-article{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
+article {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.container-img {
+  width: 47%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+span {
+  font-size: 1.5rem;
+  color: #008681;
+}
+.imgprofil {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 180%;
+  margin: 0;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+}
+article a:link {
+  text-decoration: none;
+}
+article a:hover {
+  background-color: #39c6c0;
+}
+.textapropos {
+  font-family: "Forum", cursive;
+  justify-content: center;
+  margin: 10px;
+  text-align: justify;
+  width: 90%;
+}
+.apropos {
+  margin-bottom: 50px;
+}
+.description {
+  margin-top: 20px;
 }
 
-.container-img{
-    width: 20%;
-}
-
-span{
-    font-size: 15px;
-    color: #008681;
-}
-
-.imgprofil{
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 180%;
-    margin: 0;
-}
-
-a:link{
+article a:link{
     text-decoration:none;
 } 
 
-a:hover{
+article a:hover{
     background-color: #39C6C0;
 }
 
-p{
+.description{
     font-family: 'Forum', cursive;
     justify-content: center;
     text-align: center;
     margin: 10px;
 }
-.apropos{
-    margin-bottom: 50px;
+/* Partie formulaire contact */
+
+form {
+  width: auto;
+  margin: 45px;
+  border-width: 2px;
+  border-radius: 5px;
 }
 
+input,
+textarea {
+  display: flex;
+  border-color: #006b67;
+  margin: 5px auto 5px auto;
+  width: 100%;
+}
+.bouton {
+  display: flex;
+  justify-content: end;
+}
+/* Fin partie Alexandra */
+
 /* création d'une classe container avec les règles flex */
-.container{
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
+.container {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
 }
 
 /* container d'une card */
-.card-container{
-    border: solid 1px grey;
-    border-radius: 5px;
-    width: 90%;
-    margin: 20px auto;
-    background-color: ghostwhite;
-    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, .2);
+.card-container {
+  border: solid 1px grey;
+  border-radius: 1px 45px 1px 45px;
+  width: 90%;
+  margin: 20px auto;
+  background-color: ghostwhite;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
 }
 
 /* image des card */
-.card-img{
-    background-size: cover;
-    border-radius: 5px;
-    width: 100%;
+.card-img {
+  background-size: cover;
+  border-radius: 1px 45px 0px 0px;
+  width: 100%;
 }
 
 /* Partie formulaire contact */
@@ -155,145 +206,139 @@ input, textarea{
 }
 
 /* container du text des card */
-.card-text-container{
-    margin: auto 5%;
-    
-    
+.card-text-container {
+  margin: auto 5%;
 }
 
 /* concerne la description des card */
-.card-description{
-    color: slategrey;
-    font-size: 1.5rem;
-    font-family: Forum, cursive;
-    margin: 0;
-    border-bottom: grey 1px dotted;
+.card-description {
+  color: slategrey;
+  font-size: 1.5rem;
+  font-family: Forum, cursive;
+  margin: 0;
+  border-bottom: grey 1px dotted;
 }
 
 /* titre des cards */
-.card-text-container h2{
-    border-bottom: grey solid 1px;
-    padding-bottom: 5px;
-    font-family: Luckiest Guy, cursive;
-    letter-spacing: 4px;
-    font-size: 1.7rem;
+.card-text-container h2 {
+  border-bottom: grey solid 1px;
+  padding-bottom: 5px;
+  font-family: Luckiest Guy, cursive;
+  letter-spacing: 4px;
+  font-size: 1.7rem;
 }
 
 /* information article(date, auteur...) */
-.info-article{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 0;
-    list-style:none;
-    color: grey;
-    font-family: Forum, cursive;
-    font-size: 1.3rem;
-
+.info-article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+  list-style: none;
+  color: grey;
+  font-family: Forum, cursive;
+  font-size: 1.3rem;
 }
 /* suppression de la couleur par défaut des lien */
-.info-article li a{ 
-    text-decoration: none;
-    color:grey;
-
-
+.info-article li a {
+  text-decoration: none;
+  color: grey;
 }
 
 /* Partie de tanguy V.Mobile fin */
 
 /* Partie Emeric navbar */
 
-.navbar{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 99999;
-    background-color:rgba(0,107,103, 0.8);
-    height: 70px;
-    max-height: 70px;
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  background-color: rgba(0, 107, 103, 0.8);
+  height: 70px;
+  max-height: 70px;
 }
 
-.navbar ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.navbar ul li a{
-    color: ghostwhite;
-    text-decoration: none;
-    font-family: Forum,cursive;
-    font-size: 1.5rem;
-    font-weight: bold;
+.navbar ul li a {
+  color: ghostwhite;
+  text-decoration: none;
+  font-family: Forum, cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-.navbar ul li{
-    padding-top: calc(70px - 1.5rem * 2);
-    cursor: pointer;
-}
-
-.navbar ul li a{
-    padding: calc(70px - 1.5rem * 2) 0;
+.navbar ul li {
+  padding-top: calc(70px - 1.5rem * 2);
+  cursor: pointer;
 }
 
-.navbar ul li a:hover{
-    color: rgb(247, 148, 0);
+.navbar ul li a {
+  padding: calc(70px - 1.5rem * 2) 0;
+}
+
+.navbar ul li a:hover {
+  color: rgb(247, 148, 0);
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
-    padding-bottom: calc(70px - 1.5rem * 2)
+  position: relative;
+  display: inline-block;
+  padding-bottom: calc(70px - 1.5rem * 2);
 }
-  
+
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(0,107,103, 0.8);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 0 16px 16px;
-    margin-top: calc(35px - 0.85rem );
-    flex-direction: column;
-    
-    
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 107, 103, 0.8);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 0 16px 16px;
+  margin-top: calc(35px - 0.85rem);
+  flex-direction: column;
+  border-radius: 0px 0px 5px 5px;
 }
-.dropdown-content li{
-    border-bottom: ghostwhite solid 1px;
-    width: 100%;
+.dropdown-content li {
+  border-bottom: ghostwhite solid 1px;
+  width: 100%;
+  height: 35px;
+}
+.dropdown-content li:hover {
+  border-bottom: rgb(247, 148, 0) solid 1px;
+}
 
-}
-.dropdown-content li:hover{
-    border-bottom: rgb(247, 148, 0) solid 1px;
+.dropdown #dropdown-content:target {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.dropdown:hover .dropdown-content {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    
-}
+
 
 /*         Partie Aline page-article       */
 
 /*     Titre    */
 
 .bref {
-  background-color: #20b5af ;
-  font-family: 'Luckiest Guy';
+  background-color: #20b5af;
+  font-family: "Luckiest Guy";
   color: white;
   font-size: 1.1rem;
   letter-spacing: 0.2rem;
-  border: 1px solid #006B67;
+  border: 1px solid #006b67;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   padding-top: 10px;
   margin-top: 100px;
   margin-bottom: 0;
-  width: 100%
+  width: 100%;
 }
 
 /*  Date et Auteur */
@@ -306,8 +351,8 @@ input, textarea{
 
 .precisions {
   list-style: none;
-  font-family: 'Forum';
-  border: 1px solid #006B67;
+  font-family: "Forum";
+  border: 1px solid #006b67;
   border-radius: 4px;
   padding: 5px;
   margin-left: 10px;
@@ -319,25 +364,24 @@ input, textarea{
 
 .travaux {
   width: 100%;
-  margin: 5% 0,
+  margin: 5% 0;
 }
 
-  /*   Article   */
+/*   Article   */
 
-  .text {
-    width: 95%;
-    padding: 0.5rem;
-    border: 1px solid #006b67;
-    border-radius: 0 20px 20px 20px ;
-    box-shadow: 10px 10px 5px #006B67;
-    font-family: 'Forum';
-    font-size: 20px;
-    margin-top: 2%;
-  }
+.text {
+  width: 95%;
+  padding: 0.5rem;
+  border: 1px solid #006b67;
+  border-radius: 0 20px 20px 20px;
+  box-shadow: 10px 10px 5px #006b67;
+  font-family: "Forum";
+  font-size: 20px;
+  margin-top: 2%;
+}
 
-  span {
-    font-weight: bold;
-  }
+span {
+  font-weight: bold;
+}
 
-  /*     Fin Aline    */
-  
+/*     Fin Aline    */
