@@ -5,7 +5,7 @@
 /* régle pour un effet smooth avec les ancres */
 * {
   scroll-behavior: smooth;
-  transition: ease-in 0.3s;
+  transition: all ease 0.3s;
 }
 
 /* Titre à propos */
@@ -66,6 +66,12 @@ body {
   text-shadow: 0 0 4px black;
 }
 
+/* création d'une classe container avec les règles flex */
+.container {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
 /* Partie Alexandra*/
 
 /* Partie à propos */
@@ -115,6 +121,20 @@ article a:hover {
   margin-top: 20px;
 }
 
+article a:link{
+    text-decoration:none;
+} 
+
+article a:hover{
+    background-color: #39C6C0;
+}
+
+.description{
+    font-family: 'Forum', cursive;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
 /* Partie formulaire contact */
 
 form {
@@ -147,7 +167,7 @@ textarea {
 /* container d'une card */
 .card-container {
   border: solid 1px grey;
-  border-radius: 5px;
+  border-radius: 1px 45px 1px 45px;
   width: 90%;
   margin: 20px auto;
   background-color: ghostwhite;
@@ -157,8 +177,32 @@ textarea {
 /* image des card */
 .card-img {
   background-size: cover;
-  border-radius: 5px;
+  border-radius: 1px 45px 0px 0px;
   width: 100%;
+}
+
+/* Partie formulaire contact */
+
+form {
+    background-color:#39C6C0;
+    padding:10px;
+    width: auto;
+    margin: 40px;
+}
+
+.formulaire{
+    padding: 5px; 
+}
+
+input, textarea{
+    display: flex;
+    border-radius: 10px;
+    border-color: #006B67;
+    border-width: 2px;
+    padding-left: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
 }
 
 /* container du text des card */
@@ -258,20 +302,24 @@ textarea {
   padding: 0 16px 16px;
   margin-top: calc(35px - 0.85rem);
   flex-direction: column;
+  border-radius: 0px 0px 5px 5px;
 }
 .dropdown-content li {
   border-bottom: ghostwhite solid 1px;
   width: 100%;
+  height: 35px;
 }
 .dropdown-content li:hover {
   border-bottom: rgb(247, 148, 0) solid 1px;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown #dropdown-content:target {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
+
 
 /*         Partie Aline page-article       */
 
