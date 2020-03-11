@@ -66,6 +66,8 @@ body {
   text-shadow: 0 0 4px black;
 }
 
+/* Partie Alexandra*/
+
 /* Partie à propos */
 article {
   flex-wrap: wrap;
@@ -112,6 +114,29 @@ article a:hover {
 .description {
   margin-top: 20px;
 }
+
+/* Partie formulaire contact */
+
+form {
+  width: auto;
+  margin: 45px;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+input,
+textarea {
+  display: flex;
+  border-color: #006b67;
+  margin: 5px auto 5px auto;
+  width: 100%;
+}
+.bouton {
+  display: flex;
+  justify-content: end;
+}
+/* Fin partie Alexandra */
+
 /* création d'une classe container avec les règles flex */
 .container {
   display: flex;
@@ -134,27 +159,6 @@ article a:hover {
   background-size: cover;
   border-radius: 5px;
   width: 100%;
-}
-
-/* Partie formulaire contact */
-
-form {
-  width: auto;
-  margin: 45px;
-  border-width: 2px;
-  border-radius: 5px;
-}
-
-input,
-textarea {
-  display: flex;
-  border-color: #006b67;
-  margin: 5px auto 5px auto;
-  width: 100%;
-}
-.bouton {
-  display: flex;
-  justify-content: end;
 }
 
 /* container du text des card */
@@ -273,7 +277,7 @@ textarea {
 
 /*     Titre    */
 
-h1 {
+.bref {
   background-color: #20b5af;
   font-family: "Luckiest Guy";
   color: white;
@@ -284,6 +288,8 @@ h1 {
   display: flex;
   justify-content: center;
   padding-top: 10px;
+  margin-top: 100px;
+  margin-bottom: 0;
   width: 100%;
 }
 
@@ -292,9 +298,10 @@ h1 {
 .infos {
   display: flex;
   justify-content: flex-end;
+  width: 100%;
 }
 
-li {
+.precisions {
   list-style: none;
   font-family: "Forum";
   border: 1px solid #006b67;
