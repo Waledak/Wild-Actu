@@ -1,10 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap');
-
-body {
-  display: flex;
-}
-
 .container{
     display: flex;
     justify-content: start;
