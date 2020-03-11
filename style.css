@@ -2,7 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap");
 
-
 /* régle pour un effet smooth avec les ancres */
 * {
   scroll-behavior: smooth;
@@ -10,13 +9,21 @@
 }
 
 /* Titre à propos */
-.titreapropos, .titrecontact{
-    font-family: 'Luckiest Guy', cursive;
-    letter-spacing: 4px;
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    color: #006B67;
+.titreapropos {
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 95px;
+  color: #006b67;
+}
+.titrecontact {
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  color: #006b67;
 }
 
 /* modification du body, 0 marge et background antiquewhite  */
@@ -65,31 +72,53 @@ body {
   justify-content: start;
   flex-wrap: wrap;
 }
+/* Partie Alexandra*/
 
 /* Partie à propos */
-article{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
+article {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
-
-.container-img{
-    width: 20%;
+.container-img {
+  width: 47%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
-
-span{
-    font-size: 15px;
-    color: #008681;
+span {
+  font-size: 1.5rem;
+  color: #008681;
 }
-
-.imgprofil{
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 180%;
-    margin: 0;
+.imgprofil {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 180%;
+  margin: 0;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+}
+article a:link {
+  text-decoration: none;
+}
+article a:hover {
+  background-color: #39c6c0;
+}
+.textapropos {
+  font-family: "Forum", cursive;
+  justify-content: center;
+  margin: 10px;
+  text-align: justify;
+  width: 90%;
+}
+.apropos {
+  margin-bottom: 50px;
+}
+.description {
+  margin-top: 20px;
 }
 
 article a:link{
@@ -106,15 +135,33 @@ article a:hover{
     text-align: center;
     margin: 10px;
 }
-.apropos{
-    margin-bottom: 50px;
+/* Partie formulaire contact */
+
+form {
+  width: auto;
+  margin: 45px;
+  border-width: 2px;
+  border-radius: 5px;
 }
 
+input,
+textarea {
+  display: flex;
+  border-color: #006b67;
+  margin: 5px auto 5px auto;
+  width: 100%;
+}
+.bouton {
+  display: flex;
+  justify-content: end;
+}
+/* Fin partie Alexandra */
+
 /* création d'une classe container avec les règles flex */
-.container{
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
+.container {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
 }
 
 /* container d'une card */
@@ -279,19 +326,19 @@ input, textarea{
 /*     Titre    */
 
 .bref {
-  background-color: #20b5af ;
-  font-family: 'Luckiest Guy';
+  background-color: #20b5af;
+  font-family: "Luckiest Guy";
   color: white;
   font-size: 1.1rem;
   letter-spacing: 0.2rem;
-  border: 1px solid #006B67;
+  border: 1px solid #006b67;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   padding-top: 10px;
   margin-top: 100px;
   margin-bottom: 0;
-  width: 100%
+  width: 100%;
 }
 
 /*  Date et Auteur */
@@ -304,8 +351,8 @@ input, textarea{
 
 .precisions {
   list-style: none;
-  font-family: 'Forum';
-  border: 1px solid #006B67;
+  font-family: "Forum";
+  border: 1px solid #006b67;
   border-radius: 4px;
   padding: 5px;
   margin-left: 10px;
@@ -317,25 +364,24 @@ input, textarea{
 
 .travaux {
   width: 100%;
-  margin: 5% 0,
+  margin: 5% 0;
 }
 
-  /*   Article   */
+/*   Article   */
 
-  .text {
-    width: 95%;
-    padding: 0.5rem;
-    border: 1px solid #006b67;
-    border-radius: 0 20px 20px 20px ;
-    box-shadow: 10px 10px 5px #006B67;
-    font-family: 'Forum';
-    font-size: 20px;
-    margin-top: 2%;
-  }
+.text {
+  width: 95%;
+  padding: 0.5rem;
+  border: 1px solid #006b67;
+  border-radius: 0 20px 20px 20px;
+  box-shadow: 10px 10px 5px #006b67;
+  font-family: "Forum";
+  font-size: 20px;
+  margin-top: 2%;
+}
 
-  span {
-    font-weight: bold;
-  }
+span {
+  font-weight: bold;
+}
 
-  /*     Fin Aline    */
-  
+/*     Fin Aline    */
