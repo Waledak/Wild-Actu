@@ -2,11 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap');
 
+
 /* régle pour un effet smooth avec les ancres */
 *{
     scroll-behavior: smooth;
     transition: ease-in 0.3s;
 
+}
+
+/* Titre à propos */
+h1{
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #006B67;
 }
 
 /* modification du body, 0 marge et background antiquewhite  */
@@ -51,12 +62,53 @@ body{
 }
 
 
+/* Partie à propos */
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.container-img{
+    width: 20%;
+}
+
+span{
+    font-size: 30px;
+    color: #008681;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 180%;
+}
+
+a:link{
+    text-decoration:none;
+} 
+
+a:hover{
+    background-color: #39C6C0;
+}
+
+p{
+    font-family: 'Forum', cursive;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+.apropos{
+    margin-bottom: 50px;
+}
+
 /* création d'une classe container avec les règles flex */
 .container{
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
-
 }
 
 /* container d'une card */
@@ -76,6 +128,29 @@ body{
     width: 100%;
 }
 
+/* Partie formulaire contact */
+
+form {
+    background-color:#39C6C0;
+    padding:10px;
+    width: auto;
+    margin: 40px;
+}
+
+.formulaire{
+    padding: 5px; 
+}
+
+input, textarea{
+    display: flex;
+    border-radius: 10px;
+    border-color: #006B67;
+    border-width: 2px;
+    padding-left: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
 
 /* container du text des card */
 .card-text-container{
@@ -237,7 +312,7 @@ li {
 
 /*   Photo   */
 
-img {
+.travaux {
   width: 100%;
   margin: 5% 0,
 }
