@@ -6,6 +6,8 @@
 /* régle pour un effet smooth avec les ancres */
 *{
     scroll-behavior: smooth;
+    transition: ease-in 0.3s;
+
 }
 
 /* Titre à propos */
@@ -23,6 +25,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     background-color: floralwhite;
+
 }
 
 /* Partie de tanguy V.Mobile début */
@@ -42,7 +45,8 @@ body{
     font-size: 6vh;
     position: relative;
     height: 45vh;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    margin-top: 70px;
 }
 
 /* text superposant l'image d'acceuil */
@@ -194,3 +198,78 @@ input, textarea{
 }
 
 /* Partie de tanguy V.Mobile fin */
+
+/* Partie Emeric navbar */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    background-color:rgba(0,107,103, 0.8);
+    height: 70px;
+    max-height: 70px;
+}
+
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.navbar ul li a{
+    color: ghostwhite;
+    text-decoration: none;
+    font-family: Forum,cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar ul li{
+    padding-top: calc(70px - 1.5rem * 2);
+    cursor: pointer;
+}
+
+.navbar ul li a{
+    padding: calc(70px - 1.5rem * 2) 0;
+}
+
+.navbar ul li a:hover{
+    color: rgb(247, 148, 0);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-bottom: calc(70px - 1.5rem * 2)
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,107,103, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0 16px 16px;
+    margin-top: calc(35px - 0.85rem );
+    flex-direction: column;
+    
+    
+}
+.dropdown-content li{
+    border-bottom: ghostwhite solid 1px;
+    width: 100%;
+
+}
+.dropdown-content li:hover{
+    border-bottom: rgb(247, 148, 0) solid 1px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
