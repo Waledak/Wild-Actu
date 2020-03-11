@@ -1,12 +1,11 @@
-@media screen and (min-width:992px){
-    .card-container{
-        width: calc(33.33% - 40px * 2);
-        margin: 40px 20px;
-
-    }
-    .container{
-        width: 90%;
-        margin: auto;
-        justify-content: space-between;
-    }  
+@media screen and (min-width: 992px) {
+  .card-container {
+    width: calc(33.33% - 40px * 2);
+    margin: 40px 20px;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+  }
 }

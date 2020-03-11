@@ -1,200 +1,187 @@
 /* link pour les fonts */
 
-@import url('https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap");
 
 /* régle pour un effet smooth avec les ancres */
-*{
-    scroll-behavior: smooth;
-    transition: ease-in 0.3s;
-
+* {
+  scroll-behavior: smooth;
+  transition: all ease 0.3s;
 }
 
 /* modification du body, 0 marge et background antiquewhite  */
-body{
-    box-sizing: border-box;
-    margin: 0;
-    background-color: floralwhite;
-
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: floralwhite;
 }
 
 /* Partie de tanguy V.Mobile début */
 
-
 /* image d'accueil (la même pour toute les pages) */
-.img-accueil{
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url(http://www.writingfordesigners.com/wp-content/uploads/2015/09/geometric_background_13.jpg);
-    background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom;
-    text-align: center;
-    color: antiquewhite;
-    font-size: 6vh;
-    position: relative;
-    height: 45vh;
-    margin-bottom: 20px;
-    margin-top: 70px;
+.img-accueil {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)),
+    url(http://www.writingfordesigners.com/wp-content/uploads/2015/09/geometric_background_13.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 6vh;
+  position: relative;
+  height: 45vh;
+  margin-bottom: 20px;
+  margin-top: 70px;
 }
 
 /* text superposant l'image d'acceuil */
-.img-accueil h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    font-family: Luckiest Guy, cursive;
-    letter-spacing: 10px;
-    text-shadow:0 0 4px  black
+.img-accueil h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-family: Luckiest Guy, cursive;
+  letter-spacing: 10px;
+  text-shadow: 0 0 4px black;
 }
 
-
 /* création d'une classe container avec les règles flex */
-.container{
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-
+.container {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
 }
 
 /* container d'une card */
-.card-container{
-    border: solid 1px grey;
-    border-radius: 5px;
-    width: 90%;
-    margin: 20px auto;
-    background-color: ghostwhite;
-    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, .2);
+.card-container {
+  border: solid 1px grey;
+  border-radius: 1px 45px 1px 45px;
+  width: 90%;
+  margin: 20px auto;
+  background-color: ghostwhite;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
 }
 
 /* image des card */
-.card-img{
-    background-size: cover;
-    border-radius: 5px;
-    width: 100%;
+.card-img {
+  background-size: cover;
+  border-radius: 1px 45px 0px 0px;
+  width: 100%;
 }
 
-
 /* container du text des card */
-.card-text-container{
-    margin: auto 5%;
-    
-    
+.card-text-container {
+  margin: auto 5%;
 }
 
 /* concerne la description des card */
-.card-description{
-    color: slategrey;
-    font-size: 1.5rem;
-    font-family: Forum, cursive;
-    margin: 0;
-    border-bottom: grey 1px dotted;
+.card-description {
+  color: slategrey;
+  font-size: 1.5rem;
+  font-family: Forum, cursive;
+  margin: 0;
+  border-bottom: grey 1px dotted;
 }
 
 /* titre des cards */
-.card-text-container h2{
-    border-bottom: grey solid 1px;
-    padding-bottom: 5px;
-    font-family: Luckiest Guy, cursive;
-    letter-spacing: 4px;
-    font-size: 1.7rem;
+.card-text-container h2 {
+  border-bottom: grey solid 1px;
+  padding-bottom: 5px;
+  font-family: Luckiest Guy, cursive;
+  letter-spacing: 4px;
+  font-size: 1.7rem;
 }
 
 /* information article(date, auteur...) */
-.info-article{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 0;
-    list-style:none;
-    color: grey;
-    font-family: Forum, cursive;
-    font-size: 1.3rem;
-
+.info-article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+  list-style: none;
+  color: grey;
+  font-family: Forum, cursive;
+  font-size: 1.3rem;
 }
 /* suppression de la couleur par défaut des lien */
-.info-article li a{ 
-    text-decoration: none;
-    color:grey;
-
-
+.info-article li a {
+  text-decoration: none;
+  color: grey;
 }
 
 /* Partie de tanguy V.Mobile fin */
 
 /* Partie Emeric navbar */
 
-.navbar{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 99999;
-    background-color:rgba(0,107,103, 0.8);
-    height: 70px;
-    max-height: 70px;
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  background-color: rgba(0, 107, 103, 0.8);
+  height: 70px;
+  max-height: 70px;
 }
 
-.navbar ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.navbar ul li a{
-    color: ghostwhite;
-    text-decoration: none;
-    font-family: Forum,cursive;
-    font-size: 1.5rem;
-    font-weight: bold;
+.navbar ul li a {
+  color: ghostwhite;
+  text-decoration: none;
+  font-family: Forum, cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-.navbar ul li{
-    padding-top: calc(70px - 1.5rem * 2);
-    cursor: pointer;
-}
-
-.navbar ul li a{
-    padding: calc(70px - 1.5rem * 2) 0;
+.navbar ul li {
+  padding-top: calc(70px - 1.5rem * 2);
+  cursor: pointer;
 }
 
-.navbar ul li a:hover{
-    color: rgb(247, 148, 0);
+.navbar ul li a {
+  padding: calc(70px - 1.5rem * 2) 0;
+}
+
+.navbar ul li a:hover {
+  color: rgb(247, 148, 0);
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
-    padding-bottom: calc(70px - 1.5rem * 2)
+  position: relative;
+  display: inline-block;
+  padding-bottom: calc(70px - 1.5rem * 2);
 }
-  
+
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(0,107,103, 0.8);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 0 16px 16px;
-    margin-top: calc(35px - 0.85rem );
-    flex-direction: column;
-    
-    
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 107, 103, 0.8);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 0 16px 16px;
+  margin-top: calc(35px - 0.85rem);
+  flex-direction: column;
+  border-radius: 0px 0px 5px 5px;
 }
-.dropdown-content li{
-    border-bottom: ghostwhite solid 1px;
-    width: 100%;
+.dropdown-content li {
+  border-bottom: ghostwhite solid 1px;
+  width: 100%;
+  height: 35px;
+}
+.dropdown-content li:hover {
+  border-bottom: rgb(247, 148, 0) solid 1px;
+}
 
-}
-.dropdown-content li:hover{
-    border-bottom: rgb(247, 148, 0) solid 1px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    
+.dropdown #dropdown-content:target {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
