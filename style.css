@@ -11,7 +11,7 @@
 }
 
 /* Titre à propos */
-h1{
+.titreapropos, .titrecontact{
     font-family: 'Luckiest Guy', cursive;
     letter-spacing: 4px;
     text-align: center;
@@ -67,7 +67,8 @@ article{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin: 0;
+    padding: 0;
 }
 
 .container-img{
@@ -75,15 +76,16 @@ article{
 }
 
 span{
-    font-size: 30px;
+    font-size: 15px;
     color: #008681;
 }
 
-img{
-    width: 300px;
-    height: 300px;
+.imgprofil{
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 180%;
+    margin: 0;
 }
 
 a:link{
