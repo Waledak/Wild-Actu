@@ -11,7 +11,16 @@
 }
 
 /* Titre à propos */
-.titreapropos, .titrecontact{
+.titreapropos{
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 95px;
+    color: #006B67;
+
+}
+.titrecontact{
     font-family: 'Luckiest Guy', cursive;
     letter-spacing: 4px;
     text-align: center;
@@ -61,51 +70,52 @@ body{
     text-shadow:0 0 4px  black
 }
 
-
 /* Partie à propos */
 article{
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0;
     padding: 0;
+    display: flex;
 }
-
 .container-img{
-    width: 20%;
+    width: 47%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 }
-
 span{
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #008681;
 }
-
 .imgprofil{
-    width: 80px;
-    height: 80px;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
     border-radius: 180%;
     margin: 0;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, .2);
 }
-
-a:link{
+article a:link{
     text-decoration:none;
 } 
-
-a:hover{
+article a:hover{
     background-color: #39C6C0;
 }
-
-p{
+.textapropos{
     font-family: 'Forum', cursive;
     justify-content: center;
-    text-align: center;
     margin: 10px;
+    text-align: justify;
+    width: 90%;
 }
 .apropos{
     margin-bottom: 50px;
 }
-
+.description{
+    margin-top: 20px;
+}
 /* création d'une classe container avec les règles flex */
 .container{
     display: flex;
@@ -133,26 +143,20 @@ p{
 /* Partie formulaire contact */
 
 form {
-    background-color:#39C6C0;
-    padding:10px;
     width: auto;
-    margin: 40px;
+    margin: 45px;
+    border-width: 2px;
+    border-radius: 5px;
 }
 
-.formulaire{
-    padding: 5px; 
-}
 
 input, textarea{
     display: flex;
-    border-radius: 10px;
     border-color: #006B67;
-    border-width: 2px;
-    padding-left: 6px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
+    margin: 5px auto 5px auto;
+    width: 100%;
 }
+
 
 /* container du text des card */
 .card-text-container{
