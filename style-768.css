@@ -29,60 +29,28 @@
   .imgprofil {
     width: 250px;
     height: 250px;
-    object-fit: cover;
-    border-radius: 180%;
-    margin: 0;
-    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
   }
   span {
     font-size: 25px;
-    color: #008681;
   }
   .textapropos {
-    font-family: "Forum", cursive;
-    justify-content: center;
-    margin: 10px;
-    text-align: justify;
-    width: 90%;
     font-size: 20px;
   }
   form {
-    padding: 10px;
     width: 50%;
-    margin: auto;
-    border-radius: 15px;
   }
   input,
   textarea {
-    display: flex;
-    border-radius: 12px;
-    padding-left: 6px;
-    width: 100%;
-    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
-    background-color: #f1f8f9;
-    font-family: "Forum", cursive;
     font-size: 18px;
-    color: #003a38;
-    border: 1px solid black;
   }
   input {
     height: 40px;
   }
   textarea {
     height: 80px;
-    padding-top: 4px;
   }
   button {
     border: 0, 5px solid;
-    border-radius: 12px;
-    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
-    background-color: #f1f8f9;
     height: 35px;
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 15px;
-    font-family: "Forum", cursive;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

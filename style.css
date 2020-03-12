@@ -78,7 +78,7 @@ body {
 article {
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 0;
+  margin-top: 40px;
   padding: 0;
   display: flex;
 }
@@ -92,13 +92,14 @@ article {
 span {
   font-size: 1.5rem;
   color: #008681;
+  padding-top: 20px;
 }
 .imgprofil {
   width: 130px;
   height: 130px;
   object-fit: cover;
   border-radius: 180%;
-  margin: 0;
+  margin-bottom: 20px;
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
 }
 article a:link {
