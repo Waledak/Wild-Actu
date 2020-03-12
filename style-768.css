@@ -16,7 +16,7 @@
     padding: 0;
   }
   .travaux {
-    max-height: 25rem;
+    height: auto;
     width: 90%;
   }
   .text {
