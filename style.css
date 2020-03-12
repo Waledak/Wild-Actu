@@ -104,8 +104,9 @@ span {
 article a:link {
   text-decoration: none;
 }
-article a:hover {
-  background-color: #39c6c0;
+.container-img,
+span:hover {
+  color: rgb(247, 148, 0);
 }
 .textapropos {
   font-family: "Forum", cursive;
@@ -118,42 +119,54 @@ article a:hover {
   margin-bottom: 50px;
 }
 .description {
-  margin-top: 20px;
-}
-article a:link {
-  text-decoration: none;
-}
-article a:hover {
-  background-color: #39c6c0;
-}
-.description {
   font-family: "Forum", cursive;
   justify-content: center;
   text-align: center;
   margin: 10px;
+  margin-top: 20px;
 }
 /* Partie formulaire contact */
 form {
   padding: 10px;
-  width: auto;
-  margin: 40px;
-  border: 2px groove black;
-  border-radius: 2px;
-  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+  width: 90%;
+  margin: auto;
+  border-radius: 15px;
 }
 input,
 textarea {
   display: flex;
-  border-color: #006b67;
-  border-width: 2px;
+  border-radius: 12px;
   padding-left: 6px;
-  margin: 5px auto 5px auto;
-  width: 230px;
+  width: 100%;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+  background-color: #f1f8f9;
+  font-family: "Forum", cursive;
+  font-size: 15px;
+  color: #003a38;
+  border: 1px solid black;
+  margin-top: 12px;
 }
-.bouton {
-  display: flex;
-  justify-content: end;
-  margin-right: 25px;
+input {
+  height: 25px;
+}
+textarea {
+  height: 60px;
+  padding-top: 4px;
+}
+button {
+  border: 0, 8px solid;
+  border-radius: 12px;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+  background-color: #f1f8f9;
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "Forum", cursive;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  align-items: flex-end;
 }
 /* Fin partie Alexandra */
 /* container d'une card */
@@ -277,7 +290,6 @@ textarea {
 .dropdown-content li:hover {
   border-bottom: rgb(247, 148, 0) solid 1px;
 }
-
 .dropdown #dropdown-content:target {
   display: flex;
   align-items: flex-start;
@@ -296,8 +308,8 @@ textarea {
   display: flex;
   justify-content: center;
   padding-top: 10px;
-  margin-top: 100px;
-  margin-bottom: 0;
+  margin-top: 40px;
+  margin-bottom: 2px0;
   width: 100%;
 }
 /*  Date et Auteur */
@@ -317,7 +329,6 @@ textarea {
   margin-bottom: 0;
 }
 /*   Photo   */
-
 .travaux {
   height: auto;
   width: 100%;
@@ -333,8 +344,66 @@ textarea {
   font-family: "Forum";
   font-size: 20px;
   margin-top: 2%;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 span {
   font-weight: bold;
 }
-/*     Fin Aline    */
+
+/* Partie de tanguy V.Mobile fin */
+
+/*debut partie footer*/
+footer {
+  background-color: rgb(0, 107, 103);
+  display: flex;
+  width: 100%;
+  margin-top: 90px;
+  justify-content: space-between;
+  font-family:'Forum', cursive;
+  font-size: 1.5rem;
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+  align-content: center;
+}
+
+.liste {
+  margin: 10px;
+  text-decoration: none;
+}
+.icone {
+  height: auto;
+  width: 50%;
+}
+.textes {
+  padding-top: 9px;
+  padding-left: 32px;
+}
+.liste a {
+  text-decoration: none;
+  outline: none;
+  color: ghostwhite
+}
+.liste a:hover {
+  color: rgb(247, 148, 0);
+}
+.tilt {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.tilt:hover {
+  -webkit-transform: rotate(-15deg);
+     -moz-transform: rotate(-15deg);
+       -o-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
