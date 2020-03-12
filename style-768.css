@@ -8,4 +8,58 @@
     margin: auto;
     justify-content: space-between;
   }
+
+  .bref {
+    width: 90%;
+  }
+
+  .infos {
+    width: 90%;
+    padding: 0;
+  }
+
+  .travaux {
+    max-height: 25rem;
+    width: 90%;
+  }
+
+  .text {
+    width: 90%;
+  }
+
+  /* Partie responsive tablette Alex */
+  .imgprofil {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 180%;
+    margin: 0;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+  }
+  span {
+    font-size: 25px;
+    color: #008681;
+  }
+  .textapropos {
+    font-family: "Forum", cursive;
+    justify-content: center;
+    margin: 10px;
+    text-align: justify;
+    width: 90%;
+    font-size: 20px;
+  }
+  input,
+  textarea {
+    display: flex;
+    border-color: #006b67;
+    border-width: 2px;
+    padding-left: 6px;
+    margin: 5px auto 5px auto;
+    width: 500px;
+  }
+  .bouton {
+    display: flex;
+    justify-content: end;
+    margin-right: 80px;
+  }
 }
