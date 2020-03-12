@@ -310,6 +310,7 @@ textarea {
 /*   Photo   */
 
 .travaux {
+  height: auto;
   width: 100%;
   margin: 5% 0;
 }
