@@ -1,93 +1,145 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-768.css">
-    <link rel="stylesheet" href="style-992.css">
-    <link rel="stylesheet" href="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-768.css" />
+    <link rel="stylesheet" href="style-992.css" />
     <title>Wild-Actu</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-
-
+      <ul>
+        <li>
+          <a href="#accueil">Accueil</a>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a href="#dropdown-content">Auteurs</a>
+            <div class="dropdown-content" id="dropdown-content">
+              <ul>
+                <li><a href="page-article.html">Aline</a></li>
+                <li><a href="index.html">Alexandra</a></li>
+                <li>
+                  <a
+                    href="https://www.google.com/search?q=redneck+mullet&tbm=isch&client=ubuntu&hs=xeg&hl=fr&ved=2ahUKEwiHg-LHupToAhVG1-AKHespAQUQrNwCKAF6BQgBEJoB&biw=1841&bih=951#imgrc=tngJDs1GABpzKM"
+                    >Emeric</a
+                  >
+                </li>
+                <li><a href="index.html">Tanguy</a></li>
+                <li style="border-bottom: none;">
+                  <a href="#dropdown-content-close">✖</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
-
-
     <div class="img-accueil">
-        <h1>Wild - Actu</h1>
+      <h1>Wild - Actu</h1>
     </div>
+    <article class="container " id="accueil">
+      <div class="card-container">
+        <a href="https://sante.lefigaro.fr/mieux-etre/nutrition-aliments/cafe"
+          ><img class="card-img" src="https://i.goopics.net/N1Ok1.jpg" alt=""
+        /></a>
+        <div class="card-text-container">
+          <h2>Y'a plus de café</h2>
+          <p class="card-description">
+            Gérons intelligement le stock de carburant !
+          </p>
+          <ul class="info-article">
+            <li><a href="">Alexandra</a></li>
+            <li>05/04/2018</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-container">
+        <a href="page-article.html"
+          ><img class="card-img" src="https://i.goopics.net/5Qakb.jpg" alt=""
+        /></a>
+        <div class="card-text-container">
+          <h2>Bref, y'a des travaux !</h2>
+          <p class="card-description">Le doux bruit du marteau-piqueur !</p>
+          <ul class="info-article">
+            <li><a href="">Aline</a></li>
+            <li>02/06/2019</li>
+          </ul>
+        </div>
+      </div>
 
-    <article class="container">
-        <div class="card-container">
-            <a href="..."><img class="card-img" src="http://www.writingfordesigners.com/wp-content/uploads/2015/09/geometric_background_13.jpg" alt=""></a>
-            <div class="card-text-container">
-                <h2>Title</h2>
-                <p class="card-description">Desc</p>
-                <ul class="info-article">
-                    <li><a href="">auteur</a></li>
-                    <li>date</li>
-                </ul>
-            </div>
+      <div class="card-container">
+        <a
+          href="https://www.francetvinfo.fr/sante/maladie/coronavirus/coronavirus-l-article-a-lire-pour-tout-comprendre-au-covid-19-et-ne-pas-trop-paniquer_3860131.html"
+          ><img class="card-img" src="https://i.goopics.net/XK7dX.jpeg" alt=""
+        /></a>
+        <div class="card-text-container">
+          <h2>Wild & Covid</h2>
+          <p class="card-description">
+            Recommandations des règles de survie !
+          </p>
+          <ul class="info-article">
+            <li><a href="">Johnny RH</a></li>
+            <li>02/05/2020</li>
+          </ul>
         </div>
-
-        <div class="card-container">
-            <a href="..."><img class="card-img" src="http://www.writingfordesigners.com/wp-content/uploads/2015/09/geometric_background_13.jpg" alt=""></a>
-            <div class="card-text-container">
-                <h2>Title</h2>
-                <p class="card-description">Desc</p>
-                <ul class="info-article">
-                    <li><a href="">auteur</a></li>
-                    <li>date</li>
-                </ul>
-            </div>
-            
+      </div>
+      <div class="card-container">
+        <a
+          href="https://www.mieux-vivre-autrement.com/prendre-l-apero-le-savoir-vivre-a-la-francaise.html"
+          ><img class="card-img" src="https://i.goopics.net/p9Njq.jpg" alt=""
+        /></a>
+        <div class="card-text-container">
+          <h2>Tous à l'apéro</h2>
+          <p class="card-description">
+            Planning des prochains évênements
+          </p>
+          <ul class="info-article">
+            <li><a href="">Tanguy</a></li>
+            <li>13/03/2020</li>
+          </ul>
         </div>
-    
-        <div class="card-container">
-            <a href="..."><img class="card-img" src="http://www.writingfordesigners.com/wp-content/uploads/2015/09/geometric_background_13.jpg" alt=""></a>
-            <div class="card-text-container">
-                <h2>Title</h2>
-                <p class="card-description">Desc</p>
-                <ul class="info-article">
-                    <li><a href="">auteur</a></li>
-                    <li>date</li>
-                </ul>
-            </div>
-        </div>
+      </div>
     </article>
-
-
-
-
-    <footer class="footer-distributed">
-
-        <div class="footer-right">
-
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
-
-        </div>
-
-        <div class="footer-left">
-
-            <p class="footer-links">
-                
-                <a href="#">Articles</a>
-
-                <a href="#">Contact</a>
-
-                <a href="#">Wild Code School</a>
-
-            </p>
-
-            <p>Wild-Actu &copy; 2020</p>
-        </div>
-
+    <footer>
+      <div>
+        <ul class="block textes">
+          <li class="liste"><a href="page-articles.html" style="color: ghostwhite">Articles</a></li>
+          <li class="liste"><a href="page-contact.html" style="color: ghostwhite">Contact</a></li>
+          <li class="liste"><a href="https://www.wildcodeschool.com/fr-FR" style="color: ghostwhite">Wild Code School</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="block">
+          <li class="liste">
+            <a href="https://fr-fr.facebook.com/"
+              ><img
+                class="icone"
+                src="https://i.goopics.net/N1gjP.png"
+                alt="Facebook icon"
+            /></a>
+          </li>
+          <li class="liste">
+            <a href="https://twitter.com/login?lang=fr"
+              ><img
+                class="icone"
+                src="https://i.goopics.net/GEZla.png"
+                alt="Twitter icon"
+            /></a>
+          </li>
+          <li class="liste">
+            <a href="https://www.instagram.com/?hl=fr"
+              ><img
+                class="icone"
+                src="https://i.goopics.net/wPlGY.png"
+                alt="Instagram icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
