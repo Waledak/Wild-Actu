@@ -1,7 +1,5 @@
 /* link pour les fonts */
-
 @import url("https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap");
-
 /* régle pour un effet smooth avec les ancres */
 * {
   scroll-behavior: smooth;
@@ -13,7 +11,6 @@ body {
   margin: 0;
   background-color: floralwhite;
 }
-
 /* Partie Alexandra : A propos et contact */
 /* Partie à propos */
 .titreapropos {
@@ -77,15 +74,12 @@ article a:hover {
 .description {
   margin-top: 20px;
 }
-
 article a:link {
   text-decoration: none;
 }
-
 article a:hover {
   background-color: #39c6c0;
 }
-
 .description {
   font-family: "Forum", cursive;
   justify-content: center;
@@ -93,7 +87,6 @@ article a:hover {
   margin: 10px;
 }
 /* Partie formulaire contact */
-
 form {
   padding: 10px;
   width: auto;
@@ -140,9 +133,7 @@ button {
   margin-right: auto;
 }
 /* Fin partie Alexandra */
-
 /* Partie de tanguy V.Mobile début */
-
 /* image d'accueil (la même pour toute les pages) */
 .img-accueil {
   width: 100%;
@@ -161,7 +152,6 @@ button {
   margin-bottom: 20px;
   margin-top: 70px;
 }
-
 /* text superposant l'image d'acceuil */
 .img-accueil h1 {
   position: absolute;
@@ -173,7 +163,6 @@ button {
   letter-spacing: 10px;
   text-shadow: 0 0 4px black;
 }
-
 /* création d'une classe container avec les règles flex */
 .container {
   display: flex;
@@ -205,7 +194,6 @@ button {
 .card-text-container {
   margin: auto 5%;
 }
-
 /* concerne la description des card */
 .card-description {
   color: slategrey;
@@ -214,7 +202,6 @@ button {
   margin: 0;
   border-bottom: grey 1px dotted;
 }
-
 /* titre des cards */
 .card-text-container h2 {
   border-bottom: grey solid 1px;
@@ -223,7 +210,6 @@ button {
   letter-spacing: 4px;
   font-size: 1.7rem;
 }
-
 /* information article(date, auteur...) */
 .info-article {
   display: flex;
@@ -240,11 +226,8 @@ button {
   text-decoration: none;
   color: grey;
 }
-
 /* Partie de tanguy V.Mobile fin */
-
 /* Partie Emeric navbar */
-
 .navbar {
   position: fixed;
   top: 0;
@@ -254,7 +237,6 @@ button {
   height: 70px;
   max-height: 70px;
 }
-
 .navbar ul {
   display: flex;
   flex-wrap: wrap;
@@ -274,21 +256,17 @@ button {
   padding-top: calc(70px - 1.5rem * 2);
   cursor: pointer;
 }
-
 .navbar ul li a {
   padding: calc(70px - 1.5rem * 2) 0;
 }
-
 .navbar ul li a:hover {
   color: rgb(247, 148, 0);
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
   padding-bottom: calc(70px - 1.5rem * 2);
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -308,17 +286,13 @@ button {
 .dropdown-content li:hover {
   border-bottom: rgb(247, 148, 0) solid 1px;
 }
-
 .dropdown #dropdown-content:target {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-
 /*         Partie Aline page-article       */
-
 /*     Titre    */
-
 .bref {
   background-color: #20b5af;
   font-family: "Luckiest Guy";
@@ -334,15 +308,12 @@ button {
   margin-bottom: 0;
   width: 100%;
 }
-
 /*  Date et Auteur */
-
 .infos {
   display: flex;
   justify-content: flex-end;
   width: 100%;
 }
-
 .precisions {
   list-style: none;
   font-family: "Forum";
@@ -353,16 +324,12 @@ button {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 /*   Photo   */
-
 .travaux {
   width: 100%;
   margin: 5% 0;
 }
-
 /*   Article   */
-
 .text {
   width: 95%;
   padding: 0.5rem;
@@ -373,9 +340,7 @@ button {
   font-size: 20px;
   margin-top: 2%;
 }
-
 span {
   font-weight: bold;
 }
-
 /*     Fin Aline    */

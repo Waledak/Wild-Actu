@@ -8,25 +8,20 @@
     margin: auto;
     justify-content: space-between;
   }
-
   .bref {
     width: 90%;
   }
-
   .infos {
     width: 90%;
     padding: 0;
   }
-
   .travaux {
     max-height: 25rem;
     width: 90%;
   }
-
   .text {
     width: 90%;
   }
-
   /* Partie responsive tablette Alex */
   .imgprofil {
     width: 250px;
