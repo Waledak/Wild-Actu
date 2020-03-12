@@ -1,7 +1,5 @@
 /* link pour les fonts */
-
 @import url("https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap");
-
 /* régle pour un effet smooth avec les ancres */
 * {
   scroll-behavior: smooth;
@@ -13,7 +11,6 @@ body {
   margin: 0;
   background-color: floralwhite;
 }
-
 /* Partie Alexandra : A propos et contact */
 /* Partie à propos */
 .titreapropos {
@@ -32,16 +29,13 @@ body {
   margin-top: 50px;
   color: #006b67;
 }
-
 /* modification du body, 0 marge et background antiquewhite  */
 body {
   box-sizing: border-box;
   margin: 0;
   background-color: floralwhite;
 }
-
 /* Partie de tanguy V.Mobile début */
-
 /* image d'accueil (la même pour toute les pages) */
 .img-accueil {
   width: 100%;
@@ -60,7 +54,6 @@ body {
   margin-bottom: 20px;
   margin-top: 70px;
 }
-
 /* text superposant l'image d'acceuil */
 .img-accueil h1 {
   position: absolute;
@@ -72,7 +65,6 @@ body {
   letter-spacing: 10px;
   text-shadow: 0 0 4px black;
 }
-
 /* création d'une classe container avec les règles flex */
 .container {
   width: 95%;
@@ -82,7 +74,6 @@ body {
   flex-wrap: wrap;
 }
 /* Partie Alexandra*/
-
 /* Partie à propos */
 article {
   flex-wrap: wrap;
@@ -129,15 +120,12 @@ article a:hover {
 .description {
   margin-top: 20px;
 }
-
 article a:link {
   text-decoration: none;
 }
-
 article a:hover {
   background-color: #39c6c0;
 }
-
 .description {
   font-family: "Forum", cursive;
   justify-content: center;
@@ -145,7 +133,6 @@ article a:hover {
   margin: 10px;
 }
 /* Partie formulaire contact */
-
 form {
   padding: 10px;
   width: auto;
@@ -169,52 +156,6 @@ textarea {
   margin-right: 25px;
 }
 /* Fin partie Alexandra */
-
-/* Partie de tanguy V.Mobile début */
-
-/* image d'accueil (la même pour toute les pages) */
-.img-accueil {
-  width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)),
-    url(http://www.writingfordesigners.com/wp-content/uploads/2015/09/geometric_background_13.jpg);
-  background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: bottom;
-  text-align: center;
-  color: antiquewhite;
-  font-size: 6vh;
-  position: relative;
-  height: 45vh;
-  margin-bottom: 20px;
-  margin-top: 70px;
-}
-
-/* text superposant l'image d'acceuil */
-.img-accueil h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  font-family: Luckiest Guy, cursive;
-  letter-spacing: 10px;
-  text-shadow: 0 0 4px black;
-}
-
-/* création d'une classe container avec les règles flex */
-.container {
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
-}
-/* création d'une classe container avec les règles flex */
-.container {
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
-}
 /* container d'une card */
 .card-container {
   border: solid 1px grey;
@@ -230,37 +171,10 @@ textarea {
   border-radius: 1px 45px 0px 0px;
   width: 100%;
 }
-
-/* Partie formulaire contact */
-
-form {
-  background-color: #39c6c0;
-  padding: 10px;
-  width: auto;
-  margin: 40px;
-}
-
-.formulaire {
-  padding: 5px;
-}
-
-input,
-textarea {
-  display: flex;
-  border-radius: 10px;
-  border-color: #006b67;
-  border-width: 2px;
-  padding-left: 6px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px;
-}
-
 /* container du text des card */
 .card-text-container {
   margin: auto 5%;
 }
-
 /* concerne la description des card */
 .card-description {
   color: slategrey;
@@ -269,7 +183,6 @@ textarea {
   margin: 0;
   border-bottom: grey 1px dotted;
 }
-
 /* titre des cards */
 .card-text-container h2 {
   border-bottom: grey solid 1px;
@@ -278,7 +191,6 @@ textarea {
   letter-spacing: 4px;
   font-size: 1.7rem;
 }
-
 /* information article(date, auteur...) */
 .info-article {
   display: flex;
@@ -295,11 +207,8 @@ textarea {
   text-decoration: none;
   color: grey;
 }
-
 /* Partie de tanguy V.Mobile fin */
-
 /* Partie Emeric navbar */
-
 .navbar {
   position: fixed;
   top: 0;
@@ -309,7 +218,6 @@ textarea {
   height: 70px;
   max-height: 70px;
 }
-
 .navbar ul {
   display: flex;
   flex-wrap: wrap;
@@ -328,22 +236,19 @@ textarea {
 .navbar ul li {
   padding-top: calc(70px - 1.5rem * 2);
   cursor: pointer;
+  outline: none;
 }
-
 .navbar ul li a {
   padding: calc(70px - 1.5rem * 2) 0;
 }
-
 .navbar ul li a:hover {
   color: rgb(247, 148, 0);
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
   padding-bottom: calc(70px - 1.5rem * 2);
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -369,11 +274,8 @@ textarea {
   align-items: flex-start;
   flex-wrap: wrap;
 }
-
 /*         Partie Aline page-article       */
-
 /*     Titre    */
-
 .bref {
   background-color: #20b5af;
   font-family: "Luckiest Guy";
@@ -389,15 +291,12 @@ textarea {
   margin-bottom: 0;
   width: 100%;
 }
-
 /*  Date et Auteur */
-
 .infos {
   display: flex;
   justify-content: flex-end;
   width: 100%;
 }
-
 .precisions {
   list-style: none;
   font-family: "Forum";
@@ -408,7 +307,6 @@ textarea {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 /*   Photo   */
 
 .travaux {
@@ -416,9 +314,7 @@ textarea {
   width: 100%;
   margin: 5% 0;
 }
-
 /*   Article   */
-
 .text {
   width: 95%;
   padding: 0.5rem;
@@ -429,9 +325,7 @@ textarea {
   font-size: 20px;
   margin-top: 2%;
 }
-
 span {
   font-weight: bold;
 }
-
 /*     Fin Aline    */
