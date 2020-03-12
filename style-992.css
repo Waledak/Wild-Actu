@@ -3,7 +3,8 @@
     width: calc(33.33% - 40px * 2);
     margin: 40px 20px;
   }
-  .container, .infos {
+  .container,
+  .infos {
     width: 80%;
   }
   .container {
