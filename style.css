@@ -155,7 +155,7 @@ textarea {
   padding-top: 4px;
 }
 button {
-  border: 0, 8px solid;
+  border: 1px solid;
   border-radius: 12px;
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
   background-color: #f1f8f9;
@@ -308,7 +308,7 @@ button {
   justify-content: center;
   padding-top: 10px;
   margin-top: 40px;
-  margin-bottom: 2px0;
+  margin-bottom: 20px;
   width: 100%;
 }
 /*  Date et Auteur */
