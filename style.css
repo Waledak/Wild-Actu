@@ -108,9 +108,8 @@ textarea {
   border-color: #006b67;
   border-width: 2px;
   padding-left: 6px;
-  margin: auto;
-  width: 300px;
-  margin-bottom: 5px;
+  margin: 5px auto 5px auto;
+  width: 230px;
 }
 .bouton {
   display: flex;

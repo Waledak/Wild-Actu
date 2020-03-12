@@ -1,41 +1,90 @@
-@media screen and (min-width:992px){
-    .card-container{
-        width: calc(33.33% - 40px * 2);
-        margin: 40px 20px;
+@media screen and (min-width: 992px) {
+  .card-container {
+    width: calc(33.33% - 40px * 2);
+    margin: 40px 20px;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+  }
 
-    }
-    .container{
-        width: 90%;
-        margin: auto;
-        justify-content: space-between;
-    } 
-    
-    .bref {
-      width: 40%;
-    }
+  .bref {
+    width: 40%;
+  }
 
-    .infos {
-      width: 80%;
-      padding: 0;
-      justify-content: center;
-    }
+  .infos {
+    width: 80%;
+    padding: 0;
+    justify-content: center;
+  }
 
-    .travaux {
-      max-height: 35rem;
-      width: 80%;
-    }
+  .travaux {
+    max-height: 35rem;
+    width: 80%;
+  }
 
-    .text {
-      width: 70%;
-      padding: 20px;
-    }
+  .text {
+    width: 70%;
+    padding: 20px;
+  }
 
-    .text p {
-      font-size: 20px;
-      margin: 15px;
-    }
+  .text p {
+    font-size: 20px;
+    margin: 15px;
+  }
 
-    .text p span {
-      font-size: 25px;
-    }
+  .text p span {
+    font-size: 25px;
+  }
+
+  /* Partie responsive web Alex */
+  .imgprofil {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 180%;
+    margin: 0;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+  }
+  article {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .container-img {
+    width: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  span {
+    font-size: 2rem;
+    color: #008681;
+  }
+  .textapropos {
+    font-family: "Forum", cursive;
+    justify-content: center;
+    margin: 10px;
+    text-align: justify;
+    width: 90%;
+    font-size: 25px;
+  }
+  input,
+  textarea {
+    display: flex;
+    border-color: #006b67;
+    border-width: 2px;
+    padding-left: 6px;
+    margin: 5px auto 5px auto;
+    width: 800px;
+  }
+  .bouton {
+    display: flex;
+    justify-content: end;
+    margin-right: 300px;
+  }
 }
