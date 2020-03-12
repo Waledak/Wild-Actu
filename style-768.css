@@ -48,18 +48,49 @@
     width: 90%;
     font-size: 20px;
   }
+  form {
+    padding: 10px;
+    width: auto;
+    margin: 40px;
+    border: 2px groove black;
+    border-radius: 15px;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+  }
   input,
   textarea {
     display: flex;
-    border-color: #006b67;
-    border-width: 2px;
+    border-radius: 12px;
+    border: none;
     padding-left: 6px;
-    margin: 5px auto 5px auto;
-    width: 500px;
+    margin: 25px auto 25px auto;
+    width: 400px;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+    background-color: #f1f8f9;
+    font-family: "Forum", cursive;
+    font-size: 18px;
+    color: #003a38;
   }
-  .bouton {
+  input {
+    height: 40px;
+  }
+  textarea {
+    height: 80px;
+    padding-top: 4px;
+  }
+  button {
     display: flex;
     justify-content: end;
-    margin-right: 80px;
+    border: 0, 5px solid;
+    border-radius: 12px;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+    background-color: #f1f8f9;
+    height: 35px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    font-family: "Forum", cursive;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

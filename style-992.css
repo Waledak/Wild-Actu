@@ -73,18 +73,49 @@
     width: 90%;
     font-size: 25px;
   }
+  form {
+    padding: 10px;
+    width: auto;
+    margin: 40px;
+    border: 2px groove black;
+    border-radius: 15px;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+  }
   input,
   textarea {
     display: flex;
-    border-color: #006b67;
-    border-width: 2px;
+    border-radius: 12px;
+    border: none;
     padding-left: 6px;
-    margin: 5px auto 5px auto;
-    width: 800px;
+    margin: 15px auto 15px auto;
+    width: 700px;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+    background-color: #f1f8f9;
+    font-family: "Forum", cursive;
+    font-size: 19px;
+    color: #003a38;
   }
-  .bouton {
+  input {
+    height: 50px;
+  }
+  textarea {
+    height: 90px;
+    padding-top: 4px;
+  }
+  button {
     display: flex;
     justify-content: end;
-    margin-right: 300px;
+    border: 0, 5px solid;
+    border-radius: 12px;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
+    background-color: #f1f8f9;
+    height: 35px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 7px;
+    font-family: "Forum", cursive;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
