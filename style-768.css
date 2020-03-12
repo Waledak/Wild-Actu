@@ -19,9 +19,10 @@
   }
 
   .travaux {
-     width: 90%;
-    }
-    
+    height: auto;
+    width: 90%;
+  }
+
   .text {
     width: 90%;
   }
