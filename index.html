@@ -12,23 +12,22 @@
     <nav class="navbar">
       <ul>
         <li class="return-link">
-          <a onclick="history.back()" >➥</a>
+          <a onclick="history.back()">➥</a>
         </li>
         <li>
           <a href="#accueil">Accueil</a>
         </li>
         <li>
           <div class="dropdown">
-            <a href="#dropdown-content">Auteurs</a>
+            <a href="#dropdown-content" title="liste des auteurs">Auteurs</a>
             <div class="dropdown-content" id="dropdown-content">
               <ul>
                 <li><a href="page-article.html">Aline</a></li>
                 <li><a href="index.html">Alexandra</a></li>
                 <li>
-                  <a
-                    href="https://www.google.com/search?q=redneck+mullet&tbm=isch&client=ubuntu&hs=xeg&hl=fr&ved=2ahUKEwiHg-LHupToAhVG1-AKHespAQUQrNwCKAF6BQgBEJoB&biw=1841&bih=951#imgrc=tngJDs1GABpzKM"
-                    >Emeric</a
-                  >
+                  <a href="https://www.google.com/search?q=redneck+mullet&tbm=isch&client=ubuntu&hs=xeg&hl=fr&ved=2ahUKEwiHg-LHupToAhVG1-AKHespAQUQrNwCKAF6BQgBEJoB&biw=1841&bih=951#imgrc=tngJDs1GABpzKM">
+                    Emeric
+                    </a>
                 </li>
                 <li><a href="index.html">Tanguy</a></li>
                 <li style="border-bottom: none;">
@@ -46,53 +45,64 @@
     </div>
     <article class="container " id="accueil">
       <div class="card-container">
-        <a href="https://sante.lefigaro.fr/mieux-etre/nutrition-aliments/cafe"
-          ><img class="card-img" src="https://i.goopics.net/N1Ok1.jpg" alt=""
-        /></a>
+        <a target="_blank" href="https://sante.lefigaro.fr/mieux-etre/nutrition-aliments/cafe">
+          <img class="card-img" src="https://i.goopics.net/N1Ok1.jpg" alt="photo montrant une tasse de café remplie"/>
+        </a>
         <div class="card-text-container">
           <h2>Y'a plus de café</h2>
           <p class="card-description">
             Gérons intelligement le stock de carburant !
           </p>
           <ul class="info-article">
-            <li><a href="">Alexandra</a></li>
+            <li>
+              <a href="index.html">
+                Alexandra
+              </a>
+            </li>
             <li>05/04/2018</li>
           </ul>
         </div>
       </div>
       <div class="card-container">
-        <a href="page-article.html"
-          ><img class="card-img" src="https://i.goopics.net/5Qakb.jpg" alt=""
-        /></a>
+        <a href="page-article.html">
+          <img class="card-img" src="https://i.goopics.net/5Qakb.jpg" alt="Photo montrant des travailleur ferroviaire"/>
+        </a>
         <div class="card-text-container">
           <h2>Bref, y'a des travaux !</h2>
           <p class="card-description">Le doux bruit du marteau-piqueur !</p>
           <ul class="info-article">
-            <li><a href="">Aline</a></li>
+            <li>
+              <a href="page-article.html">
+                Aline
+              </a>
+            </li>
             <li>02/06/2019</li>
           </ul>
         </div>
       </div>
 
       <div class="card-container">
-        <a
-          href="https://www.francetvinfo.fr/sante/maladie/coronavirus/coronavirus-l-article-a-lire-pour-tout-comprendre-au-covid-19-et-ne-pas-trop-paniquer_3860131.html"
-          ><img class="card-img" src="https://i.goopics.net/XK7dX.jpeg" alt=""
-        /></a>
+        <a target="_blank" href="https://www.francetvinfo.fr/sante/maladie/coronavirus/coronavirus-l-article-a-lire-pour-tout-comprendre-au-covid-19-et-ne-pas-trop-paniquer_3860131.html">
+          <img class="card-img" src="https://i.goopics.net/XK7dX.jpeg" alt="Photo montrant une personne mettant un masque à gaz pour rappeler le coronavirus"/>
+        </a>
         <div class="card-text-container">
           <h2>Wild & Covid</h2>
           <p class="card-description">
             Recommandations des règles de survie !
           </p>
           <ul class="info-article">
-            <li><a href="">Johnny RH</a></li>
+            <li>
+              <a href="https://pbs.twimg.com/profile_images/684130711062855680/t1KB2nvE_400x400.jpg" target="_blank">
+                Johnny RH
+              </a>
+            </li>
             <li>02/05/2020</li>
           </ul>
         </div>
       </div>
       <div class="card-container">
-        <a  href="https://www.mieux-vivre-autrement.com/prendre-l-apero-le-savoir-vivre-a-la-francaise.html">
-          <img class="card-img" src="https://i.goopics.net/p9Njq.jpg" alt="" />
+        <a href="https://www.mieux-vivre-autrement.com/prendre-l-apero-le-savoir-vivre-a-la-francaise.html">
+          <img class="card-img" src="https://i.goopics.net/p9Njq.jpg" alt="Photo montrant un bar" />
         </a>
         <div class="card-text-container">
           <h2>Tous à l'apéro</h2>
@@ -100,7 +110,11 @@
             Planning des prochains évênements
           </p>
           <ul class="info-article">
-            <li><a href="">Tanguy</a></li>
+            <li>
+              <a href="index.html">
+                Tanguy
+              </a>
+            </li>
             <li>13/03/2020</li>
           </ul>
         </div>
@@ -109,36 +123,39 @@
     <footer>
       <div>
         <ul class="block textes">
-          <li class="liste"><a href="page-article.html">Articles</a></li>
-          <li class="liste"><a href="contact.html">Contact</a></li>
-          <li class="liste"><a href="https://www.wildcodeschool.com/fr-FR">Wild Code School</a></li>
+          <li class="liste">
+            <a href="page-article.html">
+              Articles
+            </a>
+          </li>
+          <li class="liste">
+            <a href="contact.html">
+              Contact
+            </a>
+          </li>
+          <li class="liste">
+            <a href="https://www.wildcodeschool.com/fr-FR" target="_blank">
+              Wild Code School
+            </a>
+          </li>
         </ul>
       </div>
       <div>
         <ul class="block">
           <li class="liste tilt">
-            <a href="https://fr-fr.facebook.com/"
-              ><img
-                class="icone"
-                src="https://i.goopics.net/N1gjP.png"
-                alt="Facebook icon"
-            /></a>
+            <a href="https://fr-fr.facebook.com/" target="_blank">
+              <img class="icone" src="https://i.goopics.net/N1gjP.png"  alt="Facebook icon"/>
+            </a>
           </li>
           <li class="liste tilt">
-            <a href="https://twitter.com/login?lang=fr"
-              ><img
-                class="icone"
-                src="https://i.goopics.net/GEZla.png"
-                alt="Twitter icon"
-            /></a>
+            <a href="https://twitter.com/login?lang=fr" target="_blank">
+              <img class="icone" src="https://i.goopics.net/GEZla.png" alt="Twitter icon"/>
+            </a>
           </li>
           <li class="liste tilt">
-            <a href="https://www.instagram.com/?hl=fr"
-              ><img
-                class="icone"
-                src="https://i.goopics.net/wPlGY.png"
-                alt="Instagram icon"
-            /></a>
+            <a href="https://www.instagram.com/?hl=fr" target="_blank">
+              <img class="icone" src="https://i.goopics.net/wPlGY.png" alt="Instagram icon"/>
+            </a>
           </li>
         </ul>
       </div>
