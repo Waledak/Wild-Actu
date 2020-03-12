@@ -188,7 +188,6 @@ button {
   border-radius: 1px 45px 0px 0px;
   width: 100%;
 }
-
 /* container du text des card */
 .card-text-container {
   margin: auto 5%;
@@ -236,7 +235,6 @@ button {
   height: 70px;
   max-height: 70px;
 }
-
 .navbar ul {
   display: flex;
   flex-wrap: wrap;
@@ -330,11 +328,9 @@ button {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 .precisions a:visited {
   color: black;
   }
-
 /*   Photo   */
 .travaux {
   height: auto;
@@ -357,9 +353,7 @@ button {
 span {
   font-weight: bold;
 }
-
 /* Partie de tanguy V.Mobile fin */
-
 /*debut partie footer*/
 footer {
   background-color: rgb(0, 107, 103);
@@ -370,7 +364,6 @@ footer {
   font-family:'Forum', cursive;
   font-size: 1.5rem;
 }
-
 .block {
   display: flex;
   flex-wrap: wrap;
@@ -379,7 +372,6 @@ footer {
   align-items: center;
   align-content: center;
 }
-
 .liste {
   margin: 10px;
   text-decoration: none;
