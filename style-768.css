@@ -19,7 +19,7 @@
   }
 
   .travaux {
-    max-height: 25rem;
+    height: auto;
     width: 90%;
   }
 
