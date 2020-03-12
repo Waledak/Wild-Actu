@@ -9,7 +9,7 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  background-color: floralwhite;
+  background-color: rgb(255, 237, 200);
 }
 /* Partie Alexandra : A propos et contact */
 /* Partie à propos */
@@ -165,12 +165,16 @@ textarea {
   background-color: ghostwhite;
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
 }
+.card-container:hover {
+  transform: rotate(1deg);
+}
 /* image des card */
 .card-img {
   background-size: cover;
   border-radius: 1px 45px 0px 0px;
   width: 100%;
 }
+
 /* container du text des card */
 .card-text-container {
   margin: auto 5%;
@@ -218,6 +222,7 @@ textarea {
   height: 70px;
   max-height: 70px;
 }
+
 .navbar ul {
   display: flex;
   flex-wrap: wrap;
@@ -225,6 +230,10 @@ textarea {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.return-link{
+  transform: rotate(180deg);
+  outline: none;
 }
 .navbar ul li a {
   color: ghostwhite;
