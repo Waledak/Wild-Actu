@@ -7,8 +7,15 @@
   scroll-behavior: smooth;
   transition: all ease 0.3s;
 }
+/* modification du body, 0 marge et background antiquewhite  */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: floralwhite;
+}
 
-/* Titre à propos */
+/* Partie Alexandra : A propos et contact */
+/* Partie à propos */
 .titreapropos {
   font-family: "Luckiest Guy", cursive;
   letter-spacing: 4px;
@@ -39,14 +46,14 @@ body {
 .img-accueil {
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)),
-    url(http://www.writingfordesigners.com/wp-content/uploads/2015/09/geometric_background_13.jpg);
+    url(https://i.goopics.net/dKqxa.jpg);
   background-size: cover;
   -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center right;
   text-align: center;
-  color: antiquewhite;
+  color: #08a6a0;
   font-size: 6vh;
   position: relative;
   height: 45vh;
@@ -68,6 +75,8 @@ body {
 
 /* création d'une classe container avec les règles flex */
 .container {
+  width: 95%;
+  margin: auto;
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
@@ -121,41 +130,78 @@ article a:hover {
   margin-top: 20px;
 }
 
-article a:link{
-    text-decoration:none;
-} 
-
-article a:hover{
-    background-color: #39C6C0;
+article a:link {
+  text-decoration: none;
 }
 
-.description{
-    font-family: 'Forum', cursive;
-    justify-content: center;
-    text-align: center;
-    margin: 10px;
+article a:hover {
+  background-color: #39c6c0;
+}
+
+.description {
+  font-family: "Forum", cursive;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
 }
 /* Partie formulaire contact */
 
 form {
+  padding: 10px;
   width: auto;
-  margin: 45px;
-  border-width: 2px;
-  border-radius: 5px;
+  margin: 40px;
+  border: 2px groove black;
+  border-radius: 2px;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
 }
-
 input,
 textarea {
   display: flex;
   border-color: #006b67;
+  border-width: 2px;
+  padding-left: 6px;
   margin: 5px auto 5px auto;
-  width: 100%;
+  width: 230px;
 }
 .bouton {
   display: flex;
   justify-content: end;
+  margin-right: 25px;
 }
 /* Fin partie Alexandra */
+
+/* Partie de tanguy V.Mobile début */
+
+/* image d'accueil (la même pour toute les pages) */
+.img-accueil {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)),
+    url(http://www.writingfordesigners.com/wp-content/uploads/2015/09/geometric_background_13.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 6vh;
+  position: relative;
+  height: 45vh;
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+
+/* text superposant l'image d'acceuil */
+.img-accueil h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-family: Luckiest Guy, cursive;
+  letter-spacing: 10px;
+  text-shadow: 0 0 4px black;
+}
 
 /* création d'une classe container avec les règles flex */
 .container {
@@ -163,7 +209,12 @@ textarea {
   justify-content: start;
   flex-wrap: wrap;
 }
-
+/* création d'une classe container avec les règles flex */
+.container {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
 /* container d'une card */
 .card-container {
   border: solid 1px grey;
@@ -173,7 +224,6 @@ textarea {
   background-color: ghostwhite;
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
 }
-
 /* image des card */
 .card-img {
   background-size: cover;
@@ -184,25 +234,26 @@ textarea {
 /* Partie formulaire contact */
 
 form {
-    background-color:#39C6C0;
-    padding:10px;
-    width: auto;
-    margin: 40px;
+  background-color: #39c6c0;
+  padding: 10px;
+  width: auto;
+  margin: 40px;
 }
 
-.formulaire{
-    padding: 5px; 
+.formulaire {
+  padding: 5px;
 }
 
-input, textarea{
-    display: flex;
-    border-radius: 10px;
-    border-color: #006B67;
-    border-width: 2px;
-    padding-left: 6px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
+input,
+textarea {
+  display: flex;
+  border-radius: 10px;
+  border-color: #006b67;
+  border-width: 2px;
+  padding-left: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
 }
 
 /* container du text des card */
@@ -318,8 +369,6 @@ input, textarea{
   align-items: flex-start;
   flex-wrap: wrap;
 }
-
-
 
 /*         Partie Aline page-article       */
 
