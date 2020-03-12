@@ -78,7 +78,7 @@ body {
 article {
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 0;
+  margin-top: 40px;
   padding: 0;
   display: flex;
 }
@@ -92,13 +92,14 @@ article {
 span {
   font-size: 1.5rem;
   color: #008681;
+  padding-top: 20px;
 }
 .imgprofil {
   width: 130px;
   height: 130px;
   object-fit: cover;
   border-radius: 180%;
-  margin: 0;
+  margin-bottom: 20px;
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
 }
 article a:link {
@@ -187,7 +188,6 @@ button {
   border-radius: 1px 45px 0px 0px;
   width: 100%;
 }
-
 /* container du text des card */
 .card-text-container {
   margin: auto 5%;
@@ -235,7 +235,6 @@ button {
   height: 70px;
   max-height: 70px;
 }
-
 .navbar ul {
   display: flex;
   flex-wrap: wrap;
@@ -301,7 +300,7 @@ button {
   background-color: #20b5af;
   font-family: "Luckiest Guy";
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2rem;
   border: 1px solid #006b67;
   border-radius: 5px;
@@ -321,6 +320,7 @@ button {
 .precisions {
   list-style: none;
   font-family: "Forum";
+  color: black;
   border: 1px solid #006b67;
   border-radius: 4px;
   padding: 5px;
@@ -328,11 +328,14 @@ button {
   margin-top: 0;
   margin-bottom: 0;
 }
+.precisions a:visited {
+  color: black;
+  }
 /*   Photo   */
 .travaux {
   height: auto;
   width: 100%;
-  margin: 5% 0;
+  margin: 3% 0;
 }
 /*   Article   */
 .text {
@@ -350,9 +353,7 @@ button {
 span {
   font-weight: bold;
 }
-
 /* Partie de tanguy V.Mobile fin */
-
 /*debut partie footer*/
 footer {
   background-color: rgb(0, 107, 103);
@@ -363,7 +364,6 @@ footer {
   font-family:'Forum', cursive;
   font-size: 1.5rem;
 }
-
 .block {
   display: flex;
   flex-wrap: wrap;
@@ -372,7 +372,6 @@ footer {
   align-items: center;
   align-content: center;
 }
-
 .liste {
   margin: 10px;
   text-decoration: none;

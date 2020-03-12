@@ -3,16 +3,18 @@
     width: calc(33.33% - 40px * 2);
     margin: 40px 20px;
   }
-  .container {
+  .container, .infos {
     width: 80%;
+  }
+  .container {
     margin: auto;
     justify-content: space-between;
   }
   .bref {
-    width: 40%;
+    width: 55%;
+    font-size: 2.5rem;
   }
   .infos {
-    width: 80%;
     padding: 0;
     justify-content: center;
   }
@@ -22,7 +24,6 @@
     border-radius: 70px;
     margin: 3%, 0;
   }
-
   .text {
     width: 70%;
     padding: 20px;
@@ -38,75 +39,36 @@
   .imgprofil {
     width: 300px;
     height: 300px;
-    object-fit: cover;
-    border-radius: 180%;
-    margin: 0;
-    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
   }
   article {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    margin-bottom: 40px;
   }
   .container-img {
     width: auto;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
   }
   span {
     font-size: 2rem;
-    color: #008681;
   }
   .textapropos {
-    font-family: "Forum", cursive;
-    justify-content: center;
-    margin: 10px;
-    text-align: justify;
-    width: 90%;
-    font-size: 25px;
+    text-align: center;
   }
   form {
-    padding: 10px;
     width: 50%;
-    margin: auto;
-    border-radius: 15px;
   }
   input,
   textarea {
-    display: flex;
-    border-radius: 12px;
     border: 1px solid black;
-    padding-left: 6px;
-    width: 100%;
-    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
-    background-color: #f1f8f9;
-    font-family: "Forum", cursive;
     font-size: 19px;
-    color: #003a38;
   }
   input {
     height: 50px;
   }
   textarea {
     height: 90px;
-    padding-top: 4px;
   }
   button {
     justify-content: center;
     border: 0, 5px solid;
-    border-radius: 12px;
-    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
-    background-color: #f1f8f9;
     height: 35px;
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 15px;
-    font-family: "Forum", cursive;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
