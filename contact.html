@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-768.css" />
+    <link rel="stylesheet" href="style-992.css" />
+    <title>Wild-Actu</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li class="return-link">
+          <a title="Retour" onclick="history.back()">➥</a>
+        </li>
+        <li>
+          <a href="index.html">Accueil</a>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a href="#dropdown-content" title="liste des auteurs">Auteurs</a>
+            <div class="dropdown-content" id="dropdown-content">
+              <ul>
+                <li><a href="page-article.html">Aline</a></li>
+                <li><a href="index.html">Alexandra</a></li>
+                <li>
+                  <a
+                    href="https://www.google.com/search?q=redneck+mullet&tbm=isch&client=ubuntu&hs=xeg&hl=fr&ved=2ahUKEwiHg-LHupToAhVG1-AKHespAQUQrNwCKAF6BQgBEJoB&biw=1841&bih=951#imgrc=tngJDs1GABpzKM"
+                  >
+                    Emeric
+                  </a>
+                </li>
+                <li><a href="index.html">Tanguy</a></li>
+                <li style="border-bottom: none;">
+                  <a href="#dropdown-content-close">✖</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="img-accueil">
+      <h1>A propos</h1>
+    </div>
+    <div class="apropos">
+      <article>
+        <div class="container-img">
+          <a href="page-article.html" target="_blank"
+            ><img
+              src="https://i.goopics.net/wPAV3.jpg"
+              alt="photo Aline"
+              class="imgprofil"
+          /></a>
+          <a href="page-article.html" target="_blank"><span>Aline</span></a>
+        </div>
+        <div class="container-img">
+          <a href="https://i.goopics.net/dKwYd.jpg" target="_blank"
+            ><img
+              src="https://i.goopics.net/dKwYd.jpg"
+              alt="photo Tanguy"
+              class="imgprofil"
+          /></a>
+          <a href="https://i.goopics.net/dKwYd.jpg" target="_blank"
+            ><span>Tanguy</span></a
+          >
+        </div>
+        <div class="container-img">
+          <a href="https://i.goopics.net/aKGZA.jpeg" target="_blank"
+            ><img
+              src="https://i.goopics.net/aKGZA.jpeg"
+              alt="photo Emeric"
+              class="imgprofil"
+          /></a>
+          <a href="https://i.goopics.net/aKGZA.jpeg" target="_blank"
+            ><span>Emeric</span></a
+          >
+        </div>
+        <div class="container-img">
+          <a href="https://i.goopics.net/VDRw1.jpg" target="_blank"
+            ><img
+              src="https://i.goopics.net/VDRw1.jpg"
+              alt="photo Alexandra"
+              class="imgprofil"
+          /></a>
+          <a href="https://i.goopics.net/VDRw1.jpg" target="_blank"
+            ><span>Alexandra</span></a
+          >
+        </div>
+      </article>
+      <div class="description container">
+        <p class="textapropos">
+          Nous sommes les Wilders de la session Mars 2020.
+        </p>
+        <p class="textapropos">
+          Sur ce blog vous trouverez toutes les actualités du campus de
+          Toulouse.
+        </p>
+        <p class="textapropos">
+          N'hésitez pas à nous contacter si vous avez des infos croustillantes à
+          nous mettre sous la dent !
+        </p>
+      </div>
+    </div>
+    <hr />
+    <h1 class="titrecontact">Contactez-nous</h1>
+    <form>
+      <div class="formulaire">
+        <input type="text" placeholder="Votre nom" />
+        <input type="email" placeholder="Votre email" />
+        <textarea placeholder="Votre message"></textarea>
+        <button type="submit">Envoyer</button>
+      </div>
+    </form>
+    <footer>
+      <div>
+        <ul class="block textes">
+          <li class="liste"><a href="page-article.html">Articles</a></li>
+          <li class="liste"><a href="contact.html">Contact</a></li>
+          <li class="liste">
+            <a target="_blank" href="https://www.wildcodeschool.com/fr-FR">Wild Code School</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="block">
+          <li class="liste tilt">
+            <a href="https://fr-fr.facebook.com/" target="_blank">
+              <img class="icone" src="https://i.goopics.net/N1gjP.png" alt="Facebook icon"/>
+            </a>
+          </li>
+          <li class="liste tilt">
+            <a href="https://twitter.com/login?lang=fr" target="_blank">
+              <img class="icone" src="https://i.goopics.net/GEZla.png" alt="Twitter icon"/>
+            </a>
+          </li>
+          <li class="liste tilt">
+            <a href="https://www.instagram.com/?hl=fr" target="_blank">
+              <img class="icone" src="https://i.goopics.net/wPlGY.png" alt="Instagram icon"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

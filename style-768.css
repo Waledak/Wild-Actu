@@ -1,0 +1,55 @@
+@media screen and (min-width: 768px) {
+  .card-container {
+    width: calc(50% - 40px * 2);
+    margin: 40px 20px;
+  }
+  .container,
+  .bref,
+  .infos,
+  .travaux,
+  .text {
+    width: 90%;
+  }
+  .container {
+    margin: auto;
+    justify-content: space-between;
+  }
+  .bref {
+    font-size: 2rem;
+  }
+  .infos {
+    padding: 0;
+  }
+  .travaux {
+    height: auto;
+    border-radius: 5px;
+  }
+  /* Partie responsive tablette Alex */
+  .imgprofil {
+    width: 250px;
+    height: 250px;
+  }
+  span {
+    font-size: 25px;
+  }
+  .textapropos {
+    font-size: 20px;
+  }
+  form {
+    width: 50%;
+  }
+  input,
+  textarea {
+    font-size: 18px;
+  }
+  input {
+    height: 40px;
+  }
+  textarea {
+    height: 80px;
+  }
+  button {
+    border: 1px solid;
+    height: 35px;
+  }
+}

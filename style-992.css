@@ -1,0 +1,75 @@
+@media screen and (min-width: 992px) {
+  .card-container {
+    width: calc(33.33% - 40px * 2);
+    margin: 40px 20px;
+  }
+  .container,
+  .infos {
+    width: 80%;
+  }
+  .container {
+    margin: auto;
+    justify-content: space-between;
+  }
+  .bref {
+    width: 55%;
+    font-size: 2.5rem;
+  }
+  .infos {
+    padding: 0;
+    justify-content: center;
+  }
+  .travaux {
+    height: auto;
+    width: 60%;
+    border-radius: 70px;
+    margin: 3% 0;
+  }
+  .text {
+    width: 70%;
+    padding: 20px;
+  }
+  .text p {
+    font-size: 20px;
+    margin: 15px;
+  }
+  .text p span {
+    font-size: 25px;
+  }
+  /* Partie responsive web Alex */
+  .imgprofil {
+    width: 300px;
+    height: 300px;
+  }
+  article {
+    margin-bottom: 40px;
+  }
+  .container-img {
+    width: auto;
+  }
+  span {
+    font-size: 2rem;
+  }
+  .textapropos {
+    text-align: center;
+  }
+  form {
+    width: 50%;
+  }
+  input,
+  textarea {
+    border: 1px solid black;
+    font-size: 19px;
+  }
+  input {
+    height: 50px;
+  }
+  textarea {
+    height: 90px;
+  }
+  button {
+    justify-content: center;
+    border: 1px solid;
+    height: 35px;
+  }
+}
