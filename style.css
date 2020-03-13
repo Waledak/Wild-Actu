@@ -114,7 +114,8 @@ span:hover {
   justify-content: center;
   margin: 10px;
   text-align: justify;
-  width: 90%;
+  width: 100%;
+  font-size: 1.5rem;
 }
 .apropos {
   margin-bottom: 50px;
@@ -123,7 +124,6 @@ span:hover {
   font-family: "Forum", cursive;
   justify-content: center;
   text-align: center;
-  margin: 10px;
   margin-top: 20px;
 }
 /* Partie formulaire contact */
