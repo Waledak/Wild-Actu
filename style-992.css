@@ -3,7 +3,8 @@
     width: calc(33.33% - 40px * 2);
     margin: 40px 20px;
   }
-  .container, .infos {
+  .container,
+  .infos {
     width: 80%;
   }
   .container {
@@ -22,7 +23,7 @@
     height: auto;
     width: 60%;
     border-radius: 70px;
-    margin: 3%, 0;
+    margin: 3% 0;
   }
   .text {
     width: 70%;
@@ -68,7 +69,7 @@
   }
   button {
     justify-content: center;
-    border: 0, 5px solid;
+    border: 1px solid;
     height: 35px;
   }
 }

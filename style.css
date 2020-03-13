@@ -114,7 +114,8 @@ span:hover {
   justify-content: center;
   margin: 10px;
   text-align: justify;
-  width: 90%;
+  width: 100%;
+  font-size: 1.5rem;
 }
 .apropos {
   margin-bottom: 50px;
@@ -123,7 +124,6 @@ span:hover {
   font-family: "Forum", cursive;
   justify-content: center;
   text-align: center;
-  margin: 10px;
   margin-top: 20px;
 }
 /* Partie formulaire contact */
@@ -155,7 +155,7 @@ textarea {
   padding-top: 4px;
 }
 button {
-  border: 0, 8px solid;
+  border: 1px solid;
   border-radius: 12px;
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
   background-color: #f1f8f9;
@@ -243,7 +243,7 @@ button {
   padding: 0;
   margin: 0;
 }
-.return-link{
+.return-link {
   transform: rotate(180deg);
   outline: none;
 }
@@ -308,7 +308,7 @@ button {
   justify-content: center;
   padding-top: 10px;
   margin-top: 40px;
-  margin-bottom: 2px0;
+  margin-bottom: 20px;
   width: 100%;
 }
 /*  Date et Auteur */
@@ -330,7 +330,7 @@ button {
 }
 .precisions a:visited {
   color: black;
-  }
+}
 /*   Photo   */
 .travaux {
   height: auto;
@@ -361,7 +361,7 @@ footer {
   width: 100%;
   margin-top: 90px;
   justify-content: space-between;
-  font-family:'Forum', cursive;
+  font-family: "Forum", cursive;
   font-size: 1.5rem;
 }
 .block {
@@ -387,22 +387,22 @@ footer {
 .liste a {
   text-decoration: none;
   outline: none;
-  color: ghostwhite
+  color: ghostwhite;
 }
 .liste a:hover {
   color: rgb(247, 148, 0);
 }
 .tilt {
   -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .tilt:hover {
   -webkit-transform: rotate(-15deg);
-     -moz-transform: rotate(-15deg);
-       -o-transform: rotate(-15deg);
-      -ms-transform: rotate(-15deg);
-          transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
