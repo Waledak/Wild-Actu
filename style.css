@@ -1,24 +1,24 @@
-:root{
+:root {
   /*modifs emeric*/
   /*--background-color:rgb(255, 237, 200);*/
   --background-color: floralwhite;
-  --text-color :rgb(30,30,30);
-  --navbar-bg-color : #4c71d8ea;
-  --theme-txt-button: rgb(30,30,30);
+  --text-color: rgb(30, 30, 30);
+  --navbar-bg-color: #4c71d8ea;
+  --theme-txt-button: rgb(30, 30, 30);
   --theme-bg-circle-button: ghostwhite;
   --theme-bg-button: #4c71d8ea;
-  --theme-border-button:rgb(222, 238, 240);
-  --bg-card-container:rgb(218, 221, 231);
+  --theme-border-button: rgb(222, 238, 240);
+  --bg-card-container: rgb(218, 221, 231);
 }
-[data-theme="dark"]{
-  --background-color:rgb(66, 66, 66);
-  --text-color :ghostwhite;
+[data-theme="dark"] {
+  --background-color: rgb(66, 66, 66);
+  --text-color: ghostwhite;
   --navbar-bg-color: #0e1797;
-  --theme-txt-button: ghostwhite ;
-  --theme-bg-circle-button:  rgb(255, 255, 86);
+  --theme-txt-button: ghostwhite;
+  --theme-bg-circle-button: rgb(255, 255, 86);
   --theme-bg-button: rgb(66, 66, 66);
-  --theme-border-button:yellow;
-  --bg-card-container:rgb(136, 133, 133);
+  --theme-border-button: yellow;
+  --bg-card-container: rgb(136, 133, 133);
 }
 /* link pour les fonts */
 @import url("https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap");
@@ -78,7 +78,7 @@ body {
   align-self: center;
   vertical-align: middle;
   margin: 0;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 10px;
   text-shadow: 0 0 4px black;
 }
@@ -127,7 +127,7 @@ span:hover {
   color: rgb(247, 148, 0);
 }
 .textapropos {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   justify-content: center;
   margin: 10px;
   text-align: justify;
@@ -138,17 +138,17 @@ span:hover {
   margin-bottom: 50px;
 }
 .description {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   justify-content: center;
   text-align: center;
   margin-top: 20px;
 }
 /* Partie formulaire contact */
 form {
-  padding: 10px;
-  width: 90%;
+  width: 95%;
   margin: auto;
-  border-radius: 15px;
+  justify-content: start;
+  flex-wrap: wrap;
 }
 input,
 textarea {
@@ -158,33 +158,74 @@ textarea {
   width: 100%;
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
   background-color: #f1f8f9;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 15px;
   color: #003a38;
   border: 1px solid black;
   margin-top: 12px;
 }
-input {
-  height: 25px;
+.box {
+  width: auto;
+  margin: auto;
+  padding: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,.1))
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  font-family: "Forum", cursive;
 }
-textarea {
-  height: 60px;
-  padding-top: 4px;
+.box input {
+  padding: 10px 0;
+  margin-bottom: 30px;
 }
-button {
-  border: 1px solid;
-  border-radius: 12px;
-  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
-  background-color: #f1f8f9;
-  height: 30px;
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 15px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 12px;
-  align-items: flex-end;
+.box textarea {
+  height: 80px;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+.box input,
+.box textarea {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #999;
+}
+.box input[type="submit"] {
+  border-bottom: none;
+  cursor: pointer;
+  background: rgb(0, 107, 103);
+  color: white;
+  margin-bottom: 0;
+  font-family: "Forum", cursive;
+  font-size: 20px;
+}
+.box form div {
+  position: relative;
+}
+.box form div label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #999;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.box input:focus ~ label,
+.box textarea:focus ~ label,
+.box input:valid ~ label,
+.box textarea:valid ~ label {
+  top: -12px;
+  left: 0;
+  color: rgb(0, 107, 103);
+  font-size: 15px;
+  font-weight: bold;
+}
+.box input:focus,
+.box textarea:focus,
+.box input:valid,
+.box textarea:valid {
+  border-bottom: 2px solid rgb(0, 107, 103);
 }
 /* Fin partie Alexandra */
 /* container d'une card */
@@ -214,7 +255,7 @@ button {
 .card-description {
   color: slategrey;
   font-size: 1.5rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin: 0;
   border-bottom: grey 1px dotted;
 }
@@ -222,7 +263,7 @@ button {
 .card-text-container h2 {
   border-bottom: grey solid 1px;
   padding-bottom: 5px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 4px;
   font-size: 1.7rem;
 }
@@ -234,7 +275,7 @@ button {
   padding-left: 0;
   list-style: none;
   color: grey;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 1.3rem;
 }
 /* suppression de la couleur par défaut des lien */
@@ -244,24 +285,24 @@ button {
 }
 /* Partie de tanguy V.Mobile fin */
 /* Partie Emeric navbar */
-#themeButtonContainer{
+#themeButtonContainer {
   width: 105px;
   height: 50px;
 }
-.nav{
+.nav {
   position: fixed;
   width: 100%;
   height: 8vh;
   background: var(--navbar-bg-color);
   z-index: 1;
 }
-.linkName{
+.linkName {
   display: none;
 }
-.linkNameOpen{
+.linkNameOpen {
   display: block;
 }
-.nav-links{
+.nav-links {
   display: flex;
   list-style: none;
   height: 100%;
@@ -269,14 +310,14 @@ button {
   align-items: center;
   margin: 0 0 0 auto;
   width: 100%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .nav-links li a {
   color: var(--text-color);
   text-decoration: none;
   font-size: 1.4rem;
 }
-#darkOrLight{
+#darkOrLight {
   position: relative;
   display: block;
   height: 100%;
@@ -287,7 +328,7 @@ button {
   transition: 0.4s ease;
   border: 2px solid var(--theme-border-button);
 }
-#textTheme{
+#textTheme {
   cursor: default;
   color: var(--theme-txt-button);
   display: block;
@@ -295,13 +336,14 @@ button {
   z-index: 2;
   font-size: 1rem;
   font-weight: bold;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-left:3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-left: 3rem;
 }
-#dark{
+#dark {
   display: none;
 }
-#darkOrLight::before, #darkOrLight::after{
+#darkOrLight::before,
+#darkOrLight::after {
   content: "";
   position: absolute;
   top: 8px;
@@ -309,41 +351,40 @@ button {
   height: 34px;
   border-radius: 50%;
 }
-#darkOrLight::before{
+#darkOrLight::before {
   left: -34px;
   z-index: 1;
-  transition: 0.4s ease left, 0.4s ease top ;
+  transition: 0.4s ease left, 0.4s ease top;
 }
-#darkOrLight::after{
+#darkOrLight::after {
   left: 8px;
   background-color: var(--theme-bg-circle-button);
-  transition: 0.4s ease left, 0.4s ease ;
+  transition: 0.4s ease left, 0.4s ease;
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3) inset;
 }
-#dark:checked + #darkOrLight{
+#dark:checked + #darkOrLight {
   background-color: var(--background-color);
-  border:2px solid var(--theme-bg-circle-button);
-  
+  border: 2px solid var(--theme-bg-circle-button);
 }
-#dark:checked + #darkOrLight::before{
+#dark:checked + #darkOrLight::before {
   top: -1px;
   left: 46px;
   background-color: var(--theme-bg-button);
-  transition:0.4s ease;
+  transition: 0.4s ease;
 }
-#dark:checked + #darkOrLight::after{
+#dark:checked + #darkOrLight::after {
   left: 58px;
   background-color: var(--theme-bg-circle-button);
   background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
   background-attachment: fixed;
-  background-position:left;
+  background-position: left;
   box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;
 }
 /*         Partie Aline page-article       */
 /*     Titre    */
 .bref {
   background-color: #20b5af;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: white;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
@@ -364,7 +405,7 @@ button {
 }
 .precisions {
   list-style: none;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: black;
   border: 1px solid #006b67;
   border-radius: 4px;
@@ -389,7 +430,7 @@ button {
   border: 1px solid #006b67;
   border-radius: 0 20px 20px 20px;
   box-shadow: 10px 10px 5px #006b67;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 20px;
   margin-top: 2%;
   margin-bottom: 10px;
@@ -406,7 +447,7 @@ footer {
   width: 100%;
   margin-top: 90px;
   justify-content: space-between;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 1.5rem;
 }
 .block {
