@@ -3,7 +3,11 @@
     width: calc(50% - 40px * 2);
     margin: 40px 20px;
   }
-  .container, .bref, .infos, .travaux, .text {
+  .container,
+  .bref,
+  .infos,
+  .travaux,
+  .text {
     width: 90%;
   }
   .container {
@@ -18,7 +22,7 @@
   }
   .travaux {
     height: auto;
-    border-radius: 5px ;
+    border-radius: 5px;
   }
   /* Partie responsive tablette Alex */
   .imgprofil {
@@ -30,22 +34,5 @@
   }
   .textapropos {
     font-size: 20px;
-  }
-  form {
-    width: 50%;
-  }
-  input,
-  textarea {
-    font-size: 18px;
-  }
-  input {
-    height: 40px;
-  }
-  textarea {
-    height: 80px;
-  }
-  button {
-    border: 0, 5px solid;
-    height: 35px;
   }
 }

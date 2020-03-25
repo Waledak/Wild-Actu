@@ -3,7 +3,8 @@
     width: calc(33.33% - 40px * 2);
     margin: 40px 20px;
   }
-  .container, .infos {
+  .container,
+  .infos {
     width: 80%;
   }
   .container {
@@ -51,24 +52,5 @@
   }
   .textapropos {
     text-align: center;
-  }
-  form {
-    width: 50%;
-  }
-  input,
-  textarea {
-    border: 1px solid black;
-    font-size: 19px;
-  }
-  input {
-    height: 50px;
-  }
-  textarea {
-    height: 90px;
-  }
-  button {
-    justify-content: center;
-    border: 0, 5px solid;
-    height: 35px;
   }
 }

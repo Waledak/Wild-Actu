@@ -128,46 +128,73 @@ span:hover {
 }
 /* Partie formulaire contact */
 form {
-  padding: 10px;
-  width: 90%;
+  width: 95%;
   margin: auto;
-  border-radius: 15px;
+  justify-content: start;
+  flex-wrap: wrap;
 }
-input,
-textarea {
-  display: flex;
-  border-radius: 12px;
-  padding-left: 6px;
+.box {
+  width: auto;
+  margin: auto;
+  padding: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,.1))
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  font-family: "Forum", cursive;
+}
+.box input {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+.box textarea {
+  height: 80px;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+.box input,
+.box textarea {
   width: 100%;
-  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
-  background-color: #f1f8f9;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #999;
+}
+.box input[type="submit"] {
+  border-bottom: none;
+  cursor: pointer;
+  background: rgb(0, 107, 103);
+  color: white;
+  margin-bottom: 0;
   font-family: "Forum", cursive;
+  font-size: 20px;
+}
+.box form div {
+  position: relative;
+}
+.box form div label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #999;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.box input:focus ~ label,
+.box textarea:focus ~ label,
+.box input:valid ~ label,
+.box textarea:valid ~ label {
+  top: -12px;
+  left: 0;
+  color: rgb(0, 107, 103);
   font-size: 15px;
-  color: #003a38;
-  border: 1px solid black;
-  margin-top: 12px;
+  font-weight: bold;
 }
-input {
-  height: 25px;
-}
-textarea {
-  height: 60px;
-  padding-top: 4px;
-}
-button {
-  border: 0, 8px solid;
-  border-radius: 12px;
-  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
-  background-color: #f1f8f9;
-  height: 30px;
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 15px;
-  font-family: "Forum", cursive;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 12px;
-  align-items: flex-end;
+.box input:focus,
+.box textarea:focus,
+.box input:valid,
+.box textarea:valid {
+  border-bottom: 2px solid rgb(0, 107, 103);
 }
 /* Fin partie Alexandra */
 /* container d'une card */
@@ -243,7 +270,7 @@ button {
   padding: 0;
   margin: 0;
 }
-.return-link{
+.return-link {
   transform: rotate(180deg);
   outline: none;
 }
@@ -330,7 +357,7 @@ button {
 }
 .precisions a:visited {
   color: black;
-  }
+}
 /*   Photo   */
 .travaux {
   height: auto;
@@ -361,7 +388,7 @@ footer {
   width: 100%;
   margin-top: 90px;
   justify-content: space-between;
-  font-family:'Forum', cursive;
+  font-family: "Forum", cursive;
   font-size: 1.5rem;
 }
 .block {
@@ -387,22 +414,22 @@ footer {
 .liste a {
   text-decoration: none;
   outline: none;
-  color: ghostwhite
+  color: ghostwhite;
 }
 .liste a:hover {
   color: rgb(247, 148, 0);
 }
 .tilt {
   -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .tilt:hover {
   -webkit-transform: rotate(-15deg);
-     -moz-transform: rotate(-15deg);
-       -o-transform: rotate(-15deg);
-      -ms-transform: rotate(-15deg);
-          transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
