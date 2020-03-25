@@ -144,26 +144,6 @@ span:hover {
   margin-top: 20px;
 }
 /* Partie formulaire contact */
-form {
-  width: 95%;
-  margin: auto;
-  justify-content: start;
-  flex-wrap: wrap;
-}
-input,
-textarea {
-  display: flex;
-  border-radius: 12px;
-  padding-left: 6px;
-  width: 100%;
-  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
-  background-color: #f1f8f9;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 15px;
-  color: #003a38;
-  border: 1px solid black;
-  margin-top: 12px;
-}
 .box {
   width: auto;
   margin: auto;
