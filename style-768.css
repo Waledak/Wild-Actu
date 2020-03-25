@@ -55,6 +55,7 @@
   .textapropos {
     font-size: 20px;
   }
+<<<<<<< HEAD
   form {
     width: 50%;
   }
@@ -72,6 +73,8 @@
     border: 1px solid;
     height: 35px;
   }
+=======
+>>>>>>> feature/form
 }
 @media screen and (max-width:768px){
   .line{

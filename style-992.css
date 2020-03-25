@@ -102,6 +102,7 @@
   .textapropos {
     text-align: center;
   }
+<<<<<<< HEAD
   form {
     width: 50%;
   }
@@ -121,4 +122,6 @@
     border: 1px solid;
     height: 35px;
   }
+=======
+>>>>>>> feature/form
 }
