@@ -102,26 +102,14 @@
   .textapropos {
     text-align: center;
   }
-<<<<<<< HEAD
-  form {
-    width: 50%;
-  }
-  input,
-  textarea {
-    border: 1px solid black;
-    font-size: 19px;
-  }
-  input {
-    height: 50px;
-  }
-  textarea {
-    height: 90px;
-  }
-  button {
-    justify-content: center;
-    border: 1px solid;
-    height: 35px;
-  }
-=======
->>>>>>> feature/form
+}
+/* Progress bar */
+#myProgress {
+  position: relative;
+  height: 15px;
+  width: 50%;
+}
+#myBar {
+  position: relative;
+  height: 15px;
 }

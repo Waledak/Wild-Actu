@@ -472,3 +472,17 @@ footer {
   -ms-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
+/*----ProgressBar----*/
+#myProgress {
+  width: 100%;
+  background-color: lightgrey;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#myBar {
+  width: 25%;
+  height: 10px;
+  background-color:#006b67;
+  border-radius: 10px;
+}

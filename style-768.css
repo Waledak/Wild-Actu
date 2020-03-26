@@ -103,3 +103,10 @@
     font-size: 1.1rem;
   }
 }
+/*progressBar*/
+#myProgress {
+  height: 15px;
+}
+#myBar {
+  height: 15px;
+}
