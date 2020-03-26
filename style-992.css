@@ -105,11 +105,9 @@
 }
 /* Progress bar */
 #myProgress {
-  position: relative;
   height: 15px;
-  width: 50%;
+  width: 100%;
 }
 #myBar {
-  position: relative;
   height: 15px;
 }

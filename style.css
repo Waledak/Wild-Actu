@@ -73,7 +73,7 @@ body {
   margin-bottom: 20px;
   z-index: 0;
 }
-/* text superposant l'image d'acceuil */
+/* text superposant l'image d'accueil */
 .img-accueil h1 {
   align-self: center;
   vertical-align: middle;
@@ -481,7 +481,7 @@ footer {
 }
 
 #myBar {
-  width: 25%;
+  width: 66.66%;
   height: 10px;
   background-color:#006b67;
   border-radius: 10px;
