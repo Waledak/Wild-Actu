@@ -1,24 +1,24 @@
 :root {
-  /*modifs emeric*/
+ /*modifs emeric*/
   /*--background-color:rgb(255, 237, 200);*/
-  --background-color: floralwhite;
-  --text-color: rgb(30, 30, 30);
-  --navbar-bg-color: #4c71d8ea;
-  --theme-txt-button: rgb(30, 30, 30);
+  --background-color:ghostwhite;
+  --text-color :rgb(30,30,30);
+  --navbar-bg-color : #009b95;
+  --theme-txt-button: rgb(30,30,30);
   --theme-bg-circle-button: ghostwhite;
-  --theme-bg-button: #4c71d8ea;
-  --theme-border-button: rgb(222, 238, 240);
-  --bg-card-container: rgb(218, 221, 231);
+  --theme-bg-button: #009b95;
+  --theme-border-button:rgb(222, 238, 240);
+  --bg-footer:#009b95;
 }
-[data-theme="dark"] {
-  --background-color: rgb(66, 66, 66);
-  --text-color: ghostwhite;
-  --navbar-bg-color: #0e1797;
-  --theme-txt-button: ghostwhite;
-  --theme-bg-circle-button: rgb(255, 255, 86);
+[data-theme="dark"]{
+  --background-color:rgb(66, 66, 66);
+  --text-color :ghostwhite;
+  --navbar-bg-color: #005e5b;
+  --theme-txt-button: ghostwhite ;
+  --theme-bg-circle-button:  rgb(255, 255, 86);
   --theme-bg-button: rgb(66, 66, 66);
-  --theme-border-button: yellow;
-  --bg-card-container: rgb(136, 133, 133);
+  --theme-border-button:yellow;
+  --bg-footer:#005e5b;
 }
 /* link pour les fonts */
 @import url("https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap");
