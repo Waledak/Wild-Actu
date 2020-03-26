@@ -39,6 +39,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 /* Partie Alexandra : A propos et contact */
 /* Partie à propos */
@@ -61,12 +62,12 @@ body {
 /* Partie de tanguy V.Mobile début */
 /* image d'accueil (la même pour toute les pages) */
 .img-accueil {
+  margin-top: 6.1vh;
   width: 100%;
   background: var(--img-background-title);
-  background-size: cover;
-  -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   background-position: center right;
   text-align: center;
   color: var(--h1-color);
@@ -74,19 +75,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 45vh;
+  height: 50vh;
   margin-bottom: 20px;
   z-index: 0;
+  transform: rotateZ(1deg) skew(1deg);
 }
 /* text superposant l'image d'accueil */
 .img-accueil h1 {
   align-self: center;
   vertical-align: middle;
   margin: 0;
+  font-size: 4rem;
   text-transform: uppercase;
   font-family: 'Comfortaa', cursive;
   letter-spacing: 5px;
   text-shadow: 0 0 4px black;
+  transform: rotateZ(-1deg) skew(-1deg);
 }
 /* création d'une classe container avec les règles flex */
 .container {
@@ -279,6 +283,7 @@ span:hover {
   position: fixed;
   width: 100%;
   height: 8vh;
+  top: 0;
   background: var(--navbar-bg-color);
   z-index: 1;
 }
@@ -315,15 +320,12 @@ span:hover {
   border: 2px solid var(--theme-border-button);
 }
 #textTheme {
-  cursor: default;
+  cursor: pointer;
   color: var(--theme-txt-button);
-  display: block;
-  position: absolute;
-  z-index: 2;
   font-size: 1rem;
   font-weight: bold;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  margin-left: 3rem;
+  margin-left: 2.8rem;
 }
 #dark {
   display: none;

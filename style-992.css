@@ -31,7 +31,7 @@
     width: 70%;
   }
   .card-container {
-    width: calc(33.33% - 55px * 2.5);
+    width: calc(30% - 20px * 2);
     margin: 40px 20px;
   }
   .container,
@@ -85,10 +85,11 @@
     text-align: center;
   }
 }
+
 @media screen and (min-width:992px) and (min-height:1300px){
   #darkOrLight {
     height: 95%;
-    width: 101%;
+    width: 100%;
   }
   #textTheme{
     font-size: 1rem;

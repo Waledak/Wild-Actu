@@ -4,13 +4,13 @@ function switchTheme(event){
   let textTheme = document.getElementById("textTheme");
   if (event.target.checked){
     document.documentElement.setAttribute('data-theme','dark');
-    textTheme.style.marginLeft = "1rem";
-    textTheme.innerHTML = "Dark";
+    textTheme.style.marginLeft = "0.5rem";
+    textTheme.innerHTML = "Light";
     cards.forEach(card => card.style.boxShadow = "none");
   }else{
     document.documentElement.setAttribute('data-theme','light');
-    textTheme.style.marginLeft = "3.2rem";
-    textTheme.innerHTML = "Light";
+    textTheme.style.marginLeft = "2.8rem";
+    textTheme.innerHTML = "Dark";
     cards.forEach(card => card.style.boxShadow = "8px 8px 2px 1px rgba(0, 0, 255, 0.2)");
   }
 }
@@ -44,3 +44,5 @@ function move() {
         elem.style.width = width + "%";
       }
     }
+  }
+};

@@ -25,6 +25,9 @@
     width: calc(50% - 40px * 2);
     margin: 40px 20px;
   }
+  .img-accueil h1{
+    font-size: 6rem;
+  }
   .container,
   .bref,
   .infos,
@@ -128,7 +131,7 @@
     width: 85%;
   }
   #textTheme{
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   #darkOrLight::before,
   #darkOrLight::after {
