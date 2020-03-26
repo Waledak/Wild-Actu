@@ -1,3 +1,6 @@
+/* link pour les fonts */
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
 :root {
   /*modifs emeric*/
   /*--background-color:rgb(255, 237, 200);*/
@@ -10,6 +13,8 @@
   --theme-border-button: rgb(222, 238, 240);
   --bg-card-container: rgb(218, 221, 231);
   --bg-footer:#009b95;
+  --h1-color:#08a6a0;
+  --img-background-title:linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(https://i.goopics.net/dKqxa.jpg);
 }
 [data-theme="dark"] {
   --background-color: rgb(66, 66, 66);
@@ -21,9 +26,10 @@
   --theme-border-button: yellow;
   --bg-card-container: rgb(136, 133, 133);
   --bg-footer:#005e5b;
+  --h1-color:#08a6a0;
+  --img-background-title:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://i.goopics.net/dKqxa.jpg);
 }
-/* link pour les fonts */
-@import url("https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap");
+
 /* régle pour un effet smooth avec les ancres */
 * {
   scroll-behavior: smooth;
@@ -58,15 +64,14 @@ body {
 /* image d'accueil (la même pour toute les pages) */
 .img-accueil {
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)),
-    url(https://i.goopics.net/dKqxa.jpg);
+  background: var(--img-background-title);
   background-size: cover;
   -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center right;
   text-align: center;
-  color: #08a6a0;
+  color: var(--h1-color);
   font-size: 6vh;
   display: flex;
   justify-content: center;
@@ -80,8 +85,9 @@ body {
   align-self: center;
   vertical-align: middle;
   margin: 0;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-family: 'Comfortaa', cursive;
+  letter-spacing: 5px;
   text-shadow: 0 0 4px black;
 }
 /* création d'une classe container avec les règles flex */
