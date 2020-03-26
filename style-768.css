@@ -118,7 +118,7 @@
     -webkit-clip-path: circle(135% at 100% -10%);
     pointer-events: all;
   }
-  .nav-links li a {
+  .nav-links li a, .nav-links li p {
     font-size: 1.6rem;
   }
   #textTheme{

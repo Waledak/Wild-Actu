@@ -24,7 +24,7 @@
   .nav{
     max-height: 8vh;
   }
-  .nav-links li a {
+  .nav-links li a, .nav-links li p {
     font-size: 1.3rem;
   }
   .container{

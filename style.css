@@ -303,7 +303,7 @@ span:hover {
   width: 100%;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.nav-links li a {
+.nav-links li a, .nav-links li p {
   color: var(--text-color);
   text-decoration: none;
   font-size: 1.4rem;
@@ -494,3 +494,5 @@ footer {
   background-color:#006b67;
   border-radius: 10px;
 }
+
+/*----Date----*/
