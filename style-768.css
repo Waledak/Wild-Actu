@@ -25,6 +25,9 @@
     width: calc(50% - 40px * 2);
     margin: 40px 20px;
   }
+  .img-accueil h1{
+    font-size: 6rem;
+  }
   .container,
   .bref,
   .infos,
@@ -115,7 +118,7 @@
     -webkit-clip-path: circle(135% at 100% -10%);
     pointer-events: all;
   }
-  .nav-links li a {
+  .nav-links li a, .nav-links li p {
     font-size: 1.6rem;
   }
   #textTheme{
@@ -128,7 +131,7 @@
     width: 85%;
   }
   #textTheme{
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   #darkOrLight::before,
   #darkOrLight::after {
@@ -150,10 +153,10 @@
     height: 10vh;
   }
 }
-/*progressBar*/
+/*progressBar
 #myProgress {
   height: 15px;
 }
 #myBar {
   height: 15px;
-}
+}*/
