@@ -3,20 +3,22 @@
   /*--background-color:rgb(255, 237, 200);*/
   --background-color:ghostwhite;
   --text-color :rgb(30,30,30);
-  --navbar-bg-color : #4c71d8ea;
+  --navbar-bg-color : #009b95;
   --theme-txt-button: rgb(30,30,30);
   --theme-bg-circle-button: ghostwhite;
   --theme-bg-button: #4c71d8ea;
   --theme-border-button:rgb(222, 238, 240);
+  --bg-footer:#009b95;
 }
 [data-theme="dark"]{
   --background-color:rgb(66, 66, 66);
   --text-color :ghostwhite;
-  --navbar-bg-color: #0e1797e7;
+  --navbar-bg-color: #005e5b;
   --theme-txt-button: ghostwhite ;
   --theme-bg-circle-button:  rgb(255, 255, 86);
   --theme-bg-button: rgb(66, 66, 66);
   --theme-border-button:yellow;
+  --bg-footer:#005e5b;
 }
 @media screen and (min-width: 768px) {
   .card-container {
@@ -55,7 +57,6 @@
   .textapropos {
     font-size: 20px;
   }
-<<<<<<< HEAD
   form {
     width: 50%;
   }
@@ -73,8 +74,6 @@
     border: 1px solid;
     height: 35px;
   }
-=======
->>>>>>> feature/form
 }
 @media screen and (max-width:768px){
   .line{
@@ -120,6 +119,34 @@
     font-size: 1.6rem;
   }
   #textTheme{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-height:862px){
+  #darkOrLight {
+    height: 90%;
+    width: 85%;
+  }
+  #textTheme{
+    font-size: 0.9rem;
+  }
+  #darkOrLight::before,
+  #darkOrLight::after {
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  }
+  #darkOrLight::before {
+    left: -25px;
+  }
+  #darkOrLight::after {
+    left: 10px;
+  }
+  #dark:checked + #darkOrLight::before {
+    top: 5px;
+    left: 47px;
+  }
+  .nav{
+    height: 10vh;
   }
 }
