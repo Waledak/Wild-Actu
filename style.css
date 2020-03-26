@@ -176,12 +176,10 @@ body {
   justify-content: start;
   flex-wrap: wrap;
 }
-<<<<<<< HEAD
 .container h2 {
   color: black;
 }
 /* Partie Alexandra*/
-=======
 /* Partie Alexandra : A propos et contact */
 /* Partie à propos */
 .titreapropos {
@@ -200,7 +198,6 @@ body {
   margin-top: 50px;
   color: #006b67;
 }
->>>>>>> 28efd0af166b538849cd6b496bd7791a1e188ad2
 /* Partie à propos */
 article {
   flex-wrap: wrap;
@@ -611,8 +608,7 @@ footer {
   border-radius: 10px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 */
 
 /*----Date----*/
-=======
->>>>>>> 28efd0af166b538849cd6b496bd7791a1e188ad2
