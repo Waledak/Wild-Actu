@@ -39,8 +39,11 @@ function move() {
       if (width >= 100) {
         clearInterval(id);
         i = 0;
+      }}
       } else {
         width++;
         elem.style.width = width + "%";
       }
     }
+    
+ 
