@@ -1,4 +1,4 @@
-:root{
+:root {
   /*modifs emeric*/
   /*--background-color:rgb(255, 237, 200);*/
   --background-color:ghostwhite;
@@ -75,19 +75,19 @@
     height: 35px;
   }
 }
-@media screen and (max-width:768px){
-  .line{
+@media screen and (max-width: 768px) {
+  .line {
     width: 30px;
     height: 4px;
     background: var(--text-color);
     margin: 5px;
     border-radius: 10px;
   }
-  .nav{
+  .nav {
     position: fixed;
     height: 9vh;
   }
-  .hamburger{
+  .hamburger {
     position: absolute;
     cursor: pointer;
     right: 5%;
@@ -96,26 +96,26 @@
     z-index: 2;
     transition: all 0.5s ease;
   }
-  .hamburger-click{
+  .hamburger-click {
     transform: rotateZ(-15deg);
   }
-  .nav-links{
+  .nav-links {
     background: var(--navbar-bg-color);
     height: 100vh;
     width: 100%;
     padding: 0;
     flex-direction: column;
     clip-path: circle(90px at 100% -30%);
-    -webkit-clip-path:circle(90px at 100% -30%);
-    transition: all 0.6s ease-out!important;
+    -webkit-clip-path: circle(90px at 100% -30%);
+    transition: all 0.6s ease-out !important;
     pointer-events: none;
   }
-  .nav-links.open{
+  .nav-links.open {
     clip-path: circle(135% at 100% -10%);
-    -webkit-clip-path:circle(135% at 100% -10%);
+    -webkit-clip-path: circle(135% at 100% -10%);
     pointer-events: all;
   }
-  .nav-links li a{
+  .nav-links li a {
     font-size: 1.6rem;
   }
   #textTheme{
