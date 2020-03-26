@@ -28,19 +28,40 @@ hamburger.addEventListener('click', () =>{
 });
 
 /*----ProgressBar----*/
-var i = 0;
-function move() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var width = 1;
-    var id = setInterval(frame, 25);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-      }
-    }
+
+function updateProgress = (event) => {
+  if(event.target.value !== "") {
+    progObj[event.target.champ1] = true;
+  } else {
+    progObj[event.target.champ1] = false;
+  }
+  let progress = 0;
+  for(field in progObj) {
+
+  }
+  document.getElementById("myBar").style.width = 33%
+}
+function updateProgress = (event) => {
+  if(event.target.value !== "") {
+    progObj[event.target.champ2] = true;
+  } else {
+    progObj[event.target.champ2] = false;
+  }
+  let progress = 0;
+  for(field in progObj) {
+
+  }
+  document.getElementById("myBar").style.width = 33%
+}
+function updateProgress = (event) => {
+  if(event.target.value !== "") {
+    progObj[event.target.champ3] = true;
+  } else {
+    progObj[event.target.champ3] = false;
+  }
+  let progress = 0;
+  for(field in progObj) {
+
+  }
+  document.getElementById("myBar").style.width = 34%
+}
