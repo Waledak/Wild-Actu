@@ -9,7 +9,7 @@ function switchTheme(event){
     cards.forEach(card => card.style.boxShadow = "none");
   }else{
     document.documentElement.setAttribute('data-theme','light');
-    textTheme.style.marginLeft = "3rem";
+    textTheme.style.marginLeft = "3.2rem";
     textTheme.innerHTML = "Light";
     cards.forEach(card => card.style.boxShadow = "8px 8px 2px 1px rgba(0, 0, 255, 0.2)");
   }
