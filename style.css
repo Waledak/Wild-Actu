@@ -2,29 +2,27 @@
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
 :root {
-  /*modifs emeric*/
+ /*modifs emeric*/
   /*--background-color:rgb(255, 237, 200);*/
-  --background-color: floralwhite;
-  --text-color: rgb(30, 30, 30);
-  --navbar-bg-color: #009b95;
-  --theme-txt-button: rgb(30, 30, 30);
+  --background-color:ghostwhite;
+  --text-color :rgb(30,30,30);
+  --navbar-bg-color : #009b95;
+  --theme-txt-button: rgb(30,30,30);
   --theme-bg-circle-button: ghostwhite;
   --theme-bg-button: #009b95;
-  --theme-border-button: rgb(222, 238, 240);
-  --bg-card-container: rgb(218, 221, 231);
+  --theme-border-button:rgb(222, 238, 240);
   --bg-footer:#009b95;
   --h1-color:#08a6a0;
   --img-background-title:linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(https://i.goopics.net/dKqxa.jpg);
 }
-[data-theme="dark"] {
-  --background-color: rgb(66, 66, 66);
-  --text-color: ghostwhite;
+[data-theme="dark"]{
+  --background-color:rgb(66, 66, 66);
+  --text-color :ghostwhite;
   --navbar-bg-color: #005e5b;
-  --theme-txt-button: ghostwhite;
-  --theme-bg-circle-button: rgb(255, 255, 86);
+  --theme-txt-button: ghostwhite ;
+  --theme-bg-circle-button:  rgb(255, 255, 86);
   --theme-bg-button: rgb(66, 66, 66);
-  --theme-border-button: yellow;
-  --bg-card-container: rgb(136, 133, 133);
+  --theme-border-button:yellow;
   --bg-footer:#005e5b;
   --h1-color:#08a6a0;
   --img-background-title:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://i.goopics.net/dKqxa.jpg);
@@ -76,11 +74,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 45vh;
   margin-bottom: 20px;
   z-index: 0;
 }
-/* text superposant l'image d'acceuil */
+/* text superposant l'image d'accueil */
 .img-accueil h1 {
   align-self: center;
   vertical-align: middle;
@@ -152,20 +150,14 @@ span:hover {
   margin-top: 20px;
 }
 /* Partie formulaire contact */
-form {
-  width: 95%;
-  margin: auto;
-  justify-content: start;
-  flex-wrap: wrap;
-}
 .box {
   width: auto;
   margin: auto;
   padding: 40px;
   box-sizing: border-box;
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid rgba(0,0,0,.1))
   box-shadow: 0 5px 10px rgba(0,0,0,.2);
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Forum", cursive;
 }
 .box input {
   padding: 10px 0;
@@ -309,8 +301,7 @@ form {
 .nav-links li a {
   color: var(--text-color);
   text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.4rem;
 }
 #darkOrLight {
   position: relative;
@@ -331,9 +322,8 @@ form {
   z-index: 2;
   font-size: 1rem;
   font-weight: bold;
-  padding-top: 17px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  margin-left: 3.2rem;
+  margin-left: 3rem;
 }
 #dark {
   display: none;
@@ -438,7 +428,7 @@ span {
 /* Partie de tanguy V.Mobile fin */
 /*debut partie footer*/
 footer {
-  background-color: var(--bg-footer);
+  background-color: rgb(0, 107, 103);
   display: flex;
   width: 100%;
   margin-top: 90px;
@@ -469,7 +459,7 @@ footer {
 .liste a {
   text-decoration: none;
   outline: none;
-  color: var(--text-color);
+  color: ghostwhite;
 }
 .liste a:hover {
   color: rgb(247, 148, 0);
@@ -487,4 +477,18 @@ footer {
   -o-transform: rotate(-15deg);
   -ms-transform: rotate(-15deg);
   transform: rotate(-15deg);
+}
+/*----ProgressBar----*/
+#myProgress {
+  width: 100%;
+  background-color: lightgrey;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#myBar {
+  width: 66.66%;
+  height: 10px;
+  background-color:#006b67;
+  border-radius: 10px;
 }
