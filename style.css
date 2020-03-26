@@ -179,6 +179,7 @@ span:hover {
   margin-bottom: 0;
   font-family: "Forum", cursive;
   font-size: 20px;
+  width: 30%;
 }
 .box form div {
   position: relative;

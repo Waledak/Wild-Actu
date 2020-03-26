@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style-768.css" />
     <link rel="stylesheet" href="style-992.css" />
+    <!-- <script src="script.js"></script> -->
     <title>Wild-Actu</title>
   </head>
   <body>
@@ -97,20 +98,20 @@
     <hr />
       <div class="box">
         <h1 class="titrecontact">Contactez-nous</h1>
-        <form>
+        <form id="contact">
           <div>
-            <input type="text" name="" required=""/>
+            <input type="text" id="name" name="Nom"/>
             <label>Name</label>
           </div>
           <div>
-            <input type="email" name="" required=""/>
+            <input type="email" id="" name="Email"/>
             <label>Email</label>
           </div>
           <div>
-            <textarea required=""></textarea>
+            <textarea name="Message"></textarea>
             <label>Message</label>
           </div>
-          <input type="submit" name="" value="Envoyer">
+          <input type="submit" id="submitBtn" value="Envoyer" class="bouton">
           </div>
         </form>
       </div>
@@ -158,5 +159,6 @@
         </ul>
       </div>
     </footer>
+    <script src="checkform.js"></script>
   </body>
 </html>

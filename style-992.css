@@ -1,40 +1,39 @@
-:root{
+:root {
   /*modifs emeric*/
   /*--background-color:rgb(255, 237, 200);*/
-  --background-color:ghostwhite;
-  --text-color :rgb(30,30,30);
-  --navbar-bg-color : #4c71d8ea;
-  --theme-txt-button: rgb(30,30,30);
+  --background-color: ghostwhite;
+  --text-color: rgb(30, 30, 30);
+  --navbar-bg-color: #4c71d8ea;
+  --theme-txt-button: rgb(30, 30, 30);
   --theme-bg-circle-button: ghostwhite;
   --theme-bg-button: #4c71d8ea;
-  --theme-border-button:rgb(222, 238, 240);
-  
+  --theme-border-button: rgb(222, 238, 240);
 }
-[data-theme="dark"]{
-  --background-color:rgb(66, 66, 66);
-  --text-color :ghostwhite;
+[data-theme="dark"] {
+  --background-color: rgb(66, 66, 66);
+  --text-color: ghostwhite;
   --navbar-bg-color: #0e1797;
-  --theme-txt-button: ghostwhite ;
-  --theme-bg-circle-button:  rgb(255, 255, 86);
+  --theme-txt-button: ghostwhite;
+  --theme-bg-circle-button: rgb(255, 255, 86);
   --theme-bg-button: rgb(66, 66, 66);
-  --theme-border-button:yellow;
+  --theme-border-button: yellow;
 }
 @media screen and (min-width: 992px) {
   .card-container {
     width: calc(50% - 40px * 2);
     margin: 40px 20px;
   }
-  .nav{
+  .nav {
     height: 8vh;
     background: var(--navbar-bg-color);
   }
-  .linkName{
+  .linkName {
     display: none;
   }
-  .linkNameOpen{
+  .linkNameOpen {
     display: block;
   }
-  .nav-links{
+  .nav-links {
     display: flex;
     list-style: none;
     height: 100%;
@@ -102,26 +101,4 @@
   .textapropos {
     text-align: center;
   }
-<<<<<<< HEAD
-  form {
-    width: 50%;
-  }
-  input,
-  textarea {
-    border: 1px solid black;
-    font-size: 19px;
-  }
-  input {
-    height: 50px;
-  }
-  textarea {
-    height: 90px;
-  }
-  button {
-    justify-content: center;
-    border: 1px solid;
-    height: 35px;
-  }
-=======
->>>>>>> feature/form
 }
