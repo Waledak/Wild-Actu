@@ -1,39 +1,41 @@
 /* link pour les fonts */
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,700");
 /* variables le mode light */
 :root {
   --background-color: ghostwhite;
   --text-color: rgb(30, 30, 30);
-  --navbar-bg-color: #00302e;
+  --navbar-bg-color: #009b95;
   --theme-txt-button: rgb(30, 30, 30);
   --theme-bg-circle-button: ghostwhite;
   --theme-bg-button: #009b95;
   --theme-border-button: rgb(222, 238, 240);
-  --bg-footer: #00302e;
+  --bg-footer: #009b95;
   --h1-color: #08a6a0;
   --img-background-title: linear-gradient(
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
     ),
     url(https://i.goopics.net/dKqxa.jpg);
+    --bg-color-bref: #08a6a0;
 }
 /* variables pour le dark */
-[data-theme="dark"] {
-  --background-color: rgb(66, 66, 66);
-  --text-color: ghostwhite;
-  --navbar-bg-color: #005e5b;
-  --theme-txt-button: ghostwhite;
-  --theme-bg-circle-button: rgb(255, 255, 86);
+[data-theme="dark"]{
+  --background-color:rgb(66, 66, 66);
+  --text-color :ghostwhite;
+  --navbar-bg-color: #00302e;
+  --theme-txt-button: ghostwhite ;
+  --theme-bg-circle-button:  rgb(255, 255, 86);
   --theme-bg-button: rgb(66, 66, 66);
-  --theme-border-button: yellow;
-  --bg-footer: #005e5b;
-  --h1-color: #005e5b;
-  --img-background-title: linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url(https://i.goopics.net/dKqxa.jpg);
+  --theme-border-button:yellow;
+  --bg-footer:#00302e;
+  --h1-color:#009b95;
+  --img-background-title:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://i.goopics.net/dKqxa.jpg);
+  --bg-card-container: #D6D1D1;
+  --bg-article: #D6D1D1;
+  --infos-font-color: #D6D1D1;
+  --bg-color-bref: #009b95;
 }
 /* ajoute un effet smooth avec les ancres et une animation sur tout changement */
 * {
@@ -184,23 +186,26 @@ body {
   justify-content: start;
   flex-wrap: wrap;
 }
+.container h2 {
+  color: black;
+}
+/* Partie Alexandra*/
 /* Partie Alexandra : A propos et contact */
 /* Partie à propos */
 .titreapropos {
-  font-family: "Luckiest Guy", cursive;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 4px;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 95px;
-  color: #006b67;
+  color: var(--h1-color);
 }
 .titrecontact {
-  font-family: "Luckiest Guy", cursive;
-  letter-spacing: 4px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
   margin-bottom: 50px;
   margin-top: 50px;
-  color: #006b67;
+  color: var(--h1-color);
 }
 /* Partie à propos */
 article {
@@ -219,7 +224,7 @@ article {
 }
 span {
   font-size: 1.5rem;
-  color: #008681;
+  color: var(--h1-color);
   padding-top: 20px;
 }
 .imgprofil {
@@ -244,6 +249,7 @@ span:hover {
   text-align: justify;
   width: 100%;
   font-size: 1.5rem;
+  color: var(--text-color);
 }
 .apropos {
   margin-bottom: 50px;
@@ -255,14 +261,18 @@ span:hover {
   margin-top: 20px;
 }
 /* Partie formulaire contact */
-.box {
-  width: auto;
+form {
   margin: auto;
+  width: 85%;
+}
+.box {
+  width: 100%;
   padding: 40px;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-family: "Forum", cursive;
+  color: var(--h1-color);
 }
 .box input {
   padding: 10px 0;
@@ -281,6 +291,8 @@ span:hover {
   outline: none;
   border: none;
   border-bottom: 2px solid #999;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 .box input[type="submit"] {
   border-bottom: none;
@@ -299,7 +311,7 @@ span:hover {
   position: absolute;
   top: 10px;
   left: 0;
-  color: #999;
+  color: var(--h1-color);
   transition: 0.5s;
   pointer-events: none;
 }
@@ -309,7 +321,7 @@ span:hover {
 .box textarea:valid ~ label {
   top: -12px;
   left: 0;
-  color: rgb(0, 107, 103);
+  color: var(--h1-color);
   font-size: 15px;
   font-weight: bold;
 }
@@ -326,12 +338,8 @@ span:hover {
   border-radius: 1px 45px 1px 45px;
   width: 90%;
   margin: 20px auto;
-  background: floralwhite;
+  background-color: var(--bg-card-container);
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
-}
-.card-container:hover {
-  transform: rotate(1deg);
-  z-index: 0;
 }
 /* image des card */
 .card-img {
@@ -339,13 +347,16 @@ span:hover {
   border-radius: 1px 45px 0px 0px;
   width: 100%;
 }
+.card-img:hover{
+  filter: blur(5px);
+}
 /* container du text des card */
 .card-text-container {
   margin: auto 5%;
 }
 /* concerne la description des card */
 .card-description {
-  color: slategrey;
+  color: grey;
   font-size: 1.5rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin: 0;
@@ -380,7 +391,7 @@ span:hover {
 /*         Partie Aline page-article       */
 /*     Titre    */
 .bref {
-  background-color: #20b5af;
+  background-color: var(--bg-color-bref);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: white;
   font-size: 1.5rem;
@@ -410,9 +421,14 @@ span:hover {
   margin-left: 10px;
   margin-top: 0;
   margin-bottom: 0;
+  color: var(--infos-font-color);
 }
 .precisions a:visited {
   color: black;
+  color: var(--infos-font-color);
+}
+.precisions a {
+  color: var(--infos-font-color);
 }
 /*   Photo   */
 .travaux {
@@ -422,6 +438,7 @@ span:hover {
 }
 /*   Article   */
 .text {
+  background-color: var(--bg-article);
   width: 95%;
   padding: 0.5rem;
   border: 1px solid #006b67;
@@ -489,6 +506,119 @@ footer {
   -ms-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
+/*snippet cartes articles*/
+.snip1585 {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  margin: 0px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  border-radius: 1px 45px 0 0;
+}
+
+.snip1585 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1585:before,
+.snip1585:after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 50px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 50px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+}
+
+.snip1585:before {
+  -webkit-transform: scaleY(2);
+  transform: scaleY(2);
+}
+
+.snip1585:after {
+  -webkit-transform: scaleY(2);
+  transform: scaleY(2);
+}
+
+.snip1585 img {
+  vertical-align: top;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.snip1585 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.snip1585 h3 {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.snip1585 h3 span {
+  display: block;
+  font-weight: 700;
+}
+
+.snip1585 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.snip1585:hover > img{
+  opacity: 0.9;
+  filter: blur(3px);
+}
+
+.snip1585:hover:before,
+.snip1585:hover:after{
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.snip1585:hover figcaption{
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
 /*----ProgressBar----
 #myProgress {
   width: 100%;
@@ -502,6 +632,8 @@ footer {
   background-color:#006b67;
   border-radius: 10px;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
 */
 
 /*----Date----*/

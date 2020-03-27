@@ -4,27 +4,27 @@
 // document.querySelector("form").addEventListener("submit", e => {
 //   check(e));
 // }
-const subBtn = document
-  .getElementById("submitBtn")
-  .addEventListener("click", check);
+const subBtn = document.getElementById("submitBtn");
+subBtn.addEventListener("click", check);
 function check(e) {
+  let checkCount = 0;
   const inputsCollection = document.querySelectorAll(
     "#contact input, #contact textarea"
   );
   console.log(inputsCollection);
   for (let inputToTest of inputsCollection) {
     if (inputToTest.value === "") {
+      checkCount++;
       e.preventDefault();
-      alert(`Erreur : le champ ${inputToTest.name} n'a pas été rempli`);
+      swal(`Erreur : le champ ${inputToTest.name} n'a pas été rempli`);
     }
   }
-}
-function validate() {
-  var email = document.getElementByName("Email");
-  if (checkEmail(email)) {
-    alert("Adresse e-mail valide");
-  } else {
-    alert("Adresse e-mail non valide");
+  if (checkCount === 0) {
+    e.preventDefault();
+    swal({
+      title: "Good job!",
+      text: "You clicked the button!",
+      icon: "success",
+    });
   }
-  return false;
 }

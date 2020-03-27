@@ -1,15 +1,21 @@
 :root {
-  /*modifs emeric*/
-  /*--background-color:rgb(255, 237, 200);*/
-  --background-color:ghostwhite;
-  --text-color :rgb(30,30,30);
-  --navbar-bg-color : #009b95;
-  --theme-txt-button: rgb(30,30,30);
+  --background-color: ghostwhite;
+  --text-color: rgb(30, 30, 30);
+  --navbar-bg-color: #009b95;
+  --theme-txt-button: rgb(30, 30, 30);
   --theme-bg-circle-button: ghostwhite;
   --theme-bg-button: #009b95;
-  --theme-border-button:rgb(222, 238, 240);
-  --bg-footer:#009b95;
+  --theme-border-button: rgb(222, 238, 240);
+  --bg-footer: #009b95;
+  --h1-color: #08a6a0;
+  --img-background-title: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+    url(https://i.goopics.net/dKqxa.jpg);
+    --bg-color-bref: #08a6a0;
 }
+/* variables pour le dark */
 [data-theme="dark"]{
   --background-color:rgb(66, 66, 66);
   --text-color :ghostwhite;
@@ -19,11 +25,20 @@
   --theme-bg-button: rgb(66, 66, 66);
   --theme-border-button:yellow;
   --bg-footer:#00302e;
+  --h1-color:#009b95;
+  --img-background-title:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://i.goopics.net/dKqxa.jpg);
+  --bg-card-container: #D6D1D1;
+  --bg-article: #D6D1D1;
+  --infos-font-color: #D6D1D1;
+  --bg-color-bref: #009b95;
 }
 @media screen and (min-width: 992px) {
   .card-container {
     width: calc(50% - 40px * 2);
     margin: 40px 20px;
+  }
+  form{
+    width: 50%;
   }
   .nav {
     height: 8vh;
@@ -46,13 +61,14 @@
   }
 }
 @media screen and (min-width: 1025px) {
-  .nav{
+  .nav {
     max-height: 8vh;
   }
-  .nav-links li a, .nav-links li p {
+  .nav-links li a,
+  .nav-links li p {
     font-size: 1.3rem;
   }
-  .container{
+  .container {
     width: 70%;
   }
   .card-container {
@@ -115,7 +131,7 @@
     height: 95%;
     width: 100%;
   }
-  #textTheme{
+  #textTheme {
     font-size: 1rem;
   }
   #darkOrLight::before,
@@ -134,7 +150,7 @@
     top: -1px;
     left: 46px;
   }
-  .nav{
+  .nav {
     height: 10vh;
   }
   .card-container {

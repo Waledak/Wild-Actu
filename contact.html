@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style-768.css" />
     <link rel="stylesheet" href="style-992.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- <script src="script.js"></script> -->
     <title>Wild-Actu</title>
   </head>
@@ -35,8 +36,8 @@
         </li>
       </ul>
     </nav>
-    <div class="img-accueil">
-      <h1>Contact</h1>
+    <div class="img-accueil" >
+      <h1 class="shadh1">Contact</h1>
     </div>
     <div class="apropos">
       <article>
@@ -102,15 +103,15 @@
         <h1 class="titrecontact">Contactez-nous</h1>
         <form id="contact">
           <div>
-            <input type="text" id="name" name="Nom"/>
+            <input type="text" id="name" name="Nom" required=""/>
             <label>Name</label>
           </div>
           <div>
-            <input type="email" id="" name="Email"/>
+            <input type="email" id="" name="Email" required/>
             <label>Email</label>
           </div>
           <div>
-            <textarea name="Message"></textarea>
+            <textarea name="Message" required></textarea>
             <label>Message</label>
           </div>
           <input type="submit" id="submitBtn" value="Envoyer" class="bouton">
