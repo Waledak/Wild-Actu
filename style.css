@@ -232,6 +232,7 @@ article {
   font-size: 1.5rem;
   color: var(--h1-color);
   padding-top: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .imgprofil {
   width: 130px;
@@ -583,6 +584,7 @@ footer {
 .snip1585 h3 span {
   display: block;
   font-weight: 700;
+  padding-top: 8px;
 }
 .snip1585 a {
   position: absolute;
