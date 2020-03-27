@@ -102,15 +102,15 @@
         <h1 class="titrecontact">Contactez-nous</h1>
         <form id="contact">
           <div>
-            <input type="text" id="name" name="Nom"/>
+            <input type="text" id="name" name="Nom" required=""/>
             <label>Name</label>
           </div>
           <div>
-            <input type="email" id="" name="Email"/>
+            <input type="email" id="" name="Email" required/>
             <label>Email</label>
           </div>
           <div>
-            <textarea name="Message"></textarea>
+            <textarea name="Message" required></textarea>
             <label>Message</label>
           </div>
           <input type="submit" id="submitBtn" value="Envoyer" class="bouton">
@@ -150,5 +150,6 @@
       </div>
     </footer>
     <script src="checkform.js"></script>
+    <script src=".script.js"></script>
   </body>
 </html>

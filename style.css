@@ -256,9 +256,11 @@ span:hover {
   margin-top: 20px;
 }
 /* Partie formulaire contact */
-.box {
-  width: auto;
+form {
   margin: auto;
+}
+.box {
+  width: 100%;
   padding: 40px;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
