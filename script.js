@@ -45,6 +45,9 @@ function fourdigits(number) {
 }
 today = date + "/" + months[now.getMonth()] + "/" + fourdigits(now.getYear());
 document.querySelector("#date").innerHTML = today;
+function changeToArticle(){
+  document.location.href = "page-article.html";
+}
 /*----ProgressBar----*/
 /*function updateProgress = (event) => {
   if(event.target.value !== "") {
