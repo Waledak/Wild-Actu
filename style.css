@@ -1,39 +1,46 @@
 /* link pour les fonts */
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+/* variables le mode light */
 :root {
- /*modifs emeric*/
-  /*--background-color:rgb(255, 237, 200);*/
-  --background-color:ghostwhite;
-  --text-color :rgb(30,30,30);
-  --navbar-bg-color : #009b95;
-  --theme-txt-button: rgb(30,30,30);
+  --background-color: ghostwhite;
+  --text-color: rgb(30, 30, 30);
+  --navbar-bg-color: #009b95;
+  --theme-txt-button: rgb(30, 30, 30);
   --theme-bg-circle-button: ghostwhite;
   --theme-bg-button: #009b95;
-  --theme-border-button:rgb(222, 238, 240);
-  --bg-footer:#009b95;
-  --h1-color:#08a6a0;
-  --img-background-title:linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(https://i.goopics.net/dKqxa.jpg);
+  --theme-border-button: rgb(222, 238, 240);
+  --bg-footer: #009b95;
+  --h1-color: #08a6a0;
+  --img-background-title: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+    url(https://i.goopics.net/dKqxa.jpg);
 }
-[data-theme="dark"]{
-  --background-color:rgb(66, 66, 66);
-  --text-color :ghostwhite;
+/* variables pour le dark */
+[data-theme="dark"] {
+  --background-color: rgb(66, 66, 66);
+  --text-color: ghostwhite;
   --navbar-bg-color: #005e5b;
-  --theme-txt-button: ghostwhite ;
-  --theme-bg-circle-button:  rgb(255, 255, 86);
+  --theme-txt-button: ghostwhite;
+  --theme-bg-circle-button: rgb(255, 255, 86);
   --theme-bg-button: rgb(66, 66, 66);
-  --theme-border-button:yellow;
-  --bg-footer:#005e5b;
-  --h1-color:#08a6a0;
-  --img-background-title:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://i.goopics.net/dKqxa.jpg);
+  --theme-border-button: yellow;
+  --bg-footer: #005e5b;
+  --h1-color: #08a6a0;
+  --img-background-title: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(https://i.goopics.net/dKqxa.jpg);
 }
-
-/* régle pour un effet smooth avec les ancres */
+/* ajoute un effet smooth avec les ancres et une animation sur tout changement */
 * {
   scroll-behavior: smooth;
   transition: all ease 0.3s;
 }
-/* modification du body, 0 marge et background antiquewhite  */
+/* modification du body de la page */
 body {
   box-sizing: border-box;
   margin: 0;
@@ -41,25 +48,103 @@ body {
   background-color: var(--background-color);
   overflow-x: hidden;
 }
-/* Partie Alexandra : A propos et contact */
-/* Partie à propos */
-.titreapropos {
-  font-family: "Luckiest Guy", cursive;
-  letter-spacing: 4px;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 95px;
-  color: #006b67;
+/* partie concernant la navbar commune à toute les pages */
+/* la nav est conçue en Desktop frst pour des raisons de facilité */
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+  top: 0;
+  background: var(--navbar-bg-color);
+  z-index: 1;
 }
-.titrecontact {
-  font-family: "Luckiest Guy", cursive;
-  letter-spacing: 4px;
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  color: #006b67;
+.linkName {
+  display: none;
 }
-/* Partie de tanguy V.Mobile début */
+.linkNameOpen {
+  display: block;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 0 auto;
+  width: 100%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.nav-links li a,
+.nav-links li p {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+#themeButtonContainer {
+  width: 105px;
+  height: 50px;
+}
+#darkOrLight {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: 60px;
+  cursor: pointer;
+  background-color: var(--theme-bg-button);
+  overflow: hidden;
+  transition: 0.4s ease;
+  border: 2px solid var(--theme-border-button);
+}
+#textTheme {
+  cursor: pointer;
+  color: var(--theme-txt-button);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-left: 2.8rem;
+}
+#dark {
+  display: none;
+}
+#darkOrLight::before,
+#darkOrLight::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+#darkOrLight::before {
+  left: -34px;
+  z-index: 1;
+  transition: 0.4s ease left, 0.4s ease top;
+}
+#darkOrLight::after {
+  left: 8px;
+  background-color: var(--theme-bg-circle-button);
+  transition: 0.4s ease left, 0.4s ease;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3) inset;
+}
+#dark:checked + #darkOrLight {
+  background-color: var(--background-color);
+  border: 2px solid var(--theme-bg-circle-button);
+}
+#dark:checked + #darkOrLight::before {
+  top: -1px;
+  left: 46px;
+  background-color: var(--theme-bg-button);
+  transition: 0.4s ease;
+}
+#dark:checked + #darkOrLight::after {
+  left: 58px;
+  background-color: var(--theme-bg-circle-button);
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-attachment: fixed;
+  background-position: left;
+  box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;
+}
+/* fin de la partie sur la nav et le bouton pour modifier le thème */
 /* image d'accueil (la même pour toute les pages) */
 .img-accueil {
   margin-top: 6.1vh;
@@ -87,7 +172,7 @@ body {
   margin: 0;
   font-size: 4rem;
   text-transform: uppercase;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   letter-spacing: 5px;
   text-shadow: 0 0 4px black;
   transform: rotateZ(-1deg) skew(-1deg);
@@ -100,7 +185,24 @@ body {
   justify-content: start;
   flex-wrap: wrap;
 }
-/* Partie Alexandra*/
+/* Partie Alexandra : A propos et contact */
+/* Partie à propos */
+.titreapropos {
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 95px;
+  color: #006b67;
+}
+.titrecontact {
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  color: #006b67;
+}
 /* Partie à propos */
 article {
   flex-wrap: wrap;
@@ -154,13 +256,15 @@ span:hover {
   margin-top: 20px;
 }
 /* Partie formulaire contact */
-.box {
-  width: auto;
+form {
   margin: auto;
+}
+.box {
+  width: 100%;
   padding: 40px;
   box-sizing: border-box;
-  border: 1px solid rgba(0,0,0,.1);
-  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-family: "Forum", cursive;
 }
 .box input {
@@ -189,6 +293,7 @@ span:hover {
   margin-bottom: 0;
   font-family: "Forum", cursive;
   font-size: 20px;
+  width: 30%;
 }
 .box form div {
   position: relative;
@@ -275,99 +380,6 @@ span:hover {
 }
 /* Partie de tanguy V.Mobile fin */
 /* Partie Emeric navbar */
-#themeButtonContainer {
-  width: 105px;
-  height: 50px;
-}
-.nav {
-  position: fixed;
-  width: 100%;
-  height: 8vh;
-  top: 0;
-  background: var(--navbar-bg-color);
-  z-index: 1;
-}
-.linkName {
-  display: none;
-}
-.linkNameOpen {
-  display: block;
-}
-.nav-links {
-  display: flex;
-  list-style: none;
-  height: 100%;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 0 0 auto;
-  width: 100%;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-.nav-links li a, .nav-links li p {
-  color: var(--text-color);
-  text-decoration: none;
-  font-size: 1.4rem;
-}
-#darkOrLight {
-  position: relative;
-  display: block;
-  height: 100%;
-  border-radius: 60px;
-  cursor: pointer;
-  background-color: var(--theme-bg-button);
-  overflow: hidden;
-  transition: 0.4s ease;
-  border: 2px solid var(--theme-border-button);
-}
-#textTheme {
-  cursor: pointer;
-  color: var(--theme-txt-button);
-  font-size: 1rem;
-  font-weight: bold;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  margin-left: 2.8rem;
-}
-#dark {
-  display: none;
-}
-#darkOrLight::before,
-#darkOrLight::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-}
-#darkOrLight::before {
-  left: -34px;
-  z-index: 1;
-  transition: 0.4s ease left, 0.4s ease top;
-}
-#darkOrLight::after {
-  left: 8px;
-  background-color: var(--theme-bg-circle-button);
-  transition: 0.4s ease left, 0.4s ease;
-  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3) inset;
-}
-#dark:checked + #darkOrLight {
-  background-color: var(--background-color);
-  border: 2px solid var(--theme-bg-circle-button);
-}
-#dark:checked + #darkOrLight::before {
-  top: -1px;
-  left: 46px;
-  background-color: var(--theme-bg-button);
-  transition: 0.4s ease;
-}
-#dark:checked + #darkOrLight::after {
-  left: 58px;
-  background-color: var(--theme-bg-circle-button);
-  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-  background-attachment: fixed;
-  background-position: left;
-  box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;
-}
 /*         Partie Aline page-article       */
 /*     Titre    */
 .bref {
@@ -480,19 +492,19 @@ footer {
   -ms-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
-/*----ProgressBar----*/
+/*----ProgressBar----
 #myProgress {
   width: 100%;
   background-color: lightgrey;
   margin-bottom: 10px;
   border-radius: 10px;
 }
-
 #myBar {
-  width: 66.66%;
+  width: 0%;
   height: 10px;
   background-color:#006b67;
   border-radius: 10px;
 }
+*/
 
 /*----Date----*/

@@ -79,6 +79,7 @@
   }
 }
 @media screen and (max-width: 768px) {
+  /* redimensionnement du bouton pour le thème et de la hauteur de la nav */
   .line {
     width: 30px;
     height: 4px;
@@ -126,6 +127,7 @@
   }
 }
 @media screen and (max-height:862px){
+  /* redimensionnement du bouton pour le thème et de la hauteur de la nav */
   #darkOrLight {
     height: 90%;
     width: 85%;
@@ -153,10 +155,10 @@
     height: 10vh;
   }
 }
-/*progressBar*/
+/*progressBar
 #myProgress {
   height: 15px;
 }
 #myBar {
   height: 15px;
-}
+}*/
