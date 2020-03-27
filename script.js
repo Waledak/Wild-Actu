@@ -1,17 +1,23 @@
 //dark mode
 function switchTheme(event){
   const cards = document.querySelectorAll('.card-container');
+  const imgpro = document.querySelectorAll('.imgprofil');
+  const redaction = document.getElementById('text-article');
   let textTheme = document.getElementById("textTheme");
   if (event.target.checked){
     document.documentElement.setAttribute('data-theme','dark');
     textTheme.style.marginLeft = "0.5rem";
     textTheme.innerHTML = "Light";
     cards.forEach(card => card.style.boxShadow = "none");
+    imgpro.forEach(imgprof => imgprof.style.boxShadow = "none");
+    redaction.style.boxShadow = "none";
   }else{
     document.documentElement.setAttribute('data-theme','light');
     textTheme.style.marginLeft = "2.8rem";
     textTheme.innerHTML = "Dark";
     cards.forEach(card => card.style.boxShadow = "8px 8px 2px 1px rgba(0, 0, 255, 0.2)");
+    imgpro.forEach(imgprof => imgprof.style.boxShadow = "8px 8px 2px 1px rgba(0, 0, 255, 0.2)git");
+    redaction.style.boxShadow = "10px 10px 5px #006b67";
   }
 }
 const getCheckThemeId = document.querySelector("#dark");
