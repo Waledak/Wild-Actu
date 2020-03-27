@@ -9,33 +9,29 @@
     <title>Wild-Actu</title>
   </head>
   <body>
-    <nav class="navbar">
-      <ul>
-        <li class="return-link">
-          <a onclick="history.back()" >➥</a>
-        </li>
-        <li><a href="index.html">Accueil</a></li>
+    <nav class="nav">
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
         <li>
-          <div class="dropdown">
-            <a href="#dropdown-content" title="liste des auteurs">Auteurs</a>
-            <div class="dropdown-content" id="dropdown-content">
-              <ul>
-                <li><a href="page-article.html">Aline</a></li>
-                <li><a href="index.html">Alexandra</a></li>
-                <li>
-                  <a href="https://www.google.com/search?q=redneck+mullet&tbm=isch&client=ubuntu&hs=xeg&hl=fr&ved=2ahUKEwiHg-LHupToAhVG1-AKHespAQUQrNwCKAF6BQgBEJoB&biw=1841&bih=951#imgrc=tngJDs1GABpzKM">
-                    Emeric
-                  </a>
-                </li>
-                <li><a href="index.html">Tanguy</a></li>
-                <li style="border-bottom: none;">
-                  <a href="#dropdown-content-close">✖</a>
-                </li>
-              </ul>
-            </div>
+          <p id="date"></p>
+        </li>
+        <li><a href="./index.html">Accueil</a></li>
+        <li class="linkArticle"><a href="#" >Articles</a></li>
+        <!--<li class="linkName"><a href="#">Tanguy</a></li>
+        <li class="linkName"><a href="#">Aline</a></li>
+        <li class="linkName"><a href="#">Emeric</a></li>
+        <li class="linkName"><a href="#">Alexandra</a></li>-->
+        <li><a href="./contact.html">Contact</a></li>
+        <li>
+          <div id="themeButtonContainer">
+            <input type="checkbox" name="checkbox-theme" id="dark" />
+            <label id="darkOrLight" for="dark"><p id="textTheme">Light</p></label>
           </div>
         </li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <div class="img-accueil">
@@ -48,7 +44,7 @@
         <li class="precisions"><a href="contact.html">Aline</a></li>
       </ul>
       <img class="travaux" src="https://i.goopics.net/Pjxa0.jpg" alt="Photo de chantier"/>
-      <div class="text">
+      <div class="text" id="text-article">
         <p><span>8h45 :</span> six camions d'artisans garés devant la porte,
           bref, y'a des travaux.</p>
         <p><span>9h06 :</span> une tasse de café à la main, le batiment se met à
@@ -68,30 +64,43 @@
     <footer>
       <div>
         <ul class="block textes">
-          <li class="liste"><a href="page-article.html">Articles</a></li>
-          <li class="liste"><a href="contact.html">Contact</a></li>
-          <li class="liste"><a target="_blank" href="https://www.wildcodeschool.com/fr-FR">Wild Code School</a></li>
+          <li class="liste">
+            <a href="page-article.html">
+              Articles
+            </a>
+          </li>
+          <li class="liste">
+            <a href="contact.html">
+              Contact
+            </a>
+          </li>
+          <li class="liste">
+            <a href="https://www.wildcodeschool.com/fr-FR" target="_blank">
+              Wild Code School
+            </a>
+          </li>
         </ul>
       </div>
       <div>
         <ul class="block">
           <li class="liste tilt">
-            <a href="https://fr-fr.facebook.com/" target="_blank>
+            <a href="https://fr-fr.facebook.com/" target="_blank">
               <img class="icone" src="https://i.goopics.net/N1gjP.png" alt="Facebook icon"/>
             </a>
           </li>
           <li class="liste tilt">
-            <a href="https://twitter.com/login?lang=fr" target="_blank>
+            <a href="https://twitter.com/login?lang=fr" target="_blank">
               <img class="icone" src="https://i.goopics.net/GEZla.png" alt="Twitter icon"/>
             </a>
           </li>
           <li class="liste tilt">
-            <a href="https://www.instagram.com/?hl=fr" target="_blank>
+            <a href="https://www.instagram.com/?hl=fr" target="_blank">
               <img class="icone" src="https://i.goopics.net/wPlGY.png" alt="Instagram icon"/>
             </a>
           </li>
         </ul>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

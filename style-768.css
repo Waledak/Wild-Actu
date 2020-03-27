@@ -1,7 +1,44 @@
+:root {
+  --background-color: ghostwhite;
+  --text-color: rgb(30, 30, 30);
+  --navbar-bg-color: #009b95;
+  --theme-txt-button: rgb(30, 30, 30);
+  --theme-bg-circle-button: ghostwhite;
+  --theme-bg-button: #009b95;
+  --theme-border-button: rgb(222, 238, 240);
+  --bg-footer: #009b95;
+  --h1-color: #08a6a0;
+  --img-background-title: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+    url(https://i.goopics.net/dKqxa.jpg);
+    --bg-color-bref: #08a6a0;
+}
+/* variables pour le dark */
+[data-theme="dark"]{
+  --background-color:rgb(66, 66, 66);
+  --text-color :ghostwhite;
+  --navbar-bg-color: #00302e;
+  --theme-txt-button: ghostwhite ;
+  --theme-bg-circle-button:  rgb(255, 255, 86);
+  --theme-bg-button: rgb(66, 66, 66);
+  --theme-border-button:yellow;
+  --bg-footer:#00302e;
+  --h1-color:#009b95;
+  --img-background-title:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://i.goopics.net/dKqxa.jpg);
+  --bg-card-container: #D6D1D1;
+  --bg-article: #D6D1D1;
+  --infos-font-color: #D6D1D1;
+  --bg-color-bref: #009b95;
+}
 @media screen and (min-width: 768px) {
   .card-container {
     width: calc(50% - 40px * 2);
     margin: 40px 20px;
+  }
+  .img-accueil h1{
+    font-size: 6rem;
   }
   .container,
   .bref,
@@ -25,6 +62,9 @@
     border-radius: 5px;
   }
   /* Partie responsive tablette Alex */
+  form{
+    width: 60%;
+  }
   .imgprofil {
     width: 250px;
     height: 250px;
@@ -34,9 +74,6 @@
   }
   .textapropos {
     font-size: 20px;
-  }
-  form {
-    width: 50%;
   }
   input,
   textarea {
@@ -53,3 +90,87 @@
     height: 35px;
   }
 }
+@media screen and (max-width: 768px) {
+  /* redimensionnement du bouton pour le thème et de la hauteur de la nav */
+  .line {
+    width: 30px;
+    height: 4px;
+    background: var(--text-color);
+    margin: 5px;
+    border-radius: 10px;
+  }
+  .nav {
+    position: fixed;
+    height: 9vh;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    transition: all 0.5s ease;
+  }
+  .hamburger-click {
+    transform: rotateZ(-15deg);
+  }
+  .nav-links {
+    background: var(--navbar-bg-color);
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    clip-path: circle(90px at 100% -30%);
+    -webkit-clip-path: circle(90px at 100% -30%);
+    transition: all 0.6s ease-out !important;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(135% at 100% -10%);
+    -webkit-clip-path: circle(135% at 100% -10%);
+    pointer-events: all;
+  }
+  .nav-links li a, .nav-links li p {
+    font-size: 1.6rem;
+  }
+  #textTheme{
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-height:862px){
+  /* redimensionnement du bouton pour le thème et de la hauteur de la nav */
+  #darkOrLight {
+    height: 90%;
+    width: 85%;
+  }
+  #textTheme{
+    font-size: 1rem;
+  }
+  #darkOrLight::before,
+  #darkOrLight::after {
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  }
+  #darkOrLight::before {
+    left: -25px;
+  }
+  #darkOrLight::after {
+    left: 10px;
+  }
+  #dark:checked + #darkOrLight::before {
+    top: 5px;
+    left: 47px;
+  }
+  .nav{
+    height: 10vh;
+  }
+}
+/*progressBar
+#myProgress {
+  height: 15px;
+}
+#myBar {
+  height: 15px;
+}*/

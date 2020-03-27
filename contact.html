@@ -6,46 +6,38 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style-768.css" />
     <link rel="stylesheet" href="style-992.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script src="script.js"></script> -->
     <title>Wild-Actu</title>
   </head>
   <body>
-    <nav class="navbar">
-      <ul>
-        <li class="return-link">
-          <a title="Retour" onclick="history.back()">➥</a>
-        </li>
+    <nav class="nav">
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
         <li>
-          <a href="index.html">Accueil</a>
+          <p id="date"></p>
         </li>
+        <li><a href="index.html">Accueil</a></li>
+        <li class="linkArticle"><a href="./page-article.html" >Articles</a></li>
+        <!--<li class="linkName"><a href="#">Tanguy</a></li>
+        <li class="linkName"><a href="#">Aline</a></li>
+        <li class="linkName"><a href="#">Emeric</a></li>
+        <li class="linkName"><a href="#">Alexandra</a></li>-->
+        <li><a href="./contact.html">Contact</a></li>
         <li>
-          <div class="dropdown">
-            <a href="#dropdown-content" title="liste des auteurs">Auteurs</a>
-            <div class="dropdown-content" id="dropdown-content">
-              <ul>
-                <li><a href="page-article.html">Aline</a></li>
-                <li><a href="index.html">Alexandra</a></li>
-                <li>
-                  <a
-                    href="https://www.google.com/search?q=redneck+mullet&tbm=isch&client=ubuntu&hs=xeg&hl=fr&ved=2ahUKEwiHg-LHupToAhVG1-AKHespAQUQrNwCKAF6BQgBEJoB&biw=1841&bih=951#imgrc=tngJDs1GABpzKM"
-                  >
-                    Emeric
-                  </a>
-                </li>
-                <li><a href="index.html">Tanguy</a></li>
-                <li style="border-bottom: none;">
-                  <a href="#dropdown-content-close">✖</a>
-                </li>
-              </ul>
-            </div>
+          <div id="themeButtonContainer">
+            <input type="checkbox" name="checkbox-theme" id="dark" />
+            <label id="darkOrLight" for="dark"><p id="textTheme">Dark</p></label>
           </div>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
         </li>
       </ul>
     </nav>
-    <div class="img-accueil">
-      <h1>A propos</h1>
+    <div class="img-accueil" >
+      <h1 class="shadh1">Contact</h1>
     </div>
     <div class="apropos">
       <article>
@@ -56,7 +48,7 @@
               alt="photo Aline"
               class="imgprofil"
           /></a>
-          <a href="page-article.html" target="_blank"><span>Aline</span></a>
+          <a href="page-article.html" target="_blank"><span class="nomprofil">Aline</span></a>
         </div>
         <div class="container-img">
           <a href="https://i.goopics.net/dKwYd.jpg" target="_blank"
@@ -66,7 +58,7 @@
               class="imgprofil"
           /></a>
           <a href="https://i.goopics.net/dKwYd.jpg" target="_blank"
-            ><span>Tanguy</span></a
+            ><span class="nomprofil">Tanguy</span></a
           >
         </div>
         <div class="container-img">
@@ -77,7 +69,7 @@
               class="imgprofil"
           /></a>
           <a href="https://i.goopics.net/aKGZA.jpeg" target="_blank"
-            ><span>Emeric</span></a
+            ><span class="nomprofil">Emeric</span></a
           >
         </div>
         <div class="container-img">
@@ -88,7 +80,7 @@
               class="imgprofil"
           /></a>
           <a href="https://i.goopics.net/VDRw1.jpg" target="_blank"
-            ><span>Alexandra</span></a
+            ><span class="nomprofil">Alexandra</span></a
           >
         </div>
       </article>
@@ -107,22 +99,34 @@
       </div>
     </div>
     <hr />
-    <h1 class="titrecontact">Contactez-nous</h1>
-    <form>
-      <div class="formulaire">
-        <input type="text" placeholder="Votre nom" />
-        <input type="email" placeholder="Votre email" />
-        <textarea placeholder="Votre message"></textarea>
-        <button type="submit">Envoyer</button>
+      <div class="box">
+        <h1 class="titrecontact">Contactez-nous</h1>
+        <form id="contact">
+          <div>
+            <input type="text" id="name" name="Nom" required=""/>
+            <label>Name</label>
+          </div>
+          <div>
+            <input type="email" id="" name="Email" required/>
+            <label>Email</label>
+          </div>
+          <div>
+            <textarea name="Message" required></textarea>
+            <label>Message</label>
+          </div>
+          <input type="submit" id="submitBtn" value="Envoyer" class="bouton">
+          </div>
+        </form>
       </div>
-    </form>
     <footer>
       <div>
         <ul class="block textes">
           <li class="liste"><a href="page-article.html">Articles</a></li>
           <li class="liste"><a href="contact.html">Contact</a></li>
           <li class="liste">
-            <a target="_blank" href="https://www.wildcodeschool.com/fr-FR">Wild Code School</a>
+            <a target="_blank" href="https://www.wildcodeschool.com/fr-FR"
+              >Wild Code School</a
+            >
           </li>
         </ul>
       </div>
@@ -146,5 +150,7 @@
         </ul>
       </div>
     </footer>
+    <script src="checkform.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

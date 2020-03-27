@@ -1,69 +1,188 @@
 /* link pour les fonts */
-@import url("https://fonts.googleapis.com/css?family=Forum|Luckiest+Guy&display=swap");
-/* régle pour un effet smooth avec les ancres */
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,700");
+/* variables le mode light */
+:root {
+  --background-color: ghostwhite;
+  --text-color: rgb(30, 30, 30);
+  --navbar-bg-color: #009b95;
+  --theme-txt-button: rgb(30, 30, 30);
+  --theme-bg-circle-button: ghostwhite;
+  --theme-bg-button: #009b95;
+  --theme-border-button: rgb(222, 238, 240);
+  --bg-footer: #009b95;
+  --h1-color: #08a6a0;
+  --img-background-title: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+    url(https://i.goopics.net/dKqxa.jpg);
+  --bg-color-bref: #08a6a0;
+  --h1-txt-shadow : 0 0 4px black;
+}
+/* variables pour le dark */
+[data-theme="dark"] {
+  --background-color: rgb(66, 66, 66);
+  --text-color: ghostwhite;
+  --navbar-bg-color: #00302e;
+  --theme-txt-button: ghostwhite;
+  --theme-bg-circle-button: rgb(255, 255, 86);
+  --theme-bg-button: rgb(66, 66, 66);
+  --theme-border-button: yellow;
+  --bg-footer: #00302e;
+  --h1-color: #009b95;
+  --img-background-title: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(https://i.goopics.net/dKqxa.jpg);
+  --bg-card-container: #d6d1d1;
+  --bg-article: #d6d1d1;
+  --infos-font-color: #d6d1d1;
+  --bg-color-bref: #009b95;
+  --h1-txt-shadow:none;
+}
+/* ajoute un effet smooth avec les ancres et une animation sur tout changement */
 * {
   scroll-behavior: smooth;
   transition: all ease 0.3s;
 }
-/* modification du body, 0 marge et background antiquewhite  */
+/* modification du body de la page */
 body {
   box-sizing: border-box;
   margin: 0;
-  background-color: rgb(255, 237, 200);
+  padding: 0;
+  background-color: var(--background-color);
+  overflow-x: hidden;
 }
-/* Partie Alexandra : A propos et contact */
-/* Partie à propos */
-.titreapropos {
-  font-family: "Luckiest Guy", cursive;
-  letter-spacing: 4px;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 95px;
-  color: #006b67;
+/* partie concernant la navbar commune à toute les pages */
+/* la nav est conçue en Desktop frst pour des raisons de facilité */
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+  top: 0;
+  background: var(--navbar-bg-color);
+  z-index: 3;
 }
-.titrecontact {
-  font-family: "Luckiest Guy", cursive;
-  letter-spacing: 4px;
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  color: #006b67;
+.linkName {
+  display: none;
 }
-/* modification du body, 0 marge et background antiquewhite  */
-body {
-  box-sizing: border-box;
-  margin: 0;
-  background-color: floralwhite;
+.linkNameOpen {
+  display: block;
 }
-/* Partie de tanguy V.Mobile début */
+.nav-links {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 0 auto;
+  width: 100%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.nav-links li a,
+.nav-links li p {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+#themeButtonContainer {
+  width: 105px;
+  height: 50px;
+}
+#darkOrLight {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: 60px;
+  cursor: pointer;
+  background-color: var(--theme-bg-button);
+  overflow: hidden;
+  transition: 0.4s ease;
+  border: 2px solid var(--theme-border-button);
+}
+#textTheme {
+  cursor: pointer;
+  color: var(--theme-txt-button);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-left: 2.8rem;
+}
+#dark {
+  display: none;
+}
+#darkOrLight::before,
+#darkOrLight::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+#darkOrLight::before {
+  left: -34px;
+  z-index: 1;
+  transition: 0.4s ease left, 0.4s ease top;
+}
+#darkOrLight::after {
+  left: 8px;
+  background-color: var(--theme-bg-circle-button);
+  transition: 0.4s ease left, 0.4s ease;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3) inset;
+}
+#dark:checked + #darkOrLight {
+  background-color: var(--background-color);
+  border: 2px solid var(--theme-bg-circle-button);
+}
+#dark:checked + #darkOrLight::before {
+  top: -1px;
+  left: 46px;
+  background-color: var(--theme-bg-button);
+  transition: 0.4s ease;
+}
+#dark:checked + #darkOrLight::after {
+  left: 58px;
+  background-color: var(--theme-bg-circle-button);
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-attachment: fixed;
+  background-position: left;
+  box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.3) inset;
+}
+/* fin de la partie sur la nav et le bouton pour modifier le thème */
 /* image d'accueil (la même pour toute les pages) */
 .img-accueil {
+  margin-top: 4vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)),
-    url(https://i.goopics.net/dKqxa.jpg);
-  background-size: cover;
-  -webkit-background-size: cover;
+  background: var(--img-background-title);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   background-position: center right;
   text-align: center;
-  color: #08a6a0;
+  color: var(--h1-color);
   font-size: 6vh;
-  position: relative;
-  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
   margin-bottom: 20px;
-  margin-top: 70px;
+  z-index: 0;
+  transform: rotateZ(2deg) skew(2deg);
 }
-/* text superposant l'image d'acceuil */
+/* text superposant l'image d'accueil */
 .img-accueil h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  align-self: center;
+  vertical-align: middle;
   margin: 0;
-  font-family: Luckiest Guy, cursive;
-  letter-spacing: 10px;
-  text-shadow: 0 0 4px black;
+  font-size: 4rem;
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 5px;
+  text-shadow:var(--h1-txt-shadow);
+  transform: rotateZ(-2deg) skew(-2deg);
 }
 /* création d'une classe container avec les règles flex */
 .container {
@@ -73,7 +192,27 @@ body {
   justify-content: start;
   flex-wrap: wrap;
 }
+.container h2 {
+  color: black;
+}
 /* Partie Alexandra*/
+/* Partie Alexandra : A propos et contact */
+/* Partie à propos */
+.titreapropos {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 95px;
+  color: var(--h1-color);
+}
+.titrecontact {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  color: var(--h1-color);
+}
 /* Partie à propos */
 article {
   flex-wrap: wrap;
@@ -89,9 +228,9 @@ article {
   align-items: center;
   margin-bottom: 30px;
 }
-span {
+.nomprofil {
   font-size: 1.5rem;
-  color: #008681;
+  color: var(--h1-color);
   padding-top: 20px;
 }
 .imgprofil {
@@ -110,64 +249,92 @@ span:hover {
   color: rgb(247, 148, 0);
 }
 .textapropos {
-  font-family: "Forum", cursive;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   justify-content: center;
   margin: 10px;
   text-align: justify;
   width: 100%;
   font-size: 1.5rem;
+  color: var(--text-color);
 }
 .apropos {
   margin-bottom: 50px;
 }
 .description {
-  font-family: "Forum", cursive;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   justify-content: center;
   text-align: center;
   margin-top: 20px;
 }
 /* Partie formulaire contact */
 form {
-  padding: 10px;
-  width: 90%;
   margin: auto;
-  border-radius: 15px;
+  width: 85%;
 }
-input,
-textarea {
-  display: flex;
-  border-radius: 12px;
-  padding-left: 6px;
+.box {
+  padding: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Forum", cursive;
+  color: var(--h1-color);
+}
+.box input {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+.box textarea {
+  height: 80px;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+.box input,
+.box textarea {
   width: 100%;
-  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
-  background-color: #f1f8f9;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #999;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.box input[type="submit"] {
+  border-bottom: none;
+  cursor: pointer;
+  background: rgb(0, 107, 103);
+  color: white;
+  margin-bottom: 0;
   font-family: "Forum", cursive;
+  font-size: 20px;
+  width: 30%;
+}
+.box form div {
+  position: relative;
+}
+.box form div label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: var(--h1-color);
+  transition: 0.5s;
+  pointer-events: none;
+}
+.box input:focus ~ label,
+.box textarea:focus ~ label,
+.box input:valid ~ label,
+.box textarea:valid ~ label {
+  top: -12px;
+  left: 0;
+  color: var(--h1-color);
   font-size: 15px;
-  color: #003a38;
-  border: 1px solid black;
-  margin-top: 12px;
+  font-weight: bold;
 }
-input {
-  height: 25px;
-}
-textarea {
-  height: 60px;
-  padding-top: 4px;
-}
-button {
-  border: 1px solid;
-  border-radius: 12px;
-  box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
-  background-color: #f1f8f9;
-  height: 30px;
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 15px;
-  font-family: "Forum", cursive;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 12px;
-  align-items: flex-end;
+.box input:focus,
+.box textarea:focus,
+.box input:valid,
+.box textarea:valid {
+  border-bottom: 2px solid rgb(0, 107, 103);
 }
 /* Fin partie Alexandra */
 /* container d'une card */
@@ -176,11 +343,8 @@ button {
   border-radius: 1px 45px 1px 45px;
   width: 90%;
   margin: 20px auto;
-  background-color: ghostwhite;
+  background-color: var(--bg-card-container);
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
-}
-.card-container:hover {
-  transform: rotate(1deg);
 }
 /* image des card */
 .card-img {
@@ -188,15 +352,18 @@ button {
   border-radius: 1px 45px 0px 0px;
   width: 100%;
 }
+.card-img:hover {
+  filter: blur(5px);
+}
 /* container du text des card */
 .card-text-container {
   margin: auto 5%;
 }
 /* concerne la description des card */
 .card-description {
-  color: slategrey;
+  color: grey;
   font-size: 1.5rem;
-  font-family: Forum, cursive;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin: 0;
   border-bottom: grey 1px dotted;
 }
@@ -204,7 +371,7 @@ button {
 .card-text-container h2 {
   border-bottom: grey solid 1px;
   padding-bottom: 5px;
-  font-family: Luckiest Guy, cursive;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 4px;
   font-size: 1.7rem;
 }
@@ -216,7 +383,7 @@ button {
   padding-left: 0;
   list-style: none;
   color: grey;
-  font-family: Forum, cursive;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 1.3rem;
 }
 /* suppression de la couleur par défaut des lien */
@@ -226,79 +393,11 @@ button {
 }
 /* Partie de tanguy V.Mobile fin */
 /* Partie Emeric navbar */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99999;
-  background-color: rgba(0, 107, 103, 0.8);
-  height: 70px;
-  max-height: 70px;
-}
-.navbar ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.return-link {
-  transform: rotate(180deg);
-  outline: none;
-}
-.navbar ul li a {
-  color: ghostwhite;
-  text-decoration: none;
-  font-family: Forum, cursive;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.navbar ul li {
-  padding-top: calc(70px - 1.5rem * 2);
-  cursor: pointer;
-  outline: none;
-}
-.navbar ul li a {
-  padding: calc(70px - 1.5rem * 2) 0;
-}
-.navbar ul li a:hover {
-  color: rgb(247, 148, 0);
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
-  padding-bottom: calc(70px - 1.5rem * 2);
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(0, 107, 103, 0.8);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 0 16px 16px;
-  margin-top: calc(35px - 0.85rem);
-  flex-direction: column;
-  border-radius: 0px 0px 5px 5px;
-}
-.dropdown-content li {
-  border-bottom: ghostwhite solid 1px;
-  width: 100%;
-  height: 35px;
-}
-.dropdown-content li:hover {
-  border-bottom: rgb(247, 148, 0) solid 1px;
-}
-.dropdown #dropdown-content:target {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
 /*         Partie Aline page-article       */
 /*     Titre    */
 .bref {
-  background-color: #20b5af;
-  font-family: "Luckiest Guy";
+  background-color: var(--bg-color-bref);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: white;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
@@ -319,7 +418,7 @@ button {
 }
 .precisions {
   list-style: none;
-  font-family: "Forum";
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: black;
   border: 1px solid #006b67;
   border-radius: 4px;
@@ -327,9 +426,14 @@ button {
   margin-left: 10px;
   margin-top: 0;
   margin-bottom: 0;
+  color: var(--infos-font-color);
 }
 .precisions a:visited {
   color: black;
+  color: var(--infos-font-color);
+}
+.precisions a {
+  color: var(--infos-font-color);
 }
 /*   Photo   */
 .travaux {
@@ -339,29 +443,27 @@ button {
 }
 /*   Article   */
 .text {
+  background-color: var(--bg-article);
   width: 95%;
   padding: 0.5rem;
   border: 1px solid #006b67;
   border-radius: 0 20px 20px 20px;
   box-shadow: 10px 10px 5px #006b67;
-  font-family: "Forum";
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 20px;
   margin-top: 2%;
   margin-bottom: 10px;
   margin-right: 10px;
 }
-span {
-  font-weight: bold;
-}
 /* Partie de tanguy V.Mobile fin */
 /*debut partie footer*/
 footer {
-  background-color: rgb(0, 107, 103);
+  background-color: var(--bg-footer);
   display: flex;
   width: 100%;
   margin-top: 90px;
   justify-content: space-between;
-  font-family: "Forum", cursive;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 1.5rem;
 }
 .block {
@@ -406,3 +508,119 @@ footer {
   -ms-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
+/*snippet cartes articles*/
+.snip1585 {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  margin: 0px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  border-radius: 1px 45px 0 0;
+}
+.snip1585 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+  cursor: pointer;
+}
+.snip1585:before,
+.snip1585:after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 50px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 50px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.snip1585:before {
+  -webkit-transform: scaleY(2);
+  transform: scaleY(2);
+}
+.snip1585:after {
+  -webkit-transform: scaleY(2);
+  transform: scaleY(2);
+}
+.snip1585 img {
+  vertical-align: top;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.snip1585 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+.snip1585 h3 {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.snip1585 h3 span {
+  display: block;
+  font-weight: 700;
+}
+.snip1585 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.snip1585:hover > img {
+  opacity: 0.9;
+  filter: blur(3px);
+}
+.snip1585:hover:before,
+.snip1585:hover:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.snip1585:hover figcaption {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+/*----ProgressBar----
+#myProgress {
+  width: 100%;
+  background-color: lightgrey;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+#myBar {
+  width: 0%;
+  height: 10px;
+  background-color:#006b67;
+  border-radius: 10px;
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+*/
+
+/*----Date----*/
