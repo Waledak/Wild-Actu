@@ -13,6 +13,7 @@
       rgba(0, 0, 0, 0.05)
     ),
     url(https://i.goopics.net/dKqxa.jpg);
+  --bg-color-bref: #08a6a0;
 }
 /* variables pour le dark */
 [data-theme="dark"] {
@@ -23,19 +24,21 @@
   --theme-bg-circle-button: rgb(255, 255, 86);
   --theme-bg-button: rgb(66, 66, 66);
   --theme-border-button: yellow;
-  --bg-footer: #005e5b;
   --h1-color: #08a6a0;
   --img-background-title: linear-gradient(
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
     url(https://i.goopics.net/dKqxa.jpg);
-  --bg-footer:#00302e;
+  --bg-footer: #00302e;
 }
 @media screen and (min-width: 992px) {
   .card-container {
     width: calc(50% - 40px * 2);
     margin: 40px 20px;
+  }
+  form {
+    width: 50%;
   }
   .nav {
     height: 8vh;

@@ -153,7 +153,7 @@ body {
 /* fin de la partie sur la nav et le bouton pour modifier le thème */
 /* image d'accueil (la même pour toute les pages) */
 .img-accueil {
-  margin-top: 6.1vh;
+  margin-top: 4vh;
   width: 100%;
   background: var(--img-background-title);
   background-repeat: no-repeat;
@@ -166,10 +166,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 60vh;
   margin-bottom: 20px;
   z-index: 0;
-  transform: rotateZ(1deg) skew(1deg);
+  transform: rotateZ(2deg) skew(2deg);
 }
 /* text superposant l'image d'accueil */
 .img-accueil h1 {
@@ -180,7 +180,7 @@ body {
   font-family: "Comfortaa", cursive;
   letter-spacing: 5px;
   text-shadow: 0 0 4px black;
-  transform: rotateZ(-1deg) skew(-1deg);
+  transform: rotateZ(-2deg) skew(-2deg);
 }
 /* création d'une classe container avec les règles flex */
 .container {
@@ -267,7 +267,7 @@ span:hover {
 /* Partie formulaire contact */
 form {
   margin: auto;
-  width: 50%;
+  width: 85%;
 }
 .box {
   padding: 40px;
@@ -523,14 +523,12 @@ footer {
   width: 100%;
   border-radius: 1px 45px 0 0;
 }
-
 .snip1585 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.45s ease;
   transition: all 0.45s ease;
 }
-
 .snip1585:before,
 .snip1585:after {
   background-color: rgba(0, 0, 0, 0.5);
@@ -547,23 +545,19 @@ footer {
   z-index: 1;
   opacity: 0;
 }
-
 .snip1585:before {
   -webkit-transform: scaleY(2);
   transform: scaleY(2);
 }
-
 .snip1585:after {
   -webkit-transform: scaleY(2);
   transform: scaleY(2);
 }
-
 .snip1585 img {
   vertical-align: top;
   width: 100%;
   backface-visibility: hidden;
 }
-
 .snip1585 figcaption {
   position: absolute;
   top: 0;
@@ -581,7 +575,6 @@ footer {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
-
 .snip1585 h3 {
   font-size: 1em;
   font-weight: 400;
@@ -589,12 +582,10 @@ footer {
   margin: 0;
   text-transform: uppercase;
 }
-
 .snip1585 h3 span {
   display: block;
   font-weight: 700;
 }
-
 .snip1585 a {
   position: absolute;
   top: 0;
@@ -603,25 +594,21 @@ footer {
   right: 0;
   z-index: 3;
 }
-
 .snip1585:hover > img {
   opacity: 0.9;
   filter: blur(3px);
 }
-
 .snip1585:hover:before,
 .snip1585:hover:after {
   -webkit-transform: scale(1);
   transform: scale(1);
   opacity: 1;
 }
-
 .snip1585:hover figcaption {
   opacity: 1;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
-
 /*----ProgressBar----
 #myProgress {
   width: 100%;
