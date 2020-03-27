@@ -149,7 +149,7 @@ body {
 /* fin de la partie sur la nav et le bouton pour modifier le thème */
 /* image d'accueil (la même pour toute les pages) */
 .img-accueil {
-  margin-top: 6.1vh;
+  margin-top: 4vh;
   width: 100%;
   background: var(--img-background-title);
   background-repeat: no-repeat;
@@ -162,10 +162,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 60vh;
   margin-bottom: 20px;
   z-index: 0;
-  transform: rotateZ(1deg) skew(1deg);
+  transform: rotateZ(2deg) skew(2deg);
 }
 /* text superposant l'image d'accueil */
 .img-accueil h1 {
@@ -176,7 +176,7 @@ body {
   font-family: 'Comfortaa', cursive;
   letter-spacing: 5px;
   text-shadow: 0 0 4px black;
-  transform: rotateZ(-1deg) skew(-1deg);
+  transform: rotateZ(-2deg) skew(-2deg);
 }
 /* création d'une classe container avec les règles flex */
 .container {
@@ -263,6 +263,7 @@ span:hover {
 /* Partie formulaire contact */
 form {
   margin: auto;
+  width: 85%;
 }
 .box {
   width: 100%;
