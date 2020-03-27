@@ -1,6 +1,4 @@
 :root {
-  /*modifs emeric*/
-  /*--background-color:rgb(255, 237, 200);*/
   --background-color: ghostwhite;
   --text-color: rgb(30, 30, 30);
   --navbar-bg-color: #009b95;
@@ -8,16 +6,38 @@
   --theme-bg-circle-button: ghostwhite;
   --theme-bg-button: #009b95;
   --theme-border-button: rgb(222, 238, 240);
+  --bg-footer: #009b95;
+  --h1-color: #08a6a0;
+  --img-background-title: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+    url(https://i.goopics.net/dKqxa.jpg);
 }
+/* variables pour le dark */
 [data-theme="dark"] {
   --background-color: rgb(66, 66, 66);
   --text-color: ghostwhite;
+<<<<<<< HEAD
+  --navbar-bg-color: #005e5b;
+=======
   --navbar-bg-color: #00302e;
+>>>>>>> 9cdd131607af9a78f051f197a05ef16800a46378
   --theme-txt-button: ghostwhite;
   --theme-bg-circle-button: rgb(255, 255, 86);
   --theme-bg-button: rgb(66, 66, 66);
   --theme-border-button: yellow;
+<<<<<<< HEAD
+  --bg-footer: #005e5b;
+  --h1-color: #08a6a0;
+  --img-background-title: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(https://i.goopics.net/dKqxa.jpg);
+=======
   --bg-footer:#00302e;
+>>>>>>> 9cdd131607af9a78f051f197a05ef16800a46378
 }
 @media screen and (min-width: 992px) {
   .card-container {
@@ -45,13 +65,14 @@
   }
 }
 @media screen and (min-width: 1025px) {
-  .nav{
+  .nav {
     max-height: 8vh;
   }
-  .nav-links li a, .nav-links li p {
+  .nav-links li a,
+  .nav-links li p {
     font-size: 1.3rem;
   }
-  .container{
+  .container {
     width: 70%;
   }
   .card-container {
@@ -110,13 +131,12 @@
     text-align: center;
   }
 }
-
-@media screen and (min-width:992px) and (min-height:1300px){
+@media screen and (min-width: 992px) and (min-height: 1300px) {
   #darkOrLight {
     height: 95%;
     width: 100%;
   }
-  #textTheme{
+  #textTheme {
     font-size: 1rem;
   }
   #darkOrLight::before,
@@ -135,7 +155,7 @@
     top: -1px;
     left: 46px;
   }
-  .nav{
+  .nav {
     height: 10vh;
   }
   .card-container {
