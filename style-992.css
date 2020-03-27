@@ -18,16 +18,11 @@
 [data-theme="dark"] {
   --background-color: rgb(66, 66, 66);
   --text-color: ghostwhite;
-<<<<<<< HEAD
-  --navbar-bg-color: #005e5b;
-=======
   --navbar-bg-color: #00302e;
->>>>>>> 9cdd131607af9a78f051f197a05ef16800a46378
   --theme-txt-button: ghostwhite;
   --theme-bg-circle-button: rgb(255, 255, 86);
   --theme-bg-button: rgb(66, 66, 66);
   --theme-border-button: yellow;
-<<<<<<< HEAD
   --bg-footer: #005e5b;
   --h1-color: #08a6a0;
   --img-background-title: linear-gradient(
@@ -35,9 +30,7 @@
       rgba(0, 0, 0, 0.2)
     ),
     url(https://i.goopics.net/dKqxa.jpg);
-=======
   --bg-footer:#00302e;
->>>>>>> 9cdd131607af9a78f051f197a05ef16800a46378
 }
 @media screen and (min-width: 992px) {
   .card-container {
