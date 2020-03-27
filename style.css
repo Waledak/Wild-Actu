@@ -18,7 +18,8 @@
       rgba(0, 0, 0, 0.05)
     ),
     url(https://i.goopics.net/dKqxa.jpg);
-    --bg-color-bref: #08a6a0;
+  --bg-color-bref: #08a6a0;
+  --h1-txt-shadow : 0 0 4px black;
 }
 /* variables pour le dark */
 [data-theme="dark"]{
@@ -36,6 +37,7 @@
   --bg-article: #D6D1D1;
   --infos-font-color: #D6D1D1;
   --bg-color-bref: #009b95;
+  --h1-txt-shadow:none;
 }
 /* ajoute un effet smooth avec les ancres et une animation sur tout changement */
 * {
@@ -175,7 +177,7 @@ body {
   font-size: 4rem;
   font-family: 'Comfortaa', cursive;
   letter-spacing: 5px;
-  text-shadow: 0 0 4px black;
+  text-shadow:var(--h1-txt-shadow);
   transform: rotateZ(-2deg) skew(-2deg);
 }
 /* création d'une classe container avec les règles flex */
