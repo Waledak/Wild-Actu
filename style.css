@@ -226,7 +226,7 @@ article {
   align-items: center;
   margin-bottom: 30px;
 }
-span {
+.nomprofil {
   font-size: 1.5rem;
   color: var(--h1-color);
   padding-top: 20px;
