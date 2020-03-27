@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style-768.css" />
     <link rel="stylesheet" href="style-992.css" />
+    <!-- <script src="script.js"></script> -->
     <title>Wild-Actu</title>
   </head>
   <body>
@@ -19,17 +20,17 @@
         <li>
           <p id="date"></p>
         </li>
-        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#accueil">Accueil</a></li>
         <li class="linkArticle"><a href="./page-article.html" >Articles</a></li>
         <!--<li class="linkName"><a href="#">Tanguy</a></li>
         <li class="linkName"><a href="#">Aline</a></li>
         <li class="linkName"><a href="#">Emeric</a></li>
         <li class="linkName"><a href="#">Alexandra</a></li>-->
-        <li><a href="#">Contact</a></li>
+        <li><a href="./contact.html">Contact</a></li>
         <li>
           <div id="themeButtonContainer">
             <input type="checkbox" name="checkbox-theme" id="dark" />
-            <label id="darkOrLight" for="dark"><p id="textTheme">Light</p></label>
+            <label id="darkOrLight" for="dark"><p id="textTheme">Dark</p></label>
           </div>
         </li>
       </ul>
@@ -96,25 +97,23 @@
         </p>
       </div>
     </div>
-    <div class="box">
-      <h1 class="titrecontact">Contactez-nous</h1>
-        <form>
-          <div id="myProgress">
-            <div id="myBar"></div>
-          </div>
+    <hr />
+      <div class="box">
+        <h1 class="titrecontact">Contactez-nous</h1>
+        <form id="contact">
           <div>
-            <input type="text" name="champ1" required=""/>
+            <input type="text" id="name" name="Nom"/>
             <label>Name</label>
           </div>
           <div>
-            <input type="email" name="champ2" required=""/>
+            <input type="email" id="" name="Email"/>
             <label>Email</label>
           </div>
           <div>
-            <textarea name="champ3" required=""></textarea>
+            <textarea name="Message"></textarea>
             <label>Message</label>
           </div>
-          <input type="submit" name="" value="Envoyer">
+          <input type="submit" id="submitBtn" value="Envoyer" class="bouton">
           </div>
         </form>
       </div>
@@ -150,6 +149,7 @@
         </ul>
       </div>
     </footer>
-  <script src="./script.js"></script>
+    <script src="checkform.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

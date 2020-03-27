@@ -1,4 +1,4 @@
-:root{
+:root {
   /*modifs emeric*/
   /*--background-color:rgb(255, 237, 200);*/
   --background-color:ghostwhite;
@@ -19,6 +19,31 @@
   --theme-bg-button: rgb(66, 66, 66);
   --theme-border-button:yellow;
   --bg-footer:#005e5b;
+}
+@media screen and (min-width: 992px) {
+  .card-container {
+    width: calc(50% - 40px * 2);
+    margin: 40px 20px;
+  }
+  .nav {
+    height: 8vh;
+    background: var(--navbar-bg-color);
+  }
+  .linkName {
+    display: none;
+  }
+  .linkNameOpen {
+    display: block;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 0 auto;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1025px) {
   .nav{
@@ -85,7 +110,6 @@
     text-align: center;
   }
 }
-
 @media screen and (min-width:992px) and (min-height:1300px){
   #darkOrLight {
     height: 95%;
