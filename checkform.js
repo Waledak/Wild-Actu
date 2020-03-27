@@ -16,15 +16,19 @@ function check(e) {
     if (inputToTest.value === "") {
       checkCount++;
       e.preventDefault();
-      swal(`Erreur : le champ ${inputToTest.name} n'a pas été rempli`);
+      swal({
+        title: "Erreur !",
+        text: "Un ou plusieurs champ(s) n'a pas été rempli !",
+        icon: "error"
+      });
     }
   }
   if (checkCount === 0) {
     e.preventDefault();
     swal({
       title: "Good job!",
-      text: "You clicked the button!",
-      icon: "success",
+      text: "Votre message a été envoyé !",
+      icon: "success"
     });
   }
 }

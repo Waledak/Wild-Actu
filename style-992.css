@@ -13,31 +13,31 @@
       rgba(0, 0, 0, 0.05)
     ),
     url(https://i.goopics.net/dKqxa.jpg);
-    --bg-color-bref: #08a6a0;
+  --bg-color-bref: #08a6a0;
 }
 /* variables pour le dark */
-[data-theme="dark"]{
-  --background-color:rgb(66, 66, 66);
-  --text-color :ghostwhite;
+[data-theme="dark"] {
+  --background-color: rgb(66, 66, 66);
+  --text-color: ghostwhite;
   --navbar-bg-color: #00302e;
-  --theme-txt-button: ghostwhite ;
-  --theme-bg-circle-button:  rgb(255, 255, 86);
+  --theme-txt-button: ghostwhite;
+  --theme-bg-circle-button: rgb(255, 255, 86);
   --theme-bg-button: rgb(66, 66, 66);
-  --theme-border-button:yellow;
-  --bg-footer:#00302e;
-  --h1-color:#009b95;
-  --img-background-title:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://i.goopics.net/dKqxa.jpg);
-  --bg-card-container: #D6D1D1;
-  --bg-article: #D6D1D1;
-  --infos-font-color: #D6D1D1;
-  --bg-color-bref: #009b95;
+  --theme-border-button: yellow;
+  --h1-color: #08a6a0;
+  --img-background-title: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(https://i.goopics.net/dKqxa.jpg);
+  --bg-footer: #00302e;
 }
 @media screen and (min-width: 992px) {
   .card-container {
     width: calc(50% - 40px * 2);
     margin: 40px 20px;
   }
-  form{
+  form {
     width: 50%;
   }
   .nav {
@@ -126,7 +126,7 @@
     text-align: center;
   }
 }
-@media screen and (min-width:992px) and (min-height:1300px){
+@media screen and (min-width: 992px) and (min-height: 1300px) {
   #darkOrLight {
     height: 95%;
     width: 100%;

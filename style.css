@@ -22,20 +22,24 @@
   --h1-txt-shadow : 0 0 4px black;
 }
 /* variables pour le dark */
-[data-theme="dark"]{
-  --background-color:rgb(66, 66, 66);
-  --text-color :ghostwhite;
+[data-theme="dark"] {
+  --background-color: rgb(66, 66, 66);
+  --text-color: ghostwhite;
   --navbar-bg-color: #00302e;
-  --theme-txt-button: ghostwhite ;
-  --theme-bg-circle-button:  rgb(255, 255, 86);
+  --theme-txt-button: ghostwhite;
+  --theme-bg-circle-button: rgb(255, 255, 86);
   --theme-bg-button: rgb(66, 66, 66);
-  --theme-border-button:yellow;
-  --bg-footer:#00302e;
-  --h1-color:#009b95;
-  --img-background-title:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://i.goopics.net/dKqxa.jpg);
-  --bg-card-container: #D6D1D1;
-  --bg-article: #D6D1D1;
-  --infos-font-color: #D6D1D1;
+  --theme-border-button: yellow;
+  --bg-footer: #00302e;
+  --h1-color: #009b95;
+  --img-background-title: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(https://i.goopics.net/dKqxa.jpg);
+  --bg-card-container: #d6d1d1;
+  --bg-article: #d6d1d1;
+  --infos-font-color: #d6d1d1;
   --bg-color-bref: #009b95;
   --h1-txt-shadow:none;
 }
@@ -175,7 +179,7 @@ body {
   vertical-align: middle;
   margin: 0;
   font-size: 4rem;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   letter-spacing: 5px;
   text-shadow:var(--h1-txt-shadow);
   transform: rotateZ(-2deg) skew(-2deg);
@@ -224,7 +228,7 @@ article {
   align-items: center;
   margin-bottom: 30px;
 }
-span {
+.nomprofil {
   font-size: 1.5rem;
   color: var(--h1-color);
   padding-top: 20px;
@@ -268,7 +272,6 @@ form {
   width: 85%;
 }
 .box {
-  width: 100%;
   padding: 40px;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -349,7 +352,7 @@ form {
   border-radius: 1px 45px 0px 0px;
   width: 100%;
 }
-.card-img:hover{
+.card-img:hover {
   filter: blur(5px);
 }
 /* container du text des card */
@@ -513,7 +516,7 @@ footer {
   background-color: #000;
   color: #fff;
   display: inline-block;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   margin: 0px;
   overflow: hidden;
@@ -522,14 +525,12 @@ footer {
   width: 100%;
   border-radius: 1px 45px 0 0;
 }
-
 .snip1585 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.45s ease;
   transition: all 0.45s ease;
 }
-
 .snip1585:before,
 .snip1585:after {
   background-color: rgba(0, 0, 0, 0.5);
@@ -540,29 +541,25 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  content: '';
+  content: "";
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   z-index: 1;
   opacity: 0;
 }
-
 .snip1585:before {
   -webkit-transform: scaleY(2);
   transform: scaleY(2);
 }
-
 .snip1585:after {
   -webkit-transform: scaleY(2);
   transform: scaleY(2);
 }
-
 .snip1585 img {
   vertical-align: top;
   width: 100%;
   backface-visibility: hidden;
 }
-
 .snip1585 figcaption {
   position: absolute;
   top: 0;
@@ -580,7 +577,6 @@ footer {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
-
 .snip1585 h3 {
   font-size: 1em;
   font-weight: 400;
@@ -588,12 +584,10 @@ footer {
   margin: 0;
   text-transform: uppercase;
 }
-
 .snip1585 h3 span {
   display: block;
   font-weight: 700;
 }
-
 .snip1585 a {
   position: absolute;
   top: 0;
@@ -602,25 +596,21 @@ footer {
   right: 0;
   z-index: 3;
 }
-
-.snip1585:hover > img{
+.snip1585:hover > img {
   opacity: 0.9;
   filter: blur(3px);
 }
-
 .snip1585:hover:before,
-.snip1585:hover:after{
+.snip1585:hover:after {
   -webkit-transform: scale(1);
   transform: scale(1);
   opacity: 1;
 }
-
-.snip1585:hover figcaption{
+.snip1585:hover figcaption {
   opacity: 1;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
-
 /*----ProgressBar----
 #myProgress {
   width: 100%;
