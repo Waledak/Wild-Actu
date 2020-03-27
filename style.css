@@ -5,12 +5,12 @@
 :root {
   --background-color: ghostwhite;
   --text-color: rgb(30, 30, 30);
-  --navbar-bg-color: #009b95;
+  --navbar-bg-color: #00302e;
   --theme-txt-button: rgb(30, 30, 30);
   --theme-bg-circle-button: ghostwhite;
   --theme-bg-button: #009b95;
   --theme-border-button: rgb(222, 238, 240);
-  --bg-footer: #009b95;
+  --bg-footer: #00302e;
   --h1-color: #08a6a0;
   --img-background-title: linear-gradient(
       rgba(0, 0, 0, 0.05),
@@ -28,7 +28,7 @@
   --theme-bg-button: rgb(66, 66, 66);
   --theme-border-button: yellow;
   --bg-footer: #005e5b;
-  --h1-color: #08a6a0;
+  --h1-color: #005e5b;
   --img-background-title: linear-gradient(
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
@@ -439,7 +439,7 @@ span {
 /* Partie de tanguy V.Mobile fin */
 /*debut partie footer*/
 footer {
-  background-color: rgb(0, 107, 103);
+  background-color: var(--bg-footer);
   display: flex;
   width: 100%;
   margin-top: 90px;
