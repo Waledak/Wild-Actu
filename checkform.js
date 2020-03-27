@@ -33,3 +33,6 @@ function validate() {
   }
   return false;
 }
+$(".imgprofil").mouseleave(function() {
+  $(this).removeClass("imgprofil");
+});
