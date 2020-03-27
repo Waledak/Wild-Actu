@@ -16,7 +16,7 @@ function switchTheme(event){
     textTheme.style.marginLeft = "2.8rem";
     textTheme.innerHTML = "Dark";
     cards.forEach(card => card.style.boxShadow = "8px 8px 2px 1px rgba(0, 0, 255, 0.2)");
-    imgpro.forEach(imgprof => imgprof.style.boxShadow = "8px 8px 2px 1px rgba(0, 0, 255, 0.2)git");
+    imgpro.forEach(imgprof => imgprof.style.boxShadow = "8px 8px 2px 1px rgba(0, 0, 255, 0.2)");
     redaction.style.boxShadow = "10px 10px 5px #006b67";
   }
 }
