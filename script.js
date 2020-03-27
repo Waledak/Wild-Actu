@@ -1,7 +1,7 @@
 // active ou désactive le dark mode et enlève et remet certaine box shadow
+const cards = document.querySelectorAll('.card-container');
+let textTheme = document.getElementById("textTheme");
 function switchTheme(event){
-  const cards = document.querySelectorAll('.card-container');
-  let textTheme = document.getElementById("textTheme");
   if (event.target.checked){
     document.documentElement.setAttribute('data-theme','dark');
     textTheme.style.marginLeft = "0.5rem";
@@ -15,7 +15,7 @@ function switchTheme(event){
   }
 }
 const getCheckThemeId = document.querySelector("#dark");
-getCheckThemeId.addEventListener('change', switchTheme,false);
+getCheckThemeId.addEventListener('change', switchTheme);
 // permet d'afficher la navbar en cliquant le menu burger et de l'animer
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
