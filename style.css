@@ -64,7 +64,7 @@ body {
   height: 8vh;
   top: 0;
   background: var(--navbar-bg-color);
-  z-index: 1;
+  z-index: 3;
 }
 .linkName {
   display: none;
@@ -455,9 +455,6 @@ form {
   margin-bottom: 10px;
   margin-right: 10px;
 }
-span {
-  font-weight: bold;
-}
 /* Partie de tanguy V.Mobile fin */
 /*debut partie footer*/
 footer {
@@ -530,6 +527,7 @@ footer {
   box-sizing: border-box;
   -webkit-transition: all 0.45s ease;
   transition: all 0.45s ease;
+  cursor: pointer;
 }
 .snip1585:before,
 .snip1585:after {
@@ -544,7 +542,6 @@ footer {
   content: "";
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  z-index: 1;
   opacity: 0;
 }
 .snip1585:before {
@@ -567,15 +564,14 @@ footer {
   left: 0;
   right: 0;
   align-items: center;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   line-height: 1.1em;
   opacity: 0;
-  z-index: 2;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+  z-index: 1;
 }
 .snip1585 h3 {
   font-size: 1em;
@@ -594,7 +590,6 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 3;
 }
 .snip1585:hover > img {
   opacity: 0.9;
